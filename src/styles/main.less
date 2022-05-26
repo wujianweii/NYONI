@@ -1,0 +1,758 @@
+@import "./normalize.less";
+// @import "./iconfont.less";
+
+.h-100vh {
+  min-height: 100vh;
+}
+
+.w-max {
+  width: 100%;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.w-55 {
+  width: 55px;
+}
+
+.w-16 {
+  width: 16px;
+}
+
+.w-22 {
+  width: 22px;
+}
+
+.w-23 {
+  width: 23px;
+}
+
+.w-50 {
+  width: 50px;
+}
+
+/* background */
+.bg-fff {
+  background-color: #fff !important;
+}
+
+.bg-green {
+  background-color: #63b253;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.z-index-999 {
+  z-index: 999;
+}
+
+.z-index-501 {
+  z-index: 501;
+}
+
+.z-index-500 {
+  z-index: 500;
+}
+
+.z-index-99 {
+  z-index: 99;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-42 {
+  flex: 0 0 42px;
+}
+
+.flex-100 {
+  flex: 0 0 100px;
+}
+
+/* 浮动 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+/* 去除浮动 */
+.clearfix::after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* 常用样式 */
+.hide {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fixed-bottom-center {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fixed-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 600px;
+  height: 45px;
+  color: #202020;
+  font-size: 15px;
+  font-family: sans-serif;
+  line-height: 45px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* 字体大小 */
+.font-12 {
+  font-size: 12px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-23 {
+  font-size: 23px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-28 {
+  font-size: 28px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-34 {
+  font-size: 34px;
+}
+
+.font-35 {
+  font-size: 35px;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+.h-24 {
+  height: 24px;
+}
+
+/* margin */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.maxw-80percent {
+  max-width: 80%;
+}
+
+.w-60percent {
+  width: 60%;
+}
+
+/* padding */
+.padding {
+  padding: 10px;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.ptb-5 {
+  padding: 5px 0;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+.pb-7 {
+  padding-bottom: 7px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+}
+
+.pl-50 {
+  padding-left: 50px;
+}
+
+.pr-12 {
+  padding-right: 12px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.plr-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.ptb-18 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.plr-30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.height-50 {
+  height: 50px;
+}
+
+// Vux swiper
+.vux-icon-dot {
+  width: 5px !important;
+  height: 5px !important;
+  background-color: #d0cdd1 !important;
+  border-radius: 50% !important;
+}
+
+.vux-icon-dot.active {
+  background-color: #fff !important;
+}
+
+.vux-slider > .vux-indicator > a,
+.vux-slider .vux-indicator-right > a {
+  margin: 0 4px !important;
+}
+
+// /* tab */
+// .vux-tab .vux-tab-item {
+//   background: none !important;
+// }
+
+/* border */
+.bb-eee {
+  border-bottom: 1px solid #eee;
+}
+
+.bt-eee {
+  border-top: 1px solid #eee;
+}
+
+.bb-f0 {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.h-45 {
+  height: 45px;
+}
+
+/* color */
+.color-yellow {
+  color: #f4c408;
+}
+
+.color-orange {
+  color: #ffc042;
+}
+
+.color-black {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.color-a {
+  // color: #576895;
+  color: #576895;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-a4 {
+  color: #a4a4a4;
+}
+
+.color-red {
+  color: #f04042;
+}
+
+.color-ccc {
+  color: #ccc;
+}
+
+.color-fff {
+  color: #fff;
+}
+
+/* popup */
+.vux-actionsheet-menu-default {
+  color: #444 !important;
+}
+
+.weui-actionsheet__cell {
+  padding: 16px 0 !important;
+  font-size: 16px !important;
+}
+
+.article-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+
+  ol,
+  ul {
+    padding-left: 20px;
+    list-style: inherit;
+  }
+
+  li {
+    list-style: inherit;
+  }
+
+  table {
+    border: none;
+    border-collapse: collapse;
+
+    td,
+    th {
+      min-width: 50px;
+      height: 20px;
+      padding: 3px 5px;
+      border: 1px solid #999;
+    }
+  }
+}
+
+.assertive {
+  color: #f04042;
+}
+
+.balanced {
+  color: #4ebd52;
+}
+
+.appreciates {
+  margin: 15px 0;
+  color: #aaa;
+}
+
+// 微贴评论样式
+@media (min-width: 600px) {
+  .vux-popup-dialog {
+    left: 50% !important;
+    margin-left: -300px;
+  }
+}
+
+// toast
+.weui-toast_text .weui-toast__content {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* button */
+.yellowWhite-btn {
+  height: 40px;
+  color: #fff; // #000
+  font-size: 14px;
+  line-height: 40px;
+  background: #ffc042;
+  border-radius: 1.571429rem; // 4px 22px
+}
+
+.dialog-btngroup {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 12px;
+}
+
+.btn-init {
+  background-color: transparent;
+}
+
+.btn-normal {
+  display: inline-block;
+  height: 43px;
+  font-size: 15px;
+  font-family: sans-serif;
+  line-height: 43px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.btn-yellow {
+  background-color: #ffd600;
+  border-color: #ffd600;
+}
+
+.btn-orange {
+  background-color: #ffc042;
+  border-color: #ffc042;
+}
+
+.btn-white {
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.dialog-textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+}
+
+// XDialog
+
+.dialog-title {
+  height: 50px;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+.dialog-body {
+  padding: 0 12px;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.dialog-close-bind {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 16px;
+}
+
+// postition
+.relative {
+  position: relative;
+}
+
+.top-1 {
+  top: 1px;
+}
+
+.top-2 {
+  top: 2px;
+}
+
+.top--2 {
+  top: -2px;
+}
+
+.top-3 {
+  top: 3px;
+}
+
+.top-45 {
+  top: 45px;
+}
+
+.top-bar {
+  height: 40px;
+  background: rgba(245, 166, 35, 0.2);
+
+  &-content {
+    overflow: scroll;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &-content::-webkit-scrollbar {
+    // 隐藏滚动条
+    display: none;
+  }
+}
+
+// 背景图片
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.feed-content {
+  display: block;
+  padding: 7px 20px 0 54px;
+  color: #444;
+  text-decoration: none;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.emojione {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  margin: -0.2rem 0.15rem 0.2rem;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+button.disabled,
+button[disabled] {
+  cursor: default !important;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// 确定按钮  背景绿色
+.btn-determine {
+  width: 100%;
+  min-height: 40px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  background: #4ebd52;
+  border-color: #3b9d3e;
+  border-radius: 4px;
+}
+
+// 取消按钮
+.btn-cancel {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #4ebd52;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  background: transparent;
+  border: 1px solid #4ebd52;
+  border-radius: 4px;
+}
+
+.color-ddd {
+  color: #ddd;
+}
+
+.minh-70 {
+  min-height: 70vh;
+}
