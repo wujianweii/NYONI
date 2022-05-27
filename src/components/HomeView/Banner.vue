@@ -1,7 +1,12 @@
 <template>
   <el-carousel indicator-position="outside" :height="bannerHeight + 'px'">
     <!-- item 从 1 开始计数 -->
-    <el-carousel-item v-for="item in 5" :key="item" height="auto">
+    <el-carousel-item
+      v-for="item in 5"
+      :key="item"
+      height="auto"
+      interval="5000"
+    >
       <!-- <el-image
         class="banner"
         :src="require('../../assets/banner/' + imageUrl[item - 1])"
