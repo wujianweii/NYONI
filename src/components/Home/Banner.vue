@@ -13,7 +13,7 @@
       /> -->
       <img
         ref="bannerHeight"
-        :src="require('../../assets/banner/' + imageUrl[item - 1])"
+        :src="require('@/assets/banner/' + item + '.jpg')"
         alt=""
         @load="imgLoad"
         style="width: 100%"
@@ -32,7 +32,6 @@ export default {
   },
   data() {
     return {
-      imageUrl: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
       bannerHeight: "",
       bannerwidth: "",
     };

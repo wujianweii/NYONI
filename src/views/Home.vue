@@ -1,20 +1,23 @@
 <template>
   <div class="home">
-    <Menu />
     <Banner />
+    <Title
+      title="COMPANY VIDEO"
+      title-text="To provide customers with cost-effective products"
+    />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Menu from "@/components/HomeView/Menu.vue";
-import Banner from "@/components/HomeView/Banner.vue";
+import Banner from "@/components/Home/Banner.vue";
+import Title from "@/components/Home/TitleComponents.vue";
 
 export default {
-  name: "HomeView",
+  name: "Home",
   components: {
-    Menu,
     Banner,
+    Title,
   },
 };
 </script>

@@ -16,30 +16,45 @@
       <el-menu-item index="0" v-show="!isMobile"
         ><img src="@/assets/common/nyoni_black.png" alt="logo" class="logo"
       /></el-menu-item>
-      <el-menu-item index="1">Home</el-menu-item>
+      <el-menu-item index="1">{{ $t("index.home") }}</el-menu-item>
       <el-sub-menu index="2">
         <template #title>Workspace</template>
-        <el-menu-item index="2-1">item one</el-menu-item>
+        <ProductMenu />
+        <!-- <el-menu-item index="2-1">item one</el-menu-item>
         <el-menu-item index="2-2">item two</el-menu-item>
         <el-menu-item index="2-3">item three</el-menu-item>
         <el-sub-menu index="2-4">
           <template #title>item four</template>
           <el-menu-item index="2-4-1">item one</el-menu-item>
           <el-menu-item index="2-4-2">item two</el-menu-item>
-          <el-menu-item index="2-4-3">item three</el-menu-item>
-        </el-sub-menu>
+          <el-menu-item index="2-4-3">item three</el-menu-item> 
+        </el-sub-menu>-->
       </el-sub-menu>
-      <el-menu-item index="4">Orders</el-menu-item>
+      <el-menu-item index="3">Orders</el-menu-item>
     </el-menu>
+    <el-dropdown @command="handleCommand" class="dropdown">
+      <span class="el-dropdown-link"> Dropdown List </span>
+      <template #dropdown>
+        <el-dropdown-menu>
+          <el-dropdown-item command="a">Action 1</el-dropdown-item>
+          <el-dropdown-item command="b">Action 2</el-dropdown-item>
+        </el-dropdown-menu>
+      </template>
+    </el-dropdown>
   </div>
 </template>
 
 <script>
-import { ElMenu, ElMenuItem } from "element-plus";
+import { ElMenu, ElMenuItem, elDropdown, elDropdownItem } from "element-plus";
+import ProductMenu from "../Common/ProductMenu.vue";
+// import { useI18n } from "vue-i18n";
 export default {
   components: {
     ElMenu,
     ElMenuItem,
+    elDropdown,
+    elDropdownItem,
+    ProductMenu,
   },
   data() {
     return {
@@ -49,6 +64,12 @@ export default {
       // textColor: "#000",
     };
   },
+  // setup() {
+  //   const { t } = useI18n();
+  //   return {
+  //     t,
+  //   };
+  // },
   mounted() {
     this.changeMenu();
     window.addEventListener(
@@ -73,7 +94,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .logo {
   height: 20px;
   margin: 18px 0;
@@ -109,5 +130,13 @@ export default {
 .menu .el-menu--collapse {
   width: 0;
   overflow: hidden;
+}
+
+.menu .dropdown {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  z-index: 1000;
+  border: none;
 }
 </style>
