@@ -30,7 +30,7 @@
 <script>
 import ProductMenu from "@/components/Common/ProductMenu.vue";
 import HotSaleList from "@/components/Products/HotSaleList.vue";
-import ProductList from "@/components/Products/ProductList.vue";
+import ProductList from "@/components/Common/ProductList.vue";
 import hotsale from "@/modules/hotsale";
 import { ElMenu } from "element-plus";
 export default {
@@ -47,7 +47,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scope>
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -64,5 +64,9 @@ export default {
 
 .box-card {
   width: 480px;
+}
+
+.el-container .el-main {
+  padding: 0 20px;
 }
 </style>

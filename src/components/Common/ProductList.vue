@@ -1,12 +1,12 @@
 <template>
-  <el-row :gutter="10">
+  <div class="container">
     <ProductItem
       v-for="product in products"
       :key="product.model"
       :model="product.model"
       :name="product.enname"
     />
-  </el-row>
+  </div>
 </template>
 
 <script>
@@ -28,3 +28,10 @@ export default {
   },
 };
 </script>
+<style>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+</style>

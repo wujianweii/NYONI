@@ -25,8 +25,9 @@ export default {
 </script>
 <style>
 .title {
-  height: 60px;
+  height: 80px;
   text-align: center;
+  margin: 20px 0;
 }
 .title-bg {
   font-size: 40px;
