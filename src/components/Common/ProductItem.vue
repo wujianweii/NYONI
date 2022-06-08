@@ -2,12 +2,12 @@
   <div class="product-box">
     <el-image
       class="product-img"
-      :src="require('@/assets/products/' + model + '1.jpg')"
+      :src="!!model ? require('@/assets/products/' + model + '.jpg') : img"
       fit="cover"
       lazy
     />
     <TwoLinesText :name="name" />
-    <p class="more">More >></p>
+    <p class="more" v-if="!model">More >></p>
   </div>
 </template>
 
@@ -17,12 +17,20 @@ export default {
   props: {
     model: {
       type: String,
-      required: true,
+      default: "",
     },
     name: {
       type: String,
       required: true,
     },
+    img: {
+      type: String,
+      default: "",
+    },
+    // more: {
+    //   type: Boolean,
+    //   default: false,
+    // },
   },
   components: {
     TwoLinesText,
@@ -33,6 +41,8 @@ export default {
 <style lang="less">
 .product-box {
   padding: 12px;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
 }
 @media (min-width: 1200px) {
   .product-box {
@@ -40,18 +50,18 @@ export default {
     max-width: 25%;
   }
 }
-@media (min-width: 992px) {
-  .product-box {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-  }
-}
-@media (min-width: 375px) {
-  .product-box {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
+// @media (min-width: 820px) {
+//   .product-box {
+//     flex: 0 0 33.33333%;
+//     max-width: 33.33333%;
+//   }
+// }
+// @media (min-width: 375px) {
+//   .product-box {
+//     flex: 0 0 50%;
+//     max-width: 50%;
+//   }
+// }
 // @media (min-width: 768px) {
 //   .product-box {
 //   }

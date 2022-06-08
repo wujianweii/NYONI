@@ -24,7 +24,11 @@ export default {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  height: 30px;
-  font-size: 12px;
+  height: 37px;
+  font-size: 14px;
+  text-align: center;
+}
+.two-lines-text-link {
+  color: #333;
 }
 </style>

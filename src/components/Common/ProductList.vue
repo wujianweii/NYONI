@@ -1,11 +1,23 @@
 <template>
-  <div class="container">
-    <ProductItem
-      v-for="product in products"
-      :key="product.model"
-      :model="product.model"
-      :name="product.enname"
-    />
+  <div>
+    <div v-if="isEnOrZh === 'zh'" class="container">
+      <ProductItem
+        v-for="(product, index) in products"
+        :key="index"
+        :model="product.model"
+        :name="product.zh_name"
+        :img="product.img"
+      />
+    </div>
+    <div v-if="isEnOrZh === 'en'" class="container">
+      <ProductItem
+        v-for="(product, index) in products"
+        :key="index"
+        :model="product.model"
+        :name="product.en_name"
+        :img="product.img"
+      />
+    </div>
   </div>
 </template>
 
@@ -24,6 +36,7 @@ export default {
   data() {
     return {
       productName: "",
+      isEnOrZh: window.localStorage.getItem("language"),
     };
   },
 };
