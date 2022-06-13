@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="relative">
     <Menu />
-    <Breadcrumb />
+    <Breadcrumb v-if="false" />
     <router-view />
     <Footer />
   </div>
