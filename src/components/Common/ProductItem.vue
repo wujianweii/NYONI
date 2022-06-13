@@ -4,8 +4,12 @@
       class="product-img"
       :src="!!model ? require('@/assets/products/' + model + '.jpg') : img"
       fit="cover"
-      lazy
     />
+    <!-- <el-image
+      class="product-img"
+      :src="require('@/assets/products/N2806.jpg')"
+      fit="cover"
+    /> -->
     <TwoLinesText :name="name" />
     <p class="more" v-if="!model">More >></p>
   </div>

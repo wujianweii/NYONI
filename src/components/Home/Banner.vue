@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       bannerHeight: "",
-      bannerwidth: "",
+      // bannerwidth: "",
     };
   },
   mounted() {
@@ -51,7 +51,7 @@ export default {
     imgLoad() {
       this.$nextTick(() => {
         this.bannerHeight = this.$refs.bannerHeight[0].height;
-        this.bannerwidth = document.body.clientWidth;
+        // this.bannerwidth = document.body.clientWidth;
       });
     },
   },

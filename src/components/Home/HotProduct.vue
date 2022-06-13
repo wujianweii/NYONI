@@ -5,7 +5,17 @@
     </el-carousel-item>
   </el-carousel>
 </template>
+<script>
+import { ElCarousel, ElCarouselItem } from "element-plus";
 
+export default {
+  components: {
+    ElCarousel,
+    ElCarouselItem,
+    // ElImage,
+  },
+};
+</script>
 <style scoped>
 .el-carousel__item h3 {
   color: #475669;

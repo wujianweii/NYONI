@@ -3,7 +3,7 @@
     <div class="menu-head" v-show="isMobile">
       <img src="@/assets/common/nyoni_black.png" alt="logo" class="logo" />
       <div @click="switchMenu">
-        <img src="@/assets/common/nyoni_black.png" alt="logo" class="logo" />
+        <img src="@/assets/icon/ship.svg" alt="logo" class="logo" />
       </div>
     </div>
     <div v-show="isMobile" class="menu-head-block"></div>
@@ -12,6 +12,9 @@
       :mode="mode"
       @select="handleSelect"
       :collapse="isCollapse"
+      background-color="#24292c"
+      text-color="#fff"
+      active-text-color="#fff"
     >
       <el-menu-item index="0" v-show="!isMobile"
         ><img src="@/assets/common/nyoni_black.png" alt="logo" class="logo"
@@ -109,6 +112,7 @@ export default {
   left: 0;
   width: 100%;
   height: 59px;
+  /* background: #24292c; */
   background: #fff;
 }
 .menu-head-block {

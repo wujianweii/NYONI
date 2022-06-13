@@ -73,7 +73,7 @@
 
 <script>
 import ImgShow from "@/components/ProductsDetail/ImgShow.vue";
-import ProductsRecommend from "@/components/ProductsDetail/ProductsRecommend.vue";
+import ProductsRecommend from "@/components/Common/ProductsRecommend false.vue";
 export default {
   components: {
     ImgShow,
