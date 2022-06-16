@@ -1,10 +1,9 @@
 <template>
-  <div class="product-box" @click="toProductDetail">
+  <div class="product-box">
     <el-image
       class="product-img"
       :src="!!model ? require('@/assets/products/' + model + '/1.jpg') : img"
       fit="cover"
-      :lazy="lazy"
     />
     <!-- <el-image
       class="product-img"
@@ -18,7 +17,6 @@
 
 <script>
 import TwoLinesText from "./TwoLinesText.vue";
-import { mapGetters } from "vuex";
 export default {
   props: {
     model: {
@@ -33,33 +31,13 @@ export default {
       type: String,
       default: "",
     },
-    lazy: {
-      type: Boolean,
-      default: true,
-    },
     // more: {
     //   type: Boolean,
     //   default: false,
     // },
   },
-  computed: {
-    ...mapGetters({
-      productsBrand: "getProductsBrand",
-    }),
-  },
   components: {
     TwoLinesText,
-  },
-  methods: {
-    toProductDetail() {
-      this.$router.push({
-        name: "details",
-        params: {
-          brand: this.productsBrand,
-          model: this.model,
-        },
-      });
-    },
   },
 };
 </script>
@@ -67,28 +45,15 @@ export default {
 <style lang="less">
 .product-box {
   padding: 12px;
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
 }
-@media screen and (max-width: 1461px) {
+@media (min-width: 1200px) {
   .product-box {
-    flex: 33.33333%;
-    max-width: 33.33333%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
-@media screen and (max-width: 1009px) {
-  .product-box {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-// @media screen and (max-width: 557px) {
-//   .product-box {
-//     flex: 100%;
-//     max-width: 100%;
-//   }
-// }
-
 // @media (min-width: 820px) {
 //   .product-box {
 //     flex: 0 0 33.33333%;
@@ -115,7 +80,7 @@ export default {
 .product-img {
   width: 100%;
   height: auto;
-  // margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .product-img img {
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);

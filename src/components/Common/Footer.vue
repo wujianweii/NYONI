@@ -5,17 +5,24 @@
         <img src="../../assets/common/nyoni_white.png" alt="" />
         <!-- <h1>NYONI - DEFINE YOUR DIRECTION OF ART</h1> -->
       </div>
+      <!-- 产品 -->
       <div>
-        <h1>PRODUCTS</h1>
-        <a href="">NYONI</a>
-        <a href="">FEIYAN</a>
+        <h1>{{ $t("common.footer.procudts.h1") }}</h1>
+        <a href="">{{ $t("common.footer.procudts.nyoni") }}</a>
+        <a href="">{{ $t("common.footer.procudts.feiyan") }}</a>
       </div>
-
+      <!-- 联系我们 -->
       <div>
-        <h1>CONTACT</h1>
-        <a href="">Landline: <br />400-8896-590</a>
-        <a href="">Phone: <br />+86 18157898718</a>
-        <a href="">Email: <br />nyoni@hzmanqini.com</a>
+        <h1>{{ $t("common.footer.contact.h1") }}</h1>
+        <a href=""
+          >{{ $t("common.footer.contact.landline") }}: <br />400-8896-590</a
+        >
+        <a href=""
+          >{{ $t("common.footer.contact.phone") }}: <br />+86 18157898718</a
+        >
+        <a href=""
+          >{{ $t("common.footer.contact.email") }}: <br />nyoni@hzmanqini.com</a
+        >
         <!-- <a href=""
           >Factory Address: No.1, Zhukou Industrial, Qingyuan, Lishui, Zhejiang,
           China.</a
@@ -26,19 +33,25 @@
           China.</a
         > -->
       </div>
+      <!-- 关于我们 -->
       <div>
-        <h1>ABOUT US</h1>
-        <a href=""> Factory: <br />Zhejiang Jiuling Brush Co., Ltd</a>
-        <a href="">Trade: <br />Hangzhou Manqini Stationery Co., Ltd</a>
+        <h1>{{ $t("common.footer.about.h1") }}</h1>
+        <a href="">
+          {{ $t("common.footer.about.factory1") }}: <br />{{
+            $t("common.footer.about.factory2")
+          }}</a
+        >
+        <a href=""
+          >{{ $t("common.footer.about.trade1") }}: <br />{{
+            $t("common.footer.about.trade2")
+          }}</a
+        >
       </div>
     </div>
     <div class="footer-bottom">
       <p class="copyright">©2022 NYONI DESIGNS</p>
       <p class="compinfo">
-        Avex is a eCommerce Agency and Shopify Plus agency in New York City.
-        Avex specializes in web design, Shopify Plus eCommerce, development,
-        design, email marketing and ecommerce optimization. Avex is rated 5 out
-        of 5 on Google Clutch.co.
+        {{ $t("common.footer.compinfo.compinfo") }}
       </p>
     </div>
   </footer>

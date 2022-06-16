@@ -11,7 +11,6 @@
         :model="product.model"
         :name="product.zh_name"
         :img="product.img"
-        :lazy="lazy"
       />
     </div>
     <div
@@ -25,7 +24,6 @@
         :model="product.model"
         :name="product.en_name"
         :img="product.img"
-        :lazy="lazy"
       />
     </div>
   </div>
@@ -42,17 +40,7 @@ export default {
       type: Array,
       required: true,
     },
-    // 是否可转行
     wrap: {
-      type: Boolean,
-      default: true,
-    },
-    // 是否监听产品列表高度
-    listenHeight: {
-      type: Boolean,
-      default: false,
-    },
-    lazy: {
       type: Boolean,
       default: true,
     },
@@ -65,30 +53,27 @@ export default {
   },
   mounted() {
     // this.imgLoad();
-    if (this.listenHeight) {
-      setTimeout(() => {
-        this.emitHeight();
-      }, 200);
-      window.addEventListener(
-        "resize",
-        () => {
-          // this.$emit("productItemHeight", this.$refs.productItem.offsetHeight)
-          // this.productItemHeight = this.$refs.productItem.offsetHeight;
-          this.emitHeight();
-        },
-        false
-      );
-    }
-
+    setTimeout(() => {
+      this.imgLoad();
+    }, 100);
     // setTimeout(this.imgLoad(), 5000);
     // setTimeout() => {
 
     // }
     // setTimeout("alert('sb')", 5000);
     // this.imgLoad();
+    window.addEventListener(
+      "resize",
+      () => {
+        // this.$emit("productItemHeight", this.$refs.productItem.offsetHeight)
+        // this.productItemHeight = this.$refs.productItem.offsetHeight;
+        this.imgLoad();
+      },
+      false
+    );
   },
   methods: {
-    emitHeight() {
+    imgLoad() {
       this.$nextTick(() => {
         this.$emit(
           "productItemHeight",

@@ -3,7 +3,7 @@ import { createI18n } from "vue-i18n";
 import zh from "./zh";
 import en from "./en";
 
-window.localStorage.setItem("language", "en");
+// window.localStorage.setItem("language", "en");
 // 默认语言 -
 const default_lang = window.localStorage.getItem("language") || "en";
 

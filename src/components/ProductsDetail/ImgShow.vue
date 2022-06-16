@@ -68,34 +68,38 @@ export default {
     },
     /** 放大镜移入 **/
     glassMoveHandle: function (event) {
-      // 鼠标的位置
-      let x = event.clientX,
-        y = event.clientY;
-      // 获取元素
-      let imgEl = this.$refs.orginImg.getBoundingClientRect();
-      // 获取元素左上角的坐标
-      let cx = imgEl.left,
-        cy = imgEl.top;
-      let coverEl = this.$refs.magnifierCover.getBoundingClientRect();
-      let tx = x - cx - coverEl.width / 2;
-      let ty = y - cy - coverEl.height / 2;
-      let maxX = imgEl.width - coverEl.width;
-      if (tx < 0) tx = 0;
-      else {
-        tx = tx > maxX ? maxX : tx;
+      if (document.body.offsetWidth <= 576) {
+        return;
+      } else {
+        // 鼠标的位置
+        let x = event.clientX,
+          y = event.clientY;
+        // 获取元素
+        let imgEl = this.$refs.orginImg.getBoundingClientRect();
+        // 获取元素左上角的坐标
+        let cx = imgEl.left,
+          cy = imgEl.top;
+        let coverEl = this.$refs.magnifierCover.getBoundingClientRect();
+        let tx = x - cx - coverEl.width / 2;
+        let ty = y - cy - coverEl.height / 2;
+        let maxX = imgEl.width - coverEl.width;
+        if (tx < 0) tx = 0;
+        else {
+          tx = tx > maxX ? maxX : tx;
+        }
+        let maxY = imgEl.height - coverEl.height;
+        if (ty < 0) ty = 0;
+        else {
+          ty = ty > maxY ? maxY : ty;
+        }
+        this.$refs.magnifierCover.style.display = "block";
+        this.$refs.magnifierBig.style.display = "block";
+        this.$refs.magnifierBig.style.backgroundPosition = `${
+          (tx / maxX) * 100
+        }% ${(ty / maxY) * 100}%`;
+        this.$refs.magnifierCover.style.left = `${tx}px`;
+        this.$refs.magnifierCover.style.top = `${ty}px`;
       }
-      let maxY = imgEl.height - coverEl.height;
-      if (ty < 0) ty = 0;
-      else {
-        ty = ty > maxY ? maxY : ty;
-      }
-      this.$refs.magnifierCover.style.display = "block";
-      this.$refs.magnifierBig.style.display = "block";
-      this.$refs.magnifierBig.style.backgroundPosition = `${
-        (tx / maxX) * 100
-      }% ${(ty / maxY) * 100}%`;
-      this.$refs.magnifierCover.style.left = `${tx}px`;
-      this.$refs.magnifierCover.style.top = `${ty}px`;
     },
     /***移出事件*/
     glassLeaveHandle: function () {
@@ -133,6 +137,7 @@ export default {
       background: hsla(0, 0%, 100%, 0.5);
     }
   }
+
   .magnifier-big {
     position: absolute;
     display: none;
@@ -165,5 +170,14 @@ export default {
       // box-shadow: ;
     }
   }
+}
+@media screen and (max-width: 576px) {
+  .magnifier-container .magnifier-mian {
+    width: 100%;
+    height: auto;
+  }
+  // .magnifier-container ul {
+  //   padding: 0 20px 20px;
+  // }
 }
 </style>

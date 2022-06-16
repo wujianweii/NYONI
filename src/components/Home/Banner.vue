@@ -5,15 +5,33 @@
       v-for="item in 5"
       :key="item"
       height="auto"
-      interval="5000"
+      :interval="5000"
     >
-      <!-- <el-image
-        class="banner"
-        :src="require('../../assets/banner/' + imageUrl[item - 1])"
-      /> -->
+      <!-- 动态背景 -->
+      <!-- <div
+        class="bannerbg"
+        :class="{
+          bannerbg1: item == 1,
+          bannerbg2: item == 2,
+          bannerbg3: item == 3,
+          bannerbg4: item == 4,
+          bannerbg5: item == 5,
+        }"
+      ></div> -->
+
+      <!-- :style="{
+          backgroundImage: require(url(`../../assets/banner/${item}.jpg`)),
+        }" -->
+      <!-- <div
+        class="bannerbg"
+        :style="{
+          backgroundImage: (url('../../assets/banner/' + item + '.jpg')),
+        }"
+      ></div> -->
+
       <img
         ref="bannerHeight"
-        :src="require('@/assets/banner/' + item + '.jpg')"
+        :src="require(`@/assets/banner/${size}/${item}.jpg`)"
         alt=""
         @load="imgLoad"
         style="width: 100%"
@@ -33,15 +51,19 @@ export default {
   data() {
     return {
       bannerHeight: "",
+      size: "",
       // bannerwidth: "",
     };
+  },
+  created() {
+    this.changeImageSize();
   },
   mounted() {
     this.imgLoad();
     window.addEventListener(
       "resize",
       () => {
-        this.bannerHeight = this.$refs.bannerHeight[0].height;
+        this.changeImageSize();
         this.imgLoad();
       },
       false
@@ -53,6 +75,14 @@ export default {
         this.bannerHeight = this.$refs.bannerHeight[0].height;
         // this.bannerwidth = document.body.clientWidth;
       });
+    },
+    changeImageSize() {
+      let width = document.body.offsetWidth;
+      if (width > 576) {
+        this.size = "large";
+      } else {
+        this.size = "small";
+      }
     },
   },
 };
@@ -69,4 +99,25 @@ export default {
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
 }
+/* .bannerbg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+}
+.bannerbg1 {
+  background-image: url(../../assets/banner/1.jpg);
+}
+.bannerbg2 {
+  background-image: url(../../assets/banner/2.jpg);
+}
+.bannerbg3 {
+  background-image: url(../../assets/banner/3.jpg);
+}
+.bannerbg4 {
+  background-image: url(../../assets/banner/4.jpg);
+}
+.bannerbg5 {
+  background-image: url(../../assets/banner/5.jpg);
+} */
 </style>

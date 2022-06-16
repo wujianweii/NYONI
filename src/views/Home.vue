@@ -4,9 +4,9 @@
     <Header />
     <!-- 公司介绍 -->
     <div class="company-introduction">
-      <h2>尼奥尼-勾勒您艺术的方向</h2>
+      <h2>{{ $t("home.companyIntroduction.title") }}</h2>
       <p>
-        浙江久灵笔刷有限公司成立于1999年，是一家集产供研于一体的专业生产销售中高档铅笔系列产品的企业，旗下拥有飞雁、少年派、尼奥尼、绔姿等品牌。公司坐落于被誉为“中国生态第一县”之称的丽水市庆元县竹口镇工业园区。竹口镇被称为“中国铅笔小镇”，是中国铅笔生产企业的集聚地，铅笔产量占国内铅笔总量的四分之一强。浙江久笔刷有限公司是庆元县最早研发、生产和销售铅笔的企业之一，产销量始终稳居全县铅笔行业的前列。
+        {{ $t("home.companyIntroduction.content") }}
       </p>
     </div>
     <!-- 轮播 -->
@@ -18,11 +18,10 @@
       <!-- <img src="../assets/common/background.jpg" alt="" /> -->
       <div class="bg"></div>
       <div class="enterprise-spirit-text">
-        <h2>以客户为中心</h2>
-        <h3>比竞争者更好的满足顾客期望</h3>
+        <h2>{{ $t("home.enterpriseSpirit.title1") }}</h2>
+        <h3>{{ $t("home.enterpriseSpirit.title2") }}</h3>
         <p>
-          全体浙江久灵人将继续弘扬“拼搏、进取、创新、求实”的企业精神，秉承“高标准、精细化、全程监控”的质量要求和“以客户为中心，比竞争者更好的满足顾客期望”的企业理念，
-          解放思想，振奋精神，齐心协力，埋头苦干，创造久灵更加美好的明天!
+          {{ $t("home.enterpriseSpirit.content") }}
         </p>
       </div>
     </div>
@@ -46,7 +45,7 @@ export default {
 
 <style lang="less">
 .company-introduction {
-  padding: 6rem 60px;
+  padding: 6rem 50px;
   max-width: 920px;
   margin: 0 auto;
   h2 {
@@ -88,7 +87,7 @@ export default {
     font-weight: 800;
   }
   h3 {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 500;
     padding: 30px 0;
   }
@@ -101,7 +100,7 @@ export default {
       font-weight: 800;
     }
     h3 {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 500;
       padding: 18px 0;
     }

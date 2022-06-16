@@ -1,7 +1,7 @@
 <template>
   <div class="products-recommend" ref="productsRecommendList">
     <el-carousel
-      :interval="1000000"
+      :interval="5000"
       arrow="always"
       :height="productsRecommendHeight + 'px'"
     >
@@ -9,11 +9,17 @@
         <ProductList
           :products="productsRecommend.slice(0, 3)"
           :wrap="false"
+          :listenHeight="true"
           @productItemHeight="getProductItemHeight"
+          :lazy="false"
         />
       </el-carousel-item>
       <el-carousel-item height="auto">
-        <ProductList :products="productsRecommend.slice(3, 6)" :wrap="false" />
+        <ProductList
+          :products="productsRecommend.slice(3, 6)"
+          :wrap="false"
+          :lazy="false"
+        />
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -51,7 +57,7 @@ export default {
   methods: {
     getProductItemHeight(data) {
       this.productsRecommendHeight = data;
-      console.log("111", this.productsRecommendHeight);
+      // console.log("111", this.productsRecommendHeight);
     },
     // imgLoad() {
     //   this.$nextTick(() => {
@@ -64,16 +70,26 @@ export default {
   },
 };
 </script>
-<style scoped>
-.products-recommend .el-carousel__container {
-  height: auto;
-}
+<style lang="less">
+.products-recommend {
+  background: #fff;
+  padding: 20px;
+  .el-carousel__arrow {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .product-box {
+    flex: 33.33333%;
+    max-width: 33.33333%;
+  }
+  .el-carousel__container {
+    height: auto;
+  }
+  .el-carousel__item:nth-child(2n) {
+    background-color: #fff;
+  }
 
-/* .el-carousel__item:nth-child(2n) {
-  background-color: #fff;
+  .el-carousel__item:nth-child(2n + 1) {
+    background-color: #fff;
+  }
 }
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #fff;
-} */
 </style>

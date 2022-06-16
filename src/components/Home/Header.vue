@@ -9,10 +9,9 @@
       loop
     ></video>
     <div class="header-title">
-      <h1 class="preTitle">NYC SHOPIFY PLUS ECOMMERCE AGENCY</h1>
+      <h1 class="preTitle">{{ $t("home.header.title1") }}</h1>
       <h2 class="title">
-        Avex is an eCommerce agency that builds & optimizes customer experiences
-        for high-growth brands.
+        {{ $t("home.header.title2") }}
       </h2>
     </div>
     <div class="header-content"></div>

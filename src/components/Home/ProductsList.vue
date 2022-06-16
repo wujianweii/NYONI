@@ -1,14 +1,16 @@
 <template>
   <div class="portfolio-list">
-    <h2>FEATURED WORK</h2>
+    <h2>{{ $t("home.productsList.title") }}</h2>
     <p class="short-content">
-      Avex is a NYC Shopify Partner Agency. We design, develop and optimize
-      eCommerce websites & email marketing campaigns for some of the world's
-      most popular brands.
+      {{ $t("home.productsList.content") }}
     </p>
     <div class="row items">
-      <!-- 图片 -->
-      <a href="/" class="col-12 col-sm-6 p-item animateFadeIn">
+      <!-- 图片color_pencil -->
+      <a
+        href="javaScript:void(0)"
+        class="col-12 col-sm-6 p-item animateFadeIn"
+        @click="toProducts('color_pencil')"
+      >
         <div class="p-img">
           <div class="logo">
             <img src="../../assets/common/nyoni_white.png" alt="" />
@@ -25,13 +27,19 @@
           />
         </div>
         <div class="p-text animateFadeIn">
-          <h3 class="h3-static">Balance Athletica</h3>
+          <h3 class="h3-static">
+            {{ $t("common.productsCategory.color_pencil") }}
+          </h3>
           <p>Helping this apparel brand increase conversions by 168%</p>
         </div>
       </a>
 
-      <!-- 图片 -->
-      <a href="/" class="col-12 col-sm-6 p-item animateFadeIn">
+      <!-- 图片sketch_pencil -->
+      <a
+        href="javaScript:void(0)"
+        class="col-12 col-sm-6 p-item animateFadeIn"
+        @click="toProducts('sketch_pencil')"
+      >
         <div class="p-img">
           <div class="logo">
             <img src="../../assets/common/nyoni_white.png" alt="" />
@@ -48,13 +56,19 @@
           />
         </div>
         <div class="p-text animateFadeIn">
-          <h3 class="h3-static">Balance Athletica</h3>
+          <h3 class="h3-static">
+            {{ $t("common.productsCategory.sketch_pencil") }}
+          </h3>
           <p>Helping this apparel brand increase conversions by 168%</p>
         </div>
       </a>
 
-      <!-- 图片 -->
-      <a href="/" class="col-12 col-sm-6 p-item animateFadeIn">
+      <!-- 图片charcoal_pencil -->
+      <a
+        href="javaScript:void(0)"
+        class="col-12 col-sm-6 p-item animateFadeIn"
+        @click="toProducts('charcoal_pencil')"
+      >
         <div class="p-img">
           <div class="logo">
             <img src="../../assets/common/nyoni_white.png" alt="" />
@@ -71,13 +85,19 @@
           />
         </div>
         <div class="p-text animateFadeIn">
-          <h3 class="h3-static">Balance Athletica</h3>
+          <h3 class="h3-static">
+            {{ $t("common.productsCategory.charcoal_pencil") }}
+          </h3>
           <p>Helping this apparel brand increase conversions by 168%</p>
         </div>
       </a>
 
-      <!-- 图片 -->
-      <a href="/" class="col-12 col-sm-6 p-item animateFadeIn">
+      <!-- 图片school_office_pencil -->
+      <a
+        href="javaScript:void(0)"
+        class="col-12 col-sm-6 p-item animateFadeIn"
+        @click="toProducts('school_office_pencil')"
+      >
         <div class="p-img">
           <div class="logo">
             <img src="../../assets/common/nyoni_white.png" alt="" />
@@ -94,7 +114,67 @@
           />
         </div>
         <div class="p-text animateFadeIn">
-          <h3 class="h3-static">Balance Athletica</h3>
+          <h3 class="h3-static">
+            {{ $t("common.productsCategory.school_office_pencil") }}
+          </h3>
+          <p>Helping this apparel brand increase conversions by 168%</p>
+        </div>
+      </a>
+
+      <!-- 图片eraser -->
+      <a
+        href="javaScript:void(0)"
+        class="col-12 col-sm-6 p-item animateFadeIn"
+        @click="toProducts('eraser')"
+      >
+        <div class="p-img">
+          <div class="logo">
+            <img src="../../assets/common/nyoni_white.png" alt="" />
+          </div>
+          <img
+            class="colored animateRight"
+            src="../../assets/products/N2806/2.jpg"
+            alt=""
+          />
+          <img
+            class="grey animateRight"
+            src="../../assets/products/N2806/2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="p-text animateFadeIn">
+          <h3 class="h3-static">
+            {{ $t("common.productsCategory.eraser") }}
+          </h3>
+          <p>Helping this apparel brand increase conversions by 168%</p>
+        </div>
+      </a>
+
+      <!-- 图片other_tools -->
+      <a
+        href="javaScript:void(0)"
+        class="col-12 col-sm-6 p-item animateFadeIn"
+        @click="toProducts('other_tools')"
+      >
+        <div class="p-img">
+          <div class="logo">
+            <img src="../../assets/common/nyoni_white.png" alt="" />
+          </div>
+          <img
+            class="colored animateRight"
+            src="../../assets/products/N2806/2.jpg"
+            alt=""
+          />
+          <img
+            class="grey animateRight"
+            src="../../assets/products/N2806/2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="p-text animateFadeIn">
+          <h3 class="h3-static">
+            {{ $t("common.productsCategory.other_tools") }}
+          </h3>
           <p>Helping this apparel brand increase conversions by 168%</p>
         </div>
       </a>
@@ -103,7 +183,37 @@
 </template>
 
 <script>
-export default {};
+import { mapActions } from "vuex";
+// import { useRouter } from "vue-router";
+export default {
+  methods: {
+    ...mapActions(["changeCategoriesChoose", "changeProductsBrand"]),
+    toProducts(data) {
+      this.changeCategoriesChoose(data);
+      // const router = useRouter();
+      // this.$base.toRouter("products", { brand: "NYONI" });
+      // router.push({ name: "products" });
+
+      if (data == "school_office_pencil") {
+        this.changeProductsBrand("feiyan");
+        this.$router.push({
+          name: "products",
+          params: {
+            brand: "feiyan",
+          },
+        });
+      } else {
+        this.changeProductsBrand("nyoni");
+        this.$router.push({
+          name: "products",
+          params: {
+            brand: "nyoni",
+          },
+        });
+      }
+    },
+  },
+};
 </script>
 
 <style lang="less">
@@ -113,7 +223,7 @@ export default {};
     margin-bottom: 1rem;
   }
   .short-content {
-    max-width: 440px;
+    max-width: 520px;
   }
   .row {
     display: flex;
@@ -501,6 +611,20 @@ export default {};
 @media screen and (min-width: 1620px) {
   .portfolio-list .p-item .p-text ul li {
     font-size: 0.75rem;
+  }
+}
+
+.h3-static {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.p-text {
+  p {
+    display: inline;
+    color: #9e9e9e;
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
 }
 </style>
