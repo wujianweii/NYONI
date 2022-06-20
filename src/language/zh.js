@@ -79,4 +79,16 @@ module.exports = {
     nyoinTitle: "尼奥尼专注于专业画材开发和生产。",
     feiyanTitle: "飞雁专注于学校办公书写铅笔开发和生产。",
   },
+  // 产品详情页
+  details: {
+    recommendText: "你可能喜欢",
+    price: "零售价",
+    buyLink: "购买链接",
+    productDetails: "产品详情",
+    model: "型号",
+    type: "类型",
+    size: "尺寸",
+    material: "材料",
+    package: "包装",
+  },
 };

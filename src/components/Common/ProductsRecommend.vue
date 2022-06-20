@@ -7,7 +7,7 @@
     >
       <el-carousel-item height="auto">
         <ProductList
-          :products="productsRecommend.slice(0, 3)"
+          :products="productsRecommend.slice(0, 4)"
           :wrap="false"
           :listenHeight="true"
           @productItemHeight="getProductItemHeight"
@@ -16,7 +16,7 @@
       </el-carousel-item>
       <el-carousel-item height="auto">
         <ProductList
-          :products="productsRecommend.slice(3, 6)"
+          :products="productsRecommend.slice(4, 8)"
           :wrap="false"
           :lazy="false"
         />
@@ -73,13 +73,13 @@ export default {
 <style lang="less">
 .products-recommend {
   background: #fff;
-  padding: 20px;
+  padding: 20px 44px;
   .el-carousel__arrow {
     background-color: rgba(0, 0, 0, 0.3);
   }
   .product-box {
-    flex: 33.33333%;
-    max-width: 33.33333%;
+    flex: 25%;
+    max-width: 25%;
   }
   .el-carousel__container {
     height: auto;
@@ -90,6 +90,11 @@ export default {
 
   .el-carousel__item:nth-child(2n + 1) {
     background-color: #fff;
+  }
+}
+@media screen and (max-width: 576px) {
+  .products-recommend {
+    padding: 20px 8px;
   }
 }
 </style>

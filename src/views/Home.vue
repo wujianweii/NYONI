@@ -10,7 +10,7 @@
       </p>
     </div>
     <!-- 轮播 -->
-    <Banner />
+    <Carousel category="banner" />
     <!-- 产品 -->
     <ProductsList />
     <!-- 客户 -->
@@ -30,13 +30,14 @@
 
 <script>
 import Header from "@/components/Home/Header.vue";
-import Banner from "@/components/Home/Banner.vue";
+import Carousel from "@/components/Common/Carousel.vue";
+// import Banner from "@/components/Home/Banner.vue";
 import ProductsList from "@/components/Home/ProductsList.vue";
 
 export default {
   name: "Home",
   components: {
-    Banner,
+    Carousel,
     Header,
     ProductsList,
   },

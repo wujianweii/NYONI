@@ -1,4 +1,5 @@
 module.exports = {
+  // 通用
   common: {
     // 导航栏
     header: {
@@ -17,6 +18,7 @@ module.exports = {
         en: "English",
       },
     },
+    // 页脚
     footer: {
       procudts: {
         h1: "PRODUCTS",
@@ -41,6 +43,7 @@ module.exports = {
           "Avex is a eCommerce Agency and Shopify Plus agency in New York City. Avex specializes in web design, Shopify Plus eCommerce, development, design, email marketing and ecommerce optimization. Avex is rated 5 out of 5 on Google Clutch.co.",
       },
     },
+    // 产品类目
     productsCategory: {
       color_pencil: "COLOR PENCIL",
       sketch_pencil: "SKETCH PENCIL",
@@ -72,11 +75,24 @@ module.exports = {
       content: `All Zhejiang Jiuling people will continue to carry forward the enterprise spirit of "hard work, enterprising, innovation and realism", adhere to the quality requirements of "high standards, refinement and whole process monitoring" and the enterprise concept of "customer-centric, better meet customer expectations than competitors", emancipate the mind, inspire the spirit, work together, and create a better tomorrow for Jiuling!`,
     },
   },
+  // 产品列表
   products: {
     title: "PRODUCTS BRANDS",
     nyoni: "NYONI",
     feiyan: "FEIYAN",
     nyoinTitle: `NYONI focuses on the development and production of professional painting materials`,
     feiyanTitle: `FEIYAN focuses on the development and production of school & office writing pencils`,
+  },
+  // 产品详情页
+  details: {
+    recommendText: "You may also like",
+    price: "Retail Price",
+    buyLink: "Buy Link",
+    productDetails: "Product Details",
+    model: "Model",
+    type: "Type",
+    size: "Size",
+    material: "Material",
+    package: "Package",
   },
 };

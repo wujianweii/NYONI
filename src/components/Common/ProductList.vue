@@ -68,16 +68,16 @@ export default {
     if (this.listenHeight) {
       setTimeout(() => {
         this.emitHeight();
+        window.addEventListener(
+          "resize",
+          () => {
+            // this.$emit("productItemHeight", this.$refs.productItem.offsetHeight)
+            // this.productItemHeight = this.$refs.productItem.offsetHeight;
+            this.emitHeight();
+          },
+          false
+        );
       }, 200);
-      window.addEventListener(
-        "resize",
-        () => {
-          // this.$emit("productItemHeight", this.$refs.productItem.offsetHeight)
-          // this.productItemHeight = this.$refs.productItem.offsetHeight;
-          this.emitHeight();
-        },
-        false
-      );
     }
 
     // setTimeout(this.imgLoad(), 5000);
@@ -90,10 +90,13 @@ export default {
   methods: {
     emitHeight() {
       this.$nextTick(() => {
-        this.$emit(
-          "productItemHeight",
-          this.$refs.productContainer.offsetHeight
-        );
+        if (this.$refs.productContainer) {
+          this.$emit(
+            "productItemHeight",
+            this.$refs.productContainer.offsetHeight
+          );
+        }
+
         // this.productsRecommendHeight = this.$refs.productContainer.offsetHeight;
         // console.log(this.$refs.productContainer);
         // console.log(this.$refs.productContainer.offsetHeight);
@@ -101,6 +104,9 @@ export default {
         // this.productsRecommendwidth = document.body.clientWidth / 3;
       });
     },
+  },
+  beforeRouteLeave() {
+    window.removeEventListener("resize");
   },
 };
 </script>
