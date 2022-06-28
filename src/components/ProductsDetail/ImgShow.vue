@@ -32,6 +32,10 @@ export default {
       type: String,
       require: true,
     },
+    length: {
+      type: Number,
+      default: 5,
+    },
   },
   data() {
     return {
@@ -41,13 +45,14 @@ export default {
     };
   },
   mounted() {
+    console.log(this.length);
+
     this.coversrc = require(`@/assets/products/${this.model}/1.jpg`);
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < this.length + 1; i++) {
       this.srcs.push({
         src: require(`@/assets/products/${this.model}/${i}.jpg`),
       });
     }
-    // console.log(this.srcs);
     this.src = this.srcs[0].src; //  默认选中第一张图片
     this.$nextTick(() => {
       // this.$refs.magnifierCover.style.backgroundImage = `url(${this.coversrc})`; // 设置遮罩图片

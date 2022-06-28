@@ -285,6 +285,40 @@ const productsList = {
       sort: "硬度",
     },
   },
+  N2802_charcoal_sketch: {
+    size: "45*45*12",
+    model: "N2802",
+    sort: [
+      {
+        sort: {
+          en: "Sketch One",
+          zh: "速写",
+        },
+        price: 18,
+      },
+      {
+        sort: {
+          en: "Sketch Two",
+          zh: "素描",
+        },
+        price: 18,
+      },
+    ],
+    en: {
+      name: "NYONI-N2802 Professional Art Standard Sketch Drawing Charcoal Pencil Set",
+      type: "Charcoal Pencil",
+      material: "Basswood",
+      package: "Paper box, 10pcs/set",
+      sort: "Hardness",
+    },
+    zh: {
+      name: "NYONI-N2802 尼奥尼速写素描系列绘画炭笔",
+      type: "炭笔",
+      material: "椴木",
+      package: "纸盒，10支/盒",
+      sort: "硬度",
+    },
+  },
   N8129: {
     size: "45*45*12",
     model: "N8129",
@@ -320,6 +354,61 @@ const productsList = {
     },
     zh: {
       name: "NYONI-N8129 尼奥尼专业六角绘画炭笔",
+      type: "炭笔",
+      material: "椴木",
+      package: "纸盒，10支/盒",
+      sort: "硬度",
+    },
+  },
+  N2805: {
+    size: "45*45*12",
+    model: "N2805",
+    sort: [
+      {
+        sort: {
+          en: "S.Soft",
+          zh: "特软",
+        },
+        price: 20,
+      },
+      {
+        sort: {
+          en: "Soft",
+          zh: "软",
+        },
+        price: 20,
+      },
+      {
+        sort: {
+          en: "Medium",
+          zh: "中",
+        },
+        price: 20,
+      },
+      {
+        sort: {
+          en: "Hard",
+          zh: "硬",
+        },
+        price: 20,
+      },
+      {
+        sort: {
+          en: "Mixture",
+          zh: "混装",
+        },
+        price: 20,
+      },
+    ],
+    en: {
+      name: "NYONI-N2805 Professional Art Standard Drawing Hexagon Charcoal Pencil Set",
+      type: "Charcoal Pencil",
+      material: "Basswood",
+      package: "Paper box, 10pcs/set",
+      sort: "Hardness",
+    },
+    zh: {
+      name: "NYONI-N2805 尼奥尼绿韵系列水性漆专业六角绘画炭笔",
       type: "炭笔",
       material: "椴木",
       package: "纸盒，10支/盒",
@@ -470,6 +559,33 @@ const productsList = {
     },
     zh: {
       name: "NYONI-N8138 尼奥尼专业九月特软绘画炭笔",
+      type: "炭笔",
+      material: "椴木",
+      package: "纸盒，10支/盒",
+      sort: "硬度",
+    },
+  },
+  N3032: {
+    size: "45*45*12",
+    model: "N3032",
+    sort: [
+      {
+        sort: {
+          en: "Mixture",
+          zh: "混装",
+        },
+        price: 20,
+      },
+    ],
+    en: {
+      name: "NYONI-N3032 Professional Art Standard Drawing Charcoal Pencil Set",
+      type: "Charcoal Pencil",
+      material: "Basswood",
+      package: "Paper box, 10pcs/set",
+      sort: "Hardness",
+    },
+    zh: {
+      name: "NYONI-N3032 尼奥尼廊桥黑杆混装专业绘画炭笔",
       type: "炭笔",
       material: "椴木",
       package: "纸盒，10支/盒",
@@ -906,6 +1022,7 @@ const productsList = {
   N8132: {
     size: "45*45*12",
     model: "N8132",
+    length: 2,
     price: 3,
     en: {
       name: "NYONI-N8132 Professional Art Eraser",
@@ -1006,8 +1123,8 @@ const productsList = {
     },
   },
   // 纸
-  "N8201/N8202": {
-    model: "N8201/N8202",
+  "N8201-N8202": {
+    model: "N8201-N8202",
     sort: [
       {
         sort: "4K",
@@ -1021,22 +1138,22 @@ const productsList = {
       },
     ],
     en: {
-      name: "NYONI-N8201/N8202 Professional Art 180g Sketch Paper",
+      name: "NYONI-N8201-N8202 Professional Art 180g Sketch Paper",
       type: "Sketch Paper",
       material: "Wood",
       package: "Plastic Bag, 20pcs/bag",
       sort: "Model",
     },
     zh: {
-      name: "NYONI-N8201/N8202 尼奥尼180g素描纸",
+      name: "NYONI-N8201-N8202 尼奥尼180g素描纸",
       type: "素描纸",
       material: "木",
       package: "塑料袋，20张/袋",
       sort: "型号",
     },
   },
-  "N8211/N8212": {
-    model: "N8211/N8212",
+  "N8211-N8212": {
+    model: "N8211-N8212",
     sort: [
       {
         sort: "4K",
@@ -1050,14 +1167,14 @@ const productsList = {
       },
     ],
     en: {
-      name: "NYONI-N8201/N8202 Professional Art Sketch Book",
+      name: "NYONI-N8211-N8212 Professional Art Sketch Book",
       type: "Sketch Book",
       material: "Wood",
       package: "Hard Paper Cover, 20pcs/bag",
       sort: "Model",
     },
     zh: {
-      name: "NYONI-N8201/N8202 尼奥尼素描本",
+      name: "NYONI-N8211-N8212 尼奥尼素描本",
       type: "素描纸",
       material: "木",
       package: "硬质封面，20张/本",
@@ -1161,14 +1278,14 @@ const productsList = {
       },
     ],
     en: {
-      name: "NYONI-N8301 Professional Art 180g Sketch Paper",
+      name: "NYONI-N8301 Professional Art 8K 100g Sketch Paper",
       type: "Sketch Paper",
       material: "Wood",
       package: "Plastic Bag, 80pcs/bag",
       sort: "Model",
     },
     zh: {
-      name: "NYONI-N8301 尼奥尼180g素写纸",
+      name: "NYONI-N8301 尼奥尼8K100g素写纸",
       type: "素描纸",
       material: "木",
       package: "塑料袋，80张/袋",
@@ -1272,9 +1389,9 @@ const productsList = {
       package: "无包装，1个装",
     },
   },
-  "N8215/N8216": {
+  "N8215-N8216": {
     size: "45*45*12",
-    model: "N8215/N8216",
+    model: "N8215-N8216",
     sort: [
       {
         sort: {
@@ -1294,14 +1411,14 @@ const productsList = {
       },
     ],
     en: {
-      name: "NYONI-N8215/N8216 Professional Art Standard Rub Cotton",
+      name: "NYONI-N8215-N8216 Professional Art Standard Rub Cotton",
       type: "Rub Cotton",
       material: "Cotton",
       package: "Paper box, 1pcs/set",
       sort: "Color",
     },
     zh: {
-      name: "NYONI-N8215/N8216 尼奥尼专业绘画揉擦棉",
+      name: "NYONI-N8215-N8216 尼奥尼专业绘画揉擦棉",
       type: "揉擦棉",
       material: "棉",
       package: "纸盒，1个/小盒",
@@ -1378,9 +1495,9 @@ const productsList = {
   },
   // 飞雁
   // 彩色铅笔
-  "FY-3001": {
+  FY3001: {
     size: "45*45*12",
-    model: "FY-3001",
+    model: "FY3001",
     sort: [
       {
         sort: 12,
@@ -1404,129 +1521,134 @@ const productsList = {
       },
     ],
     en: {
-      name: "FEIYAN-FY-3001 Art Standard Kids Color Pencil Set With 12/24/36/48 Colors",
+      name: "FEIYAN-FY3001 Art Standard Kids Color Pencil Set With 12/24/36/48 Colors",
       type: "Color Pencil",
       material: "Poplar",
       package: "Paper Tube",
       sort: "Colors",
     },
     zh: {
-      name: "FEIYAN-FY-3001 飞雁儿童彩色铅笔 12/24/36/48色",
+      name: "FEIYAN-FY3001 飞雁儿童彩色铅笔 12/24/36/48色",
       type: "彩色铅笔",
       material: "杨木",
       package: "纸筒",
       sort: "颜色",
     },
   },
-  "JL-82": {
+  JL82: {
     size: "45*45*12",
-    model: "JL-82",
+    model: "JL82",
     sort: [
       {
         sort: 12,
         price: 6.48,
-        model: "JL-8212",
+        model: "JL8212",
       },
       {
         sort: 18,
         price: 9.84,
-        model: "JL-8218",
+        model: "JL8218",
       },
       {
         sort: 24,
         price: 12.84,
-        model: "JL-8224",
+        model: "JL8224",
       },
       {
         sort: 36,
         price: 18.36,
-        model: "JL-8236",
+        model: "JL8236",
       },
     ],
     en: {
-      name: "FEIYAN-JL-82 Art Standard Medium Level Kids Color Pencil Set With 12/24/36/48 Colors",
+      name: "FEIYAN-JL82 Art Standard Medium Grade Kids Color Pencil Set With 12/24/36/48 Colors",
       type: "Color Pencil",
       material: "Poplar",
       package: "Paper Tube",
       sort: "Colors",
     },
     zh: {
-      name: "FEIYAN-JL-82 飞雁儿童中级彩色铅笔 12/24/36/48色",
+      name: "FEIYAN-JL82 飞雁儿童中级彩色铅笔 12/24/36/48色",
       type: "彩色铅笔",
       material: "杨木",
       package: "纸筒",
       sort: "颜色",
     },
   },
-  "JL-51": {
+  JL51: {
     size: "45*45*12",
-    model: "JL-51",
+    model: "JL51",
     sort: [
       {
         sort: 12,
         price: 8.16,
-        model: "JL-5112",
+        model: "JL5112",
       },
       {
         sort: 18,
         price: 12.36,
-        model: "JL-5118",
+        model: "JL5118",
       },
       {
         sort: 24,
         price: 15.72,
-        model: "JL-5124",
+        model: "JL5124",
       },
       {
         sort: 36,
         price: 22.8,
-        model: "JL-5136",
+        model: "JL5136",
       },
     ],
     en: {
-      name: "FEIYAN-JL-51 Art Standard High Level Kids Color Pencil Set With 12/24/36/48 Colors",
+      name: "FEIYAN-JL51 Art Standard High Grade Kids Color Pencil Set With 12/24/36/48 Colors",
       type: "Color Pencil",
       material: "Poplar",
       package: "Paper Tube",
       sort: "Colors",
     },
     zh: {
-      name: "FEIYAN-JL-51 飞雁儿童高级彩色铅笔 12/24/36/48色",
+      name: "FEIYAN-JL51 飞雁儿童高级彩色铅笔 12/24/36/48色",
       type: "彩色铅笔",
       material: "杨木",
       package: "纸筒",
       sort: "颜色",
     },
   },
-  "JL-83": {
+  JL83: {
     size: "45*45*12",
-    model: "JL-83",
+    model: "JL83",
     sort: [
       {
         sort: 12,
         price: 11.12,
-        model: "JL-8312",
+        model: "JL8312",
       },
       {
         sort: 24,
         price: 20.4,
-        model: "JL-8324",
+        model: "JL8324",
       },
       {
         sort: 36,
         price: 29.88,
-        model: "JL-8336",
+        model: "JL8336",
+      },
+      {
+        sort: 48,
+        price: 39.88,
+        model: "JL8348",
       },
     ],
     en: {
-      name: "FEIYAN-JL-83 Art Standard Erasable Color Pencil Set With 12/24/36/48 Colors",
+      name: "FEIYAN-JL83 Art Standard Erasable Color Pencil Set With 12/24/36/48 Colors",
       type: "Color Pencil",
       material: "Poplar",
       package: "Paper Tube",
       sort: "Colors",
     },
     zh: {
-      name: "FEIYAN-JL-83 飞雁可擦彩色铅笔 12/24/36/48色",
+      name: "FEIYAN-JL83 飞雁可擦彩色铅笔 12/24/36/48色",
       type: "彩色铅笔",
       material: "杨木",
       package: "纸筒",
@@ -1534,9 +1656,9 @@ const productsList = {
     },
   },
   // 书写铅笔
-  "FY-1009": {
+  FY1009: {
     size: "45*45*12",
-    model: "FY-1009",
+    model: "FY1009",
     sort: [
       {
         sort: {
@@ -1561,23 +1683,23 @@ const productsList = {
       },
     ],
     en: {
-      name: "FEIYAN-FY-1009 HB Round Cute Pencil",
+      name: "FEIYAN-FY1009 HB Round Cute Pencil",
       type: "Rub Cotton",
       material: "Poplar Wood",
       package: "Blister card, 12pcs/set",
       sort: "Color",
     },
     zh: {
-      name: "FEIYAN-FY-1009 飞雁圆杆套膜可爱系铅笔",
+      name: "FEIYAN-FY1009 飞雁圆杆套膜可爱系铅笔",
       type: "铅笔",
       material: "杨木",
       package: "吸卡，12支/吸卡",
       sort: "颜色",
     },
   },
-  "FY-1010": {
+  FY1010: {
     size: "45*45*12",
-    model: "FY-1010",
+    model: "FY1010",
     sort: [
       {
         sort: {
@@ -1602,23 +1724,23 @@ const productsList = {
       },
     ],
     en: {
-      name: "FEIYAN-FY-1010 HB Round Cute Pencil",
+      name: "FEIYAN-FY1010 HB Round Cute Pencil",
       type: "Rub Cotton",
       material: "杨木",
       package: "Blister card, 12pcs/set",
       sort: "Color",
     },
     zh: {
-      name: "FEIYAN-FY-1010 飞雁圆杆企鹅套膜可爱系铅笔",
+      name: "FEIYAN-FY1010 飞雁圆杆企鹅套膜可爱系铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
       sort: "颜色",
     },
   },
-  "FY-1011": {
+  FY1011: {
     size: "45*45*12",
-    model: "FY-1011",
+    model: "FY1011",
     sort: [
       {
         sort: {
@@ -1643,23 +1765,23 @@ const productsList = {
       },
     ],
     en: {
-      name: "FEIYAN-FY-1011 HB Round Cute Pencil",
+      name: "FEIYAN-FY1011 HB Round Cute Pencil",
       type: "Rub Cotton",
       material: "杨木",
       package: "Blister card, 12pcs/set",
       sort: "Color",
     },
     zh: {
-      name: "FEIYAN-FY-1011 飞雁圆杆仓鼠套膜可爱系铅笔",
+      name: "FEIYAN-FY1011 飞雁圆杆仓鼠套膜可爱系铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
       sort: "颜色",
     },
   },
-  "FY-1012": {
+  FY1012: {
     size: "45*45*12",
-    model: "FY-1012",
+    model: "FY1012",
     sort: [
       {
         sort: {
@@ -1684,99 +1806,99 @@ const productsList = {
       },
     ],
     en: {
-      name: "FEIYAN-FY-1012 HB Round Cute Pencil",
+      name: "FEIYAN-FY1012 HB Round Cute Pencil",
       type: "Rub Cotton",
       material: "杨木",
       package: "Blister card, 12pcs/set",
       sort: "Color",
     },
     zh: {
-      name: "FEIYAN-FY-1012 飞雁圆杆拾贝季套膜可爱系铅笔",
+      name: "FEIYAN-FY1012 飞雁圆杆拾贝季套膜可爱系铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
       sort: "颜色",
     },
   },
-  "FY-1013": {
-    size: "45*45*12",
-    model: "FY-1013",
-    sort: [
-      {
-        sort: {
-          en: "Green",
-          zh: "绿色",
-        },
-        price: 7,
-      },
-      {
-        sort: {
-          en: "Orange",
-          zh: "橘色",
-        },
-        price: 7,
-      },
-      {
-        sort: {
-          en: "White",
-          zh: "白色",
-        },
-        price: 7,
-      },
-    ],
-    en: {
-      name: "FEIYAN-FY-1013 HB Round Cute Pencil",
-      type: "Rub Cotton",
-      material: "杨木",
-      package: "Blister card, 12pcs/set",
-      sort: "Color",
-    },
-    zh: {
-      name: "FEIYAN-FY-1013 飞雁圆杆狗狗套膜可爱系铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "吸卡，12支/吸卡",
-      sort: "颜色",
-    },
-  },
-  "FY-1014": {
-    size: "45*45*12",
-    model: "FY-1014",
-    sort: [
-      {
-        sort: {
-          en: "Blue",
-          zh: "蓝色",
-        },
-        price: 7,
-      },
-      {
-        sort: {
-          en: "Pink",
-          zh: "粉色",
-        },
-        price: 7,
-      },
-    ],
-    en: {
-      name: "FEIYAN-FY-1014 HB Round Cute Pencil",
-      type: "Rub Cotton",
-      material: "杨木",
-      package: "Blister card, 12pcs/set",
-      sort: "Color",
-    },
-    zh: {
-      name: "FEIYAN-FY-1014 飞雁圆杆草莓季节套膜可爱系铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "吸卡，12支/吸卡",
-      sort: "颜色",
-    },
-  },
+  // "FY1013": {
+  //   size: "45*45*12",
+  //   model: "FY1013",
+  //   sort: [
+  //     {
+  //       sort: {
+  //         en: "Green",
+  //         zh: "绿色",
+  //       },
+  //       price: 7,
+  //     },
+  //     {
+  //       sort: {
+  //         en: "Orange",
+  //         zh: "橘色",
+  //       },
+  //       price: 7,
+  //     },
+  //     {
+  //       sort: {
+  //         en: "White",
+  //         zh: "白色",
+  //       },
+  //       price: 7,
+  //     },
+  //   ],
+  //   en: {
+  //     name: "FEIYAN-FY1013 HB Round Cute Pencil",
+  //     type: "Rub Cotton",
+  //     material: "杨木",
+  //     package: "Blister card, 12pcs/set",
+  //     sort: "Color",
+  //   },
+  //   zh: {
+  //     name: "FEIYAN-FY1013 飞雁圆杆狗狗套膜可爱系铅笔",
+  //     type: "铅笔",
+  //     material: "Poplar Wood",
+  //     package: "吸卡，12支/吸卡",
+  //     sort: "颜色",
+  //   },
+  // },
+  // FY1014: {
+  //   size: "45*45*12",
+  //   model: "FY1014",
+  //   sort: [
+  //     {
+  //       sort: {
+  //         en: "Blue",
+  //         zh: "蓝色",
+  //       },
+  //       price: 7,
+  //     },
+  //     {
+  //       sort: {
+  //         en: "Pink",
+  //         zh: "粉色",
+  //       },
+  //       price: 7,
+  //     },
+  //   ],
+  //   en: {
+  //     name: "FEIYAN-FY1014 HB Round Cute Pencil",
+  //     type: "Rub Cotton",
+  //     material: "杨木",
+  //     package: "Blister card, 12pcs/set",
+  //     sort: "Color",
+  //   },
+  //   zh: {
+  //     name: "FEIYAN-FY1014 飞雁圆杆草莓季节套膜可爱系铅笔",
+  //     type: "铅笔",
+  //     material: "Poplar Wood",
+  //     package: "吸卡，12支/吸卡",
+  //     sort: "颜色",
+  //   },
+  // },
   //
-  "FY-1015": {
+  FY1015: {
     size: "45*45*12",
-    model: "FY-1015",
+    model: "FY1015",
     sort: [
       {
         sort: {
@@ -1801,884 +1923,1021 @@ const productsList = {
       },
     ],
     en: {
-      name: "FEIYAN-FY-1015 HB Triangle Pole Hole Hole Pencil",
+      name: "FEIYAN-FY1015 HB Triangle Pole Hole Hole Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
       sort: "Color",
     },
     zh: {
-      name: "FEIYAN-FY-1015 飞雁三角杆HB三色洞洞笔",
+      name: "FEIYAN-FY1015 飞雁三角杆HB三色洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
       sort: "颜色",
     },
   },
-  "FY-1016": {
+  FY1016: {
     size: "45*45*12",
-    model: "FY-1016",
+    model: "FY1016",
     price: 6.72,
     en: {
-      name: "FEIYAN-FY-1016 2B Blue Triangle Pole Hole Hole Pencil",
+      name: "FEIYAN-FY1016 2B Blue Triangle Pole Hole Hole Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1016 飞雁蓝色三角杆2B三色洞洞笔",
+      name: "FEIYAN-FY1016 飞雁蓝色三角杆2B三色洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "FY-1017": {
+  FY1017: {
     size: "45*45*12",
-    model: "FY-1017",
+    model: "FY1017",
     price: 6.72,
     en: {
-      name: "FEIYAN-FY-1017 2B Triangle Article Extraction Five Colors Mix Pencil",
+      name: "FEIYAN-FY1017 2B Triangle Article Extraction Five Colors Mix Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1017 飞雁三角杆2B抽条5色混装洞洞笔",
+      name: "FEIYAN-FY1017 飞雁三角杆2B抽条5色混装洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
   //
-  "FY-1001": {
+  FY1001: {
     size: "45*45*12",
-    model: "FY-1001",
+    model: "FY1001",
     price: 7.38,
     en: {
-      name: "FEIYAN-FY-1001 HB Triangle Pencil",
+      name: "FEIYAN-FY1001 HB Triangle Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1001 飞雁马卡龙小皮头三角杆HB洞洞笔",
+      name: "FEIYAN-FY1001 飞雁马卡龙小皮头三角杆HB洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
     },
   },
-  "FY-1002": {
+  FY1002: {
     size: "45*45*12",
-    model: "FY-1002",
+    model: "FY1002",
     price: 7.98,
     en: {
-      name: "FEIYAN-FY-1002 Triangle HB Pencil",
+      name: "FEIYAN-FY1002 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1002 飞雁马卡龙大皮头三角杆HB洞洞笔",
+      name: "FEIYAN-FY1002 飞雁马卡龙大皮头三角杆HB洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
     },
   },
-  "FY-1006": {
+  FY1006: {
     size: "45*45*12",
-    model: "FY-1006",
+    model: "FY1006",
     price: 7.38,
     en: {
-      name: "FEIYAN-FY-1006 HB Triangle Pencil",
+      name: "FEIYAN-FY1006 HB Triangle Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1006 飞雁三角杆HB抽条洞洞笔",
+      name: "FEIYAN-FY1006 飞雁三角杆HB抽条洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
     },
   },
-  "JL-8116": {
+  JL8116: {
     size: "45*45*12",
-    model: "JL-8116",
+    model: "JL8116",
     price: 4.8,
     en: {
-      name: "FEIYAN-JL-8116 Triangle HB Pencil",
+      name: "FEIYAN-JL8116 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-8116 飞雁吸卡10支珠光HB铅笔",
+      name: "FEIYAN-JL8116 飞雁吸卡10支珠光HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-1852": {
+  JL0198: {
     size: "45*45*12",
-    model: "JL-1852",
+    model: "JL0198",
+    price: 4.8,
+    en: {
+      name: "FEIYAN-JL0198 High Grade Round Drawing HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Blister card, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL0198 飞雁高级绘图铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "吸卡，12支/吸卡",
+    },
+  },
+  JL1852: {
+    size: "45*45*12",
+    model: "JL1852",
     price: 6.48,
     en: {
-      name: "FEIYAN-JL-1852 Triangle HB Pencil",
+      name: "FEIYAN-JL1852 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1852 飞雁香味防滑皮头HB铅笔",
+      name: "FEIYAN-JL1852 飞雁香味防滑皮头HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-1232": {
+  JL1232: {
     size: "45*45*12",
-    model: "JL-1232",
+    model: "JL1232",
     price: 6.48,
     en: {
-      name: "FEIYAN-JL-1232 Triangle HB Pencil",
+      name: "FEIYAN-JL1232 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1232 飞雁三角杆HB铅笔",
+      name: "FEIYAN-JL1232 飞雁三角杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-8112": {
+  JL8112: {
     size: "45*45*12",
-    model: "JL-8112",
+    model: "JL8112",
     price: 6.48,
     en: {
-      name: "FEIYAN-JL-8112 Round HB Pencil",
+      name: "FEIYAN-JL8112 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-8112 飞雁吸卡10支闪光HB铅笔",
+      name: "FEIYAN-JL8112 飞雁吸卡10支闪光HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-6159": {
+  JL6159: {
     size: "45*45*12",
-    model: "JL-6159",
+    model: "JL6159",
     price: 6.48,
     en: {
-      name: "FEIYAN-JL-6159 Round HB Pencil",
+      name: "FEIYAN-JL6159 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-6159 飞雁吸卡三角抽条皮头HB",
+      name: "FEIYAN-JL6159 飞雁吸卡三角抽条皮头HB",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-8115": {
+  JL8115: {
     size: "45*45*12",
-    model: "JL-8115",
+    model: "JL8115",
     price: 6.48,
     en: {
-      name: "FEIYAN-JL-8115 Round HB Pencil",
+      name: "FEIYAN-JL8115 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-8115 飞雁吸卡三角抽条皮头HB",
+      name: "FEIYAN-JL8115 飞雁吸卡三角抽条皮头HB",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-1858": {
+  JL1858: {
     size: "45*45*12",
-    model: "JL-1858",
+    model: "JL1858",
     price: 6.72,
     en: {
-      name: "FEIYAN-JL-1858 Round HB Pencil",
+      name: "FEIYAN-JL1858 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1858 飞雁三角抽条皮头HB",
+      name: "FEIYAN-JL1858 飞雁三角抽条皮头HB",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-303": {
+  JL303: {
     size: "45*45*12",
-    model: "JL-303",
+    model: "JL303",
     price: 8.8,
     en: {
-      name: "FEIYAN-JL-303 Round HB Pencil",
+      name: "FEIYAN-JL303 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-303 飞雁高级书写HB铅笔",
+      name: "FEIYAN-JL303 飞雁高级书写HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
     },
   },
-  "JL-304": {
+  JL304: {
     size: "45*45*12",
-    model: "JL-304",
+    model: "JL304",
     price: 8.8,
     en: {
-      name: "FEIYAN-JL-304 Round HB Pencil",
+      name: "FEIYAN-JL304 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-304 飞雁高级书写HB铅笔",
+      name: "FEIYAN-JL304 飞雁高级书写HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，12支/吸卡",
     },
   },
-  "JL-1235": {
+  JL1235: {
     size: "45*45*12",
-    model: "JL-1235",
+    model: "JL1235",
     price: 6.6,
     en: {
-      name: "FEIYAN-JL-1235 Hexagon HB Pencil",
+      name: "FEIYAN-JL1235 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1235 飞雁六角杆HB铅笔",
+      name: "FEIYAN-JL1235 飞雁六角杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-1230": {
+  JL1230: {
     size: "45*45*12",
-    model: "JL-1230",
+    model: "JL1230",
     price: 6.6,
     en: {
-      name: "FEIYAN-JL-1230 Round HB Pencil",
+      name: "FEIYAN-JL1230 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1230 飞雁原木雕花HB铅笔",
+      name: "FEIYAN-JL1230 飞雁原木雕花HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
-  "JL-8120": {
+  JL8120: {
     size: "45*45*12",
-    model: "JL-8120",
+    model: "JL8120",
     price: 6.6,
     en: {
-      name: "FEIYAN-JL-8120 Round HB Pencil",
+      name: "FEIYAN-JL8120 Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Blister card, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-8120 飞雁印花HB铅笔",
+      name: "FEIYAN-JL8120 飞雁印花HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "吸卡，10支/吸卡",
     },
   },
   // 纸盒装
-  "FY-1005": {
+  FY1005: {
     size: "21*4.7*1.6",
-    model: "FY-1005",
+    model: "FY1005",
     price: 6.64,
     en: {
-      name: "FEIYAN-FY-1005 Hexagon HB Pencil",
+      name: "FEIYAN-FY1005 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1005 飞雁六角杆HB铅笔带卷笔刀",
+      name: "FEIYAN-FY1005 飞雁六角杆HB铅笔带卷笔刀",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-2005": {
+  FY2005: {
     size: "21*4.7*1.6",
-    model: "FY-2005",
+    model: "FY2005",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-2005 Hexagon Yellow 2B Pencil",
+      name: "FEIYAN-FY2005 Hexagon Yellow 2B Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-2005 飞雁六角杆2B铅笔亮光黄杆带卷笔刀",
+      name: "FEIYAN-FY2005 飞雁六角杆2B铅笔亮光黄杆带卷笔刀",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-2006": {
+  FY2006: {
     size: "21*4.7*1.6",
-    model: "FY-2006",
+    model: "FY2006",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-2006 Wood Color Hexagon HB Pencil",
+      name: "FEIYAN-FY2006 Wood Color Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-2006 飞雁原木色六角杆HB铅笔带卷笔刀",
+      name: "FEIYAN-FY2006 飞雁原木色六角杆HB铅笔带卷笔刀",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-2001": {
+  FY2001: {
     size: "21*4.7*1.6",
-    model: "FY-2001",
+    model: "FY2001",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-2001 Black Color Hexagon 2B Pencil",
+      name: "FEIYAN-FY2001 Black Color Hexagon 2B Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-2001 飞雁哑光黑六角杆2B铅笔带卷笔刀",
+      name: "FEIYAN-FY2001 飞雁哑光黑六角杆2B铅笔带卷笔刀",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1828": {
+  JL1828: {
     size: "21*4.7*1.6",
-    model: "JL-1828",
+    model: "JL1828",
     price: 6.6,
     en: {
-      name: "FEIYAN-JL-1828 High Level Hexagon HB Pencil",
+      name: "FEIYAN-JL1828 High Grade Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1828 飞雁六角杆高级书写HB铅笔",
+      name: "FEIYAN-JL1828 飞雁六角杆高级书写HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1868": {
+  JL1868: {
     size: "21*4.7*1.6",
-    model: "JL-1868",
+    model: "JL1868",
     price: 6.6,
     en: {
-      name: "FEIYAN-JL-1868 High Level Hexagon 2B Pencil",
+      name: "FEIYAN-JL1868 High Grade Hexagon 2B Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1868 飞雁六角杆高级书写2B铅笔",
+      name: "FEIYAN-JL1868 飞雁六角杆高级书写2B铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-2009": {
+  FY2009: {
     size: "21*4.7*1.6",
-    model: "FY-2009",
+    model: "FY2009",
     price: 6.8,
     en: {
-      name: "FEIYAN-FY-2009 Hexagon HB Pencil",
+      name: "FEIYAN-FY2009 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-2009 飞雁六角杆抽条HB铅笔",
+      name: "FEIYAN-FY2009 飞雁六角杆抽条HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-2010": {
+  JL1901: {
     size: "21*4.7*1.6",
-    model: "FY-2010",
+    model: "JL1901",
     price: 6.8,
     en: {
-      name: "FEIYAN-FY-2010 Red Hexagon HB Pencil",
+      name: "FEIYAN-JL1901 Colored HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-2010 飞雁考试专用铅笔",
+      name: "FEIYAN-JL1901 飞雁时尚炫彩铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-2007": {
+  FY2010: {
     size: "21*4.7*1.6",
-    model: "FY-2007",
+    model: "FY2010",
     price: 6.8,
     en: {
-      name: "FEIYAN-FY-2007 Hexagon HB Pencil",
+      name: "FEIYAN-FY2010 Red Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-2007 飞雁六角杆黄黑抽条铅笔",
+      name: "FEIYAN-FY2010 飞雁考试专用铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "FY-6151": {
+  FY2007: {
     size: "21*4.7*1.6",
-    model: "FY-6151",
+    model: "FY2007",
     price: 6.8,
     en: {
-      name: "FEIYAN-FY-6151 Hexagon HB Pencil",
+      name: "FEIYAN-FY2007 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-6151 飞雁六角杆黄黑抽条铅笔",
+      name: "FEIYAN-FY2007 飞雁六角杆黄黑抽条铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  // "JL-1822": {
+  JL6151: {
+    size: "21*4.7*1.6",
+    model: "JL6151",
+    price: 6.8,
+    en: {
+      name: "FEIYAN-JL6151 Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL6151 飞雁六角杆黄黑抽条铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1822: {
+    size: "21*4.7*1.6",
+    model: "JL1822",
+    price: 6.6,
+    en: {
+      name: "FEIYAN-JL1822 Triangle HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1822 飞雁三角杆HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1700: {
+    size: "21*4.7*1.6",
+    model: "JL1700",
+    price: 5.88,
+    en: {
+      name: "FEIYAN-JL1700 Yellow Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1700 飞雁六角杆高级书写HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1701: {
+    size: "21*4.7*1.6",
+    model: "JL1701",
+    price: 5.88,
+    en: {
+      name: "FEIYAN-JL1701 Yellow Hexagon 2B Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1701 飞雁六角杆高级书写2B铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1800: {
+    size: "21*4.7*1.6",
+    model: "JL1800",
+    price: 5.88,
+    en: {
+      name: "FEIYAN-JL1800 Black Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1800 飞雁黑杆六角杆高级书写HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1810: {
+    size: "21*4.7*1.6",
+    model: "JL1810",
+    price: 5.88,
+    en: {
+      name: "FEIYAN-JL1810 HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1810 飞雁圆杆卡通HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1801: {
+    size: "21*4.7*1.6",
+    model: "JL1801",
+    price: 5.88,
+    en: {
+      name: "FEIYAN-JL1801 Black Hexagon 2B Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1801 飞雁六角杆黑杆高级书写2B铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  // JL1822: {
   //   size: "21*4.7*1.6",
-  //   model: "JL-1822",
-  //   price: 6.6,
+  //   model: "JL1822",
+  //   price: 6.36,
   //   en: {
-  //     name: "FEIYAN-JL-1822 Triangle HB Pencil",
+  //     name: "FEIYAN-JL1822 Hexagon HB Pencil",
   //     type: "Pencil",
   //     material: "杨木",
   //     package: "Paper Box, 12pcs/set",
   //   },
   //   zh: {
-  //     name: "FEIYAN-JL-1822 飞雁三角杆HB铅笔",
+  //     name: "FEIYAN-JL1822 飞雁六角杆高级书写HB铅笔",
   //     type: "铅笔",
   //     material: "Poplar Wood",
   //     package: "纸盒，12支/盒",
   //   },
   // },
-  "JL-1700": {
+  JL311: {
     size: "21*4.7*1.6",
-    model: "JL-1700",
-    price: 5.88,
-    en: {
-      name: "FEIYAN-JL-1700 Yellow Hexagon HB Pencil",
-      type: "Pencil",
-      material: "杨木",
-      package: "Paper Box, 12pcs/set",
-    },
-    zh: {
-      name: "FEIYAN-JL-1700 飞雁六角杆高级书写HB铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "纸盒，12支/盒",
-    },
-  },
-  "JL-1701": {
-    size: "21*4.7*1.6",
-    model: "JL-1701",
-    price: 5.88,
-    en: {
-      name: "FEIYAN-JL-1701 Yellow Hexagon 2B Pencil",
-      type: "Pencil",
-      material: "杨木",
-      package: "Paper Box, 12pcs/set",
-    },
-    zh: {
-      name: "FEIYAN-JL-1701 飞雁六角杆高级书写2B铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "纸盒，12支/盒",
-    },
-  },
-  "JL-1822": {
-    size: "21*4.7*1.6",
-    model: "JL-1822",
-    price: 6.36,
-    en: {
-      name: "FEIYAN-JL-1822 Hexagon HB Pencil",
-      type: "Pencil",
-      material: "杨木",
-      package: "Paper Box, 12pcs/set",
-    },
-    zh: {
-      name: "FEIYAN-JL-1822 飞雁六角杆高级书写HB铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "纸盒，12支/盒",
-    },
-  },
-  "JL-311": {
-    size: "21*4.7*1.6",
-    model: "JL-311",
+    model: "JL311",
     price: 8.88,
     en: {
-      name: "FEIYAN-JL-311 Triangle HB Pencil",
+      name: "FEIYAN-JL311 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-311 飞雁三角杆HB沾顶洞洞笔",
+      name: "FEIYAN-JL311 飞雁三角杆HB沾顶洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-312": {
+  JL312: {
     size: "21*4.7*1.6",
-    model: "JL-312",
+    model: "JL312",
     price: 9,
     en: {
-      name: "FEIYAN-JL-312 Triangle HB Pencil",
+      name: "FEIYAN-JL312 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-312 飞雁三角杆HB沾顶洞洞笔",
+      name: "FEIYAN-JL312 飞雁三角杆HB沾顶洞洞笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1820": {
+  JL1820: {
     size: "21*4.7*1.6",
-    model: "JL-1820",
+    model: "JL1820",
     price: 5.88,
     en: {
-      name: "FEIYAN-JL-1820 Triangle HB Pencil",
+      name: "FEIYAN-JL1820 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1820 飞雁三角杆HB铅笔",
+      name: "FEIYAN-JL1820 飞雁三角杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1823": {
+  JL1823: {
     size: "21*4.7*1.6",
-    model: "JL-1823",
+    model: "JL1823",
     price: 5.88,
     en: {
-      name: "FEIYAN-JL-1823 Triangle 2B Pencil",
+      name: "FEIYAN-JL1823 Triangle 2B Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-JL-1823 飞雁三角杆高级书写2B铅笔",
+      name: "FEIYAN-JL1823 飞雁三角杆高级书写2B铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-6151": {
+
+  JL1850: {
     size: "21*4.7*1.6",
-    model: "FY-6151",
+    model: "JL1850",
     price: 6.36,
     en: {
-      name: "FEIYAN-FY-6151 Hexagon HB Pencil",
+      name: "FEIYAN-JL1850 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-6151 飞雁六角杆红黑抽条HB铅笔",
+      name: "FEIYAN-JL1850 飞雁六角杆梅兰竹菊HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1800": {
+  JL1851: {
     size: "21*4.7*1.6",
-    model: "FY-1800",
-    price: 6,
-    en: {
-      name: "FEIYAN-FY-1800 Black Hexagon HB Pencil",
-      type: "Pencil",
-      material: "杨木",
-      package: "Paper Box, 12pcs/set",
-    },
-    zh: {
-      name: "FEIYAN-FY-1800 飞雁六角杆黑杆HB铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "纸盒，12支/盒",
-    },
-  },
-  "JL-1801": {
-    size: "21*4.7*1.6",
-    model: "FY-1801",
-    price: 6,
-    en: {
-      name: "FEIYAN-FY-1801 Black Hexagon 2B Pencil",
-      type: "Pencil",
-      material: "杨木",
-      package: "Paper Box, 12pcs/set",
-    },
-    zh: {
-      name: "FEIYAN-FY-1801 飞雁六角杆黑杆2B铅笔",
-      type: "铅笔",
-      material: "Poplar Wood",
-      package: "纸盒，12支/盒",
-    },
-  },
-  "JL-1850": {
-    size: "21*4.7*1.6",
-    model: "FY-1850",
+    model: "JL1851",
     price: 6.36,
     en: {
-      name: "FEIYAN-FY-1850 Hexagon HB Pencil",
+      name: "FEIYAN-JL1851 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1850 飞雁六角杆梅兰竹菊HB铅笔",
+      name: "FEIYAN-JL1851 飞雁六角杆梅兰竹菊HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1833": {
+  JL1833: {
     size: "21*4.7*1.6",
-    model: "FY-1833",
+    model: "JL1833",
     price: 6.36,
     en: {
-      name: "FEIYAN-FY-1833 Hexagon HB Pencil",
+      name: "FEIYAN-JL1833 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1833 飞雁六角杆蔬菜系列HB铅笔",
+      name: "FEIYAN-JL1833 飞雁六角杆蔬菜系列HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1830": {
+  JL1830: {
     size: "21*4.7*1.6",
-    model: "FY-1830",
+    model: "JL1830",
     price: 6.36,
     en: {
-      name: "FEIYAN-FY-1830 Hexagon HB Pencil",
+      name: "FEIYAN-JL1830 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1830 飞雁六角杆水果系列HB铅笔",
+      name: "FEIYAN-JL1830 飞雁六角杆水果系列HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1839": {
+  JL1839: {
     size: "21*4.7*1.6",
-    model: "FY-1839",
+    model: "JL1839",
     price: 6.36,
     en: {
-      name: "FEIYAN-FY-1839 Triangle HB Pencil",
+      name: "FEIYAN-JL1839 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1839 飞雁三角杆HB铅笔",
+      name: "FEIYAN-JL1839 飞雁三角杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1812": {
+  JL1812: {
     size: "21*4.7*1.6",
-    model: "FY-1812",
+    model: "JL1812",
     price: 6.36,
     en: {
-      name: "FEIYAN-FY-1812 HB Pencil",
+      name: "FEIYAN-JL1812 HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1812 飞雁圆杆HB铅笔",
+      name: "FEIYAN-JL1812 飞雁圆杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-6158": {
+  JL6158: {
     size: "21*4.7*1.6",
-    model: "FY-6158",
+    model: "JL6158",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-6158 Triangle HB Pencil",
+      name: "FEIYAN-JL6158 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-6158 飞雁三角杆抽条哑光HB铅笔",
+      name: "FEIYAN-JL6158 飞雁三角杆抽条哑光HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-8105": {
+  JL8003: {
     size: "21*4.7*1.6",
-    model: "FY-8105",
+    model: "JL8003",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-8105 Triangle HB Pencil",
+      name: "FEIYAN-JL8003 High Grade Deep Green Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-8105 飞雁三角杆HB铅笔",
+      name: "FEIYAN-JL8003 飞雁深绿圆杆高级书写HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1821": {
+  JL8004: {
     size: "21*4.7*1.6",
-    model: "FY-1821",
+    model: "JL8004",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-1821 Hexagon HB Pencil",
+      name: "FEIYAN-JL8004 High Grade Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1821 飞雁六角杆HB铅笔",
+      name: "FEIYAN-JL8004 飞雁银杆六角杆高级书写HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1832": {
+  JL8008: {
     size: "21*4.7*1.6",
-    model: "FY-1832",
+    model: "JL8008",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-1832 Triangle HB Pencil",
+      name: "FEIYAN-JL8008 Special Grade Brown Round HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1832 飞雁三角杆考试考试专用HB铅笔",
+      name: "FEIYAN-JL8008 飞雁棕色圆杆特级书写HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1234": {
+  JL8105: {
     size: "21*4.7*1.6",
-    model: "FY-1234",
+    model: "JL8105",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-1234 Hexagon HB Pencil",
+      name: "FEIYAN-JL8105 Triangle HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1234 飞雁六角杆考试HB铅笔",
+      name: "FEIYAN-JL8105 飞雁三角杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-1233": {
+  JL1821: {
     size: "21*4.7*1.6",
-    model: "FY-1233",
+    model: "JL1821",
     price: 6.6,
     en: {
-      name: "FEIYAN-FY-1233 Hexagon HB Pencil",
+      name: "FEIYAN-JL1821 Hexagon HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 12pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-1233 飞雁六角杆考试HB铅笔",
+      name: "FEIYAN-JL1821 飞雁六角杆HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，12支/盒",
     },
   },
-  "JL-8102": {
+  JL1832: {
     size: "21*4.7*1.6",
-    model: "FY-8102",
+    model: "JL1832",
+    price: 6.6,
+    en: {
+      name: "FEIYAN-JL1832 Triangle HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1832 飞雁三角杆考试考试专用HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL8109: {
+    size: "21*4.7*1.6",
+    model: "JL8109",
+    price: 16.2,
+    en: {
+      name: "FEIYAN-JL8109 36 Pcs Bucket Three Colors Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Bucket, 36pcs/Bucket",
+    },
+    zh: {
+      name: "FEIYAN-JL8109 3色36支筒装六角杆铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "筒装，36支/筒",
+    },
+  },
+  JL8121: {
+    size: "21*4.7*1.6",
+    model: "JL8121",
+    price: 16.2,
+    en: {
+      name: "FEIYAN-JL8121 36 Pcs Bucket Wood Color Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Bucket, 36pcs/Bucket",
+    },
+    zh: {
+      name: "FEIYAN-JL8121 飞雁原木色36支筒装六角杆铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "筒装，36支/筒",
+    },
+  },
+  JL1234: {
+    size: "21*4.7*1.6",
+    model: "JL1234",
+    price: 6.6,
+    en: {
+      name: "FEIYAN-JL1234 Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1234 飞雁六角杆考试HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL1233: {
+    size: "21*4.7*1.6",
+    model: "JL1233",
+    price: 6.6,
+    en: {
+      name: "FEIYAN-JL1233 Hexagon HB Pencil",
+      type: "Pencil",
+      material: "杨木",
+      package: "Paper Box, 12pcs/set",
+    },
+    zh: {
+      name: "FEIYAN-JL1233 飞雁六角杆考试HB铅笔",
+      type: "铅笔",
+      material: "Poplar Wood",
+      package: "纸盒，12支/盒",
+    },
+  },
+  JL8102: {
+    size: "21*4.7*1.6",
+    model: "JL8102",
     price: 11.86,
     en: {
-      name: "FEIYAN-FY-8102 HB Pencil",
+      name: "FEIYAN-JL8102 HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 20pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-8102 飞雁20支装大皮头HB铅笔",
+      name: "FEIYAN-JL8102 飞雁20支装大皮头HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，20支/盒",
     },
   },
-  "JL-8810": {
+  JL8810: {
     size: "21*4.7*1.6",
-    model: "FY-8810",
+    model: "JL8810",
     price: 4.8,
     en: {
-      name: "FEIYAN-FY-8810 HB Pencil",
+      name: "FEIYAN-JL8810 HB Pencil",
       type: "Pencil",
       material: "杨木",
       package: "Paper Box, 10pcs/set",
     },
     zh: {
-      name: "FEIYAN-FY-8810 飞雁六角杆红黑抽条大皮头HB铅笔",
+      name: "FEIYAN-JL8810 飞雁六角杆红黑抽条大皮头HB铅笔",
       type: "铅笔",
       material: "Poplar Wood",
       package: "纸盒，10支/盒",

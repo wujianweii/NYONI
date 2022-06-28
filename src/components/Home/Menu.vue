@@ -185,9 +185,12 @@ export default {
       }
     },
     changeLanguage(data) {
-      window.localStorage.setItem("language", data);
-      // this.$router.push()
-      location.reload();
+      let language = window.localStorage.getItem("language");
+      if (language != data) {
+        window.localStorage.setItem("language", data);
+        // this.$router.push()
+        location.reload();
+      }
     },
     hideMenu() {
       let scrollTop =

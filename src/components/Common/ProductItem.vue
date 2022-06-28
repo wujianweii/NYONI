@@ -1,17 +1,17 @@
 <template>
   <div class="product-box" @click="toProductDetail">
-    <!-- <el-image
+    <el-image
       class="product-img"
       :src="!!model ? require('@/assets/products/' + model + '/1.jpg') : img"
       fit="cover"
       :lazy="lazy"
-    /> -->
-    <el-image
+    />
+    <!-- <el-image
       class="product-img"
       :src="require('@/assets/products/N2806/1.jpg')"
       fit="cover"
       :lazy="lazy"
-    />
+    /> -->
     <!-- <el-image
       class="product-img"
       :src="require('@/assets/products/N2806.jpg')"

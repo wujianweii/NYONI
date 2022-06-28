@@ -6,10 +6,14 @@
     <!-- 价格 -->
     <h5 class="font-500">{{ $t("details.price") }}</h5>
     <h5 class="price" v-if="language == 'en'">
-      <span>$ </span>{{ (product.sort[selectIndex].price / 6).toFixed(2) }}
+      <span>$ </span>
+      <span v-if="product.price">{{ (product.price / 6).toFixed(2) }}</span>
+      <span v-else>{{ (product.sort[selectIndex].price / 6).toFixed(2) }}</span>
     </h5>
     <h5 class="price" v-if="language == 'zh'">
-      <span>¥ </span>{{ product.sort[selectIndex].price }}
+      <span>¥ </span>
+      <span v-if="product.price">{{ product.price }}</span>
+      <span v-else>{{ product.sort[selectIndex].price }}</span>
     </h5>
     <!-- 购买链接 -->
     <!-- <h5 class="divider-top">{{ $t("details.buyLink") }}</h5>
@@ -36,15 +40,18 @@
       </li>
     </ul> -->
     <!-- 型号 -->
-    <h5 class="divider-top">{{ product[language].sort }}</h5>
-    <ul class="product-sort">
+    <h5 class="divider-top" v-if="product[language].sort">
+      {{ product[language].sort }}
+    </h5>
+    <ul class="product-sort" v-if="product[language].sort">
       <li
         v-for="(sort, index) in product.sort"
         :key="index"
         @click="chooseIndex(index)"
         :class="{ active: selectIndex == index }"
       >
-        <span>{{ sort.sort }}</span>
+        <span v-if="sort.sort[language]">{{ sort.sort[language] }}</span>
+        <span v-else>{{ sort.sort }}</span>
       </li>
     </ul>
     <!-- 产品文案详情 -->
@@ -52,13 +59,16 @@
     <div class="product-detail-item">
       <dl>
         <dt>{{ $t("details.model") }}:</dt>
-        <dd>{{ product.model }}</dd>
+        <dd v-if="product.sort && product.sort[selectIndex].model">
+          {{ product.sort[selectIndex].model }}
+        </dd>
+        <dd v-else>{{ product.model }}</dd>
       </dl>
       <dl>
         <dt>{{ $t("details.type") }}:</dt>
         <dd>{{ product[language].type }}</dd>
       </dl>
-      <dl v-if="product.sort[selectIndex].size">
+      <dl v-if="product.sort && product.sort[selectIndex].size">
         <dt>{{ $t("details.size") }}:</dt>
         <dd>{{ product.sort[selectIndex].size }}cm</dd>
       </dl>

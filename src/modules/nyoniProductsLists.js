@@ -26,7 +26,6 @@ const nyoniProductsList = {
         "NYONI-N2800 Professional Art Standard Drawing Sketch Pencil Set",
       zh_name: "NYONI-N2800 尼奥尼专业绘图铅笔",
     },
-
     {
       model: "N8128",
       en_name:
@@ -79,16 +78,34 @@ const nyoniProductsList = {
       zh_name: "NYONI-N2802 尼奥尼专业浪时代系列绘画炭笔",
     },
     {
+      model: "N2802_charcoal_sketch",
+      en_name:
+        "NYONI-N2802 Professional Art Standard Drawing Charcoal Pencil Set",
+      zh_name: "NYONI-N2802 尼奥尼速写素描系列绘画炭笔",
+    },
+    {
       model: "N8129",
       en_name:
         "NYONI-N8129 Professional Art Standard Drawing Hexagon Charcoal Pencil Set",
       zh_name: "NYONI-N8129 尼奥尼专业六角绘画炭笔",
     },
     {
+      model: "N3032",
+      en_name:
+        "NYONI-N3032 Professional Art Standard Drawing Round Charcoal Pencil Set",
+      zh_name: "NYONI-N3032 尼奥尼廊桥黑杆混装专业绘画炭笔",
+    },
+    {
       model: "N8109",
       en_name:
         "NYONI-N8109 Professional Art Standard Drawing New Hexagon Charcoal Pencil Set",
       zh_name: "NYONI-N8109 尼奥尼专业六角新款绘画炭笔",
+    },
+    {
+      model: "N2805",
+      en_name:
+        "NYONI-N2805 Professional Art Standard Drawing Hexagon Charcoal Pencil Set",
+      zh_name: "NYONI-N2805 尼奥尼绿韵系列水性漆专业六角绘画炭笔",
     },
     {
       model: "N2803",
@@ -133,7 +150,6 @@ const nyoniProductsList = {
         "NYONI-N2820 Professional Art Standard 12Pcs Eraser Pen With Brush",
       zh_name: "NYONI-N2820 尼奥尼专业12支装带毛刷橡皮笔",
     },
-
     {
       model: "N8515",
       en_name: "NYONI-N8515 Professional Art Ultrathin Eraser",
@@ -159,47 +175,47 @@ const nyoniProductsList = {
       en_name: "NYONI-N8511 Professional Art Eraser",
       zh_name: "NYONI-N8511 尼奥尼专业绘画橡皮",
     },
-    {
-      model: "N8512",
-      en_name: "NYONI-N8512 Professional Art Eraser",
-      zh_name: "NYONI-N8512 尼奥尼专业绘画橡皮",
-    },
-    {
-      model: "N8133",
-      en_name: "NYONI-N8133 Professional Art Kneadable Eraser",
-      zh_name: "NYONI-N8133 尼奥尼专业可塑橡皮",
-    },
+    // {
+    //   model: "N8512",
+    //   en_name: "NYONI-N8512 Professional Art Eraser",
+    //   zh_name: "NYONI-N8512 尼奥尼专业绘画橡皮",
+    // },
+    // {
+    //   model: "N8133",
+    //   en_name: "NYONI-N8133 Professional Art Kneadable Eraser",
+    //   zh_name: "NYONI-N8133 尼奥尼专业可塑橡皮",
+    // },
   ],
   other_tools: [
     {
-      model: "N8201/N8202",
-      en_name: "NYONI-N8201/N8202 Professional Art 180g Sketch Paper",
-      zh_name: "NYONI-N8201/N8202 尼奥尼180g素描纸",
+      model: "N8201-N8202",
+      en_name: "NYONI-N8201-N8202 Professional Art 180g Sketch Paper",
+      zh_name: "NYONI-N8201-N8202 尼奥尼180g素描纸",
     },
     {
-      model: "N8211/N8212",
-      en_name: "NYONI-N8201/N8202 Professional Art Sketch Book",
-      zh_name: "NYONI-N8201/N8202 尼奥尼素描本",
+      model: "N8211-N8212",
+      en_name: "NYONI-N8201-N8202 Professional Art Sketch Book",
+      zh_name: "NYONI-N8201-N8202 尼奥尼素描本",
     },
     {
       model: "N8213",
       en_name: "NYONI-N8213 Professional Art 180g Color Pencil Paper",
-      zh_name: "NYONI-N8213 尼奥尼180g彩铅专用纸",
+      zh_name: "NYONI-N8213 尼奥尼 180g 彩铅专用纸",
     },
     {
       model: "N8301",
-      en_name: "NYONI-N8301 Professional Art 180g Sketch Paper",
-      zh_name: "NYONI-N8301 尼奥尼180g素写纸",
+      en_name: "NYONI-N8301 Professional Art 8K 100g Sketch Paper",
+      zh_name: "NYONI-N8301 尼奥尼 8K 100g 素写纸",
     },
     {
       model: "N8302",
-      en_name: "NYONI-N8302 Professional Art 180g Sketch Paper",
-      zh_name: "NYONI-N8302 尼奥尼180g素描纸",
+      en_name: "NYONI-N8302 Professional Art 4K 8K 180g Sketch Paper",
+      zh_name: "NYONI-N8302 尼奥尼 4K 8K 180g 素描纸",
     },
     {
       model: "N8303",
-      en_name: "NYONI-N8303 Professional Art 160g Sketch Paper",
-      zh_name: "NYONI-N8303 尼奥尼160g素描纸",
+      en_name: "NYONI-N8303 Professional Art 4K 8K 160g Sketch Paper",
+      zh_name: "NYONI-N8303 尼奥尼 4K 8K 160g 素描纸",
     },
     // 其他
     {
@@ -239,9 +255,9 @@ const nyoniProductsList = {
       zh_name: "NYONI-N8210 尼奥尼素美纹纸胶带",
     },
     {
-      model: "N8215/N8216",
-      en_name: "NYONI-N8215/N8216 Professional Art Standard Rub Cotton",
-      zh_name: "NYONI-N8215/N8216 尼奥尼专业绘画揉擦棉",
+      model: "N8215-N8216",
+      en_name: "NYONI-N8215-N8216 Professional Art Standard Rub Cotton",
+      zh_name: "NYONI-N8215-N8216 尼奥尼专业绘画揉擦棉",
     },
     {
       model: "N2834",

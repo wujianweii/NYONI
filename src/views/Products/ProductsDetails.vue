@@ -1,13 +1,21 @@
 <template>
   <div class="detail-box">
     <!-- 产品详情 -->
-    <Carousel model="N2806" v-if="isMobile" />
+    <Carousel
+      v-if="isMobile"
+      :model="model"
+      :length="product.length ? product.length : 5"
+    />
     <div class="detail-container">
       <!-- background: 'url(' + require('../../assets/products/N2806/1.jpg') + ')'; -->
 
       <!-- <img src="../../assets/products/N2806/1.jpg" alt="" /> -->
       <!-- <div class="bg"></div> -->
-      <ImgShow model="N2806" v-if="!isMobile" />
+      <ImgShow
+        v-if="!isMobile"
+        :model="model"
+        :length="product.length ? product.length : 5"
+      />
       <ProductContent :product="product" :language="isEnOrZh" />
     </div>
     <!-- 你可能喜欢 -->

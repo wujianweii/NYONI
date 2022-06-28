@@ -5,7 +5,7 @@
       {{ $t("home.productsList.content") }}
     </p>
     <div class="row items">
-      <!-- 图片color_pencil -->
+      <!-- 图片 color_pencil -->
       <a
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
@@ -17,12 +17,12 @@
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/color_pencil.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/color_pencil.jpg"
             alt=""
           />
         </div>
@@ -34,7 +34,7 @@
         </div>
       </a>
 
-      <!-- 图片sketch_pencil -->
+      <!-- 图片 sketch_pencil -->
       <a
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
@@ -46,12 +46,12 @@
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/sketch_pencil.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/sketch_pencil.jpg"
             alt=""
           />
         </div>
@@ -63,7 +63,7 @@
         </div>
       </a>
 
-      <!-- 图片charcoal_pencil -->
+      <!-- 图片 charcoal_pencil -->
       <a
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
@@ -75,12 +75,12 @@
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/charcoal_pencil.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/charcoal_pencil.jpg"
             alt=""
           />
         </div>
@@ -92,7 +92,7 @@
         </div>
       </a>
 
-      <!-- 图片school_office_pencil -->
+      <!-- 图片 school_office_pencil -->
       <a
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
@@ -104,12 +104,12 @@
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/school_office_pencil.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/school_office_pencil.jpg"
             alt=""
           />
         </div>
@@ -121,7 +121,7 @@
         </div>
       </a>
 
-      <!-- 图片eraser -->
+      <!-- 图片 eraser -->
       <a
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
@@ -133,12 +133,12 @@
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/eraser.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/eraser.jpg"
             alt=""
           />
         </div>
@@ -150,7 +150,7 @@
         </div>
       </a>
 
-      <!-- 图片other_tools -->
+      <!-- 图片 other_tools -->
       <a
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
@@ -162,12 +162,12 @@
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/other_tools.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/N2806/2.jpg"
+            src="../../assets/products/catalog/other_tools.jpg"
             alt=""
           />
         </div>
