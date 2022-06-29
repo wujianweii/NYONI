@@ -41,8 +41,8 @@ module.exports = {
         trade2: "杭州曼奇尼文化用品有限公司",
       },
       compinfo: {
-        compinfo:
-          "Avex is a eCommerce Agency and Shopify Plus agency in New York City. Avex specializes in web design, Shopify Plus eCommerce, development, design, email marketing and ecommerce optimization. Avex is rated 5 out of 5 on Google Clutch.co.",
+        // compinfo: `尼奥尼是中国画材市场的一线品牌，专注于炭笔、彩色铅笔、素描铅笔和其他绘画文具。`,
+        compinfo: `NYONI is the leading brand in Chinese drawing market. NYONI specializes in charcoal pencil, color pencil, sketch pencil and many other drawing tools. And our factory also offer the OEM for customer.`,
       },
     },
     productsCategory: {
@@ -74,6 +74,11 @@ module.exports = {
       title1: "以客户为中心",
       title2: "比竞争者更好的满足顾客期望",
       content: `全体浙江久灵人将继续弘扬“拼搏、进取、创新、求实”的企业精神，秉承“高标准、精细化、全程监控”的质量要求和“以客户为中心，比竞争者更好的满足顾客期望”的企业理念， 解放思想，振奋精神，齐心协力，埋头苦干，创造久灵更加美好的明天!`,
+    },
+    button: {
+      about: "关于我们",
+      product: "查看全部",
+      contact: "联系我们",
     },
   },
   products: {

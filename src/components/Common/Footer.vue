@@ -14,13 +14,13 @@
       <!-- 联系我们 -->
       <div>
         <h1>{{ $t("common.footer.contact.h1") }}</h1>
-        <a href=""
+        <a href="tel:4008896590"
           >{{ $t("common.footer.contact.landline") }}: <br />400-8896-590</a
         >
-        <a href=""
+        <a href="tel:+8618157898718"
           >{{ $t("common.footer.contact.phone") }}: <br />+86 18157898718</a
         >
-        <a href=""
+        <a href="mailTo: nyoni@hzmanqini.comm"
           >{{ $t("common.footer.contact.email") }}: <br />nyoni@hzmanqini.com</a
         >
         <!-- <a href=""
@@ -84,6 +84,7 @@ export default {};
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 14px;
+    color: #fff;
   }
   a {
     font-size: 14px;
@@ -93,7 +94,7 @@ export default {};
     display: block;
     overflow: hidden;
     // height: 14px;
-    line-height: 14px;
+    line-height: 18px;
   }
   a:hover {
     color: #fff;
@@ -114,8 +115,13 @@ export default {};
     text-align: right;
     color: #c3c3c3;
     line-height: 16px;
-    max-width: 480px;
+    max-width: 380px;
     font-weight: 300;
+    font-size: 12px;
+  }
+  .copyright {
+    margin-bottom: 20px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -135,6 +141,7 @@ export default {};
     }
     .copyright {
       margin-bottom: 20px;
+      font-size: 14px;
     }
     .compinfo {
       text-align: left;

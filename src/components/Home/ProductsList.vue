@@ -97,6 +97,7 @@
         href="javaScript:void(0)"
         class="col-12 col-sm-6 p-item animateFadeIn"
         @click="toProducts('school_office_pencil')"
+        v-if="routerName != 'nyoni'"
       >
         <div class="p-img">
           <div class="logo">
@@ -186,6 +187,11 @@
 import { mapActions } from "vuex";
 // import { useRouter } from "vue-router";
 export default {
+  data() {
+    return {
+      routerName: this.$route.name,
+    };
+  },
   methods: {
     ...mapActions(["changeCategoriesChoose", "changeProductsBrand"]),
     toProducts(data) {
@@ -253,59 +259,7 @@ export default {
 //     height: 28.64583vw;
 //   }
 // }
-@media screen and (min-width: 576px) {
-  // .portfolio-list .p-item .p-img {
-  //   height: 15rem;
-  // }
-  .col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
 
-@media screen and (min-width: 350px) {
-  // .portfolio-list .p-item .p-img {
-  //   height: 30rem;
-  // }
-}
-// .portfolio-list .p-item .p-img {
-//   background-color: #000;
-//   max-width: 540px;
-//   margin-bottom: 10px;
-//   overflow: hidden;
-//   display: flex;
-//   width: 100%;
-//   height: 18rem;
-//   position: relative;
-// }
-// .portfolio-list .p-item .p-img .logo {
-//   position: absolute;
-//   z-index: 1;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-// }
-// .portfolio-list .p-item .p-text {
-//   opacity: 0;
-// }
-// .portfolio-list .p-item .p-img img.grey {
-//   filter: grayscale(100%);
-//   opacity: 0.5;
-// }
-// .portfolio-list .p-item .p-img img {
-//   min-width: 100%;
-//   min-height: 100%;
-//   object-fit: cover;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   transition: all 0.7s ease;
-// }
-// .portfolio-list .p-item img {
-//   transition: all 1.5s ease;
-// }
 .animateRight {
   animation: animateRight linear 0.3s;
   animation-iteration-count: 1;
@@ -402,7 +356,7 @@ export default {
   overflow: hidden;
   display: flex;
   width: 100%;
-  height: 40vw;
+  height: 30vw;
   position: relative;
 }
 .portfolio-list .p-item .p-img .logo {
@@ -415,6 +369,7 @@ export default {
 .portfolio-list .p-item .p-img .logo img {
   max-width: 125px;
   position: static;
+  background: transparent;
 }
 .portfolio-list .p-item .p-img canvas {
   position: absolute;
@@ -426,13 +381,14 @@ export default {
 .portfolio-list .p-item .p-img img {
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transition: all 0.7s ease;
+  background: #fff;
 }
 .portfolio-list .p-item .p-img img.colored {
   opacity: 0;
@@ -450,9 +406,6 @@ export default {
 .portfolio-list .p-item:hover .logo img {
   transform: scale(1) translateZ(0);
 }
-// .portfolio-list .p-item .p-text {
-//   // opacity: 0;
-// }
 .portfolio-list .p-item .p-text ul {
   list-style: none;
   margin: 0;
@@ -476,51 +429,52 @@ export default {
   content: "";
 }
 // .portfolio-list .p-item .p-img {
-//   height: 40vw;
-// }
-@media screen and (max-width: 375px) {
-  .portfolio-list .p-item h3 {
-    margin-bottom: 0;
+
+.h3-static {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.p-text {
+  p {
+    display: inline;
+    color: #9e9e9e;
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
-  // .portfolio-list .p-item .p-img {
-  //   height: 16rem;
-  // }
 }
 
-@media screen and (min-width: 576px) {
-  // .portfolio-list .p-item .p-img {
-  //   height: 15rem;
-  // }
-  .portfolio-list .p-item {
-    margin-bottom: 40px;
-    max-height: 280px;
-  }
-  // .portfolio-list .p-item .p-img {
-  //   height: 40vw;
-  // }
-}
+// 自适应
 
-@media screen and (min-width: 576px) and (min-width: 576px) and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .portfolio-list .p-item {
     max-height: 1000px;
   }
-  .portfolio-list .p-item .p-img {
-    height: 40vw;
-  }
 }
 @media screen and (max-width: 576px) {
-  .portfolio-list {
-    padding: 5rem 20px;
+  .portfolio-list .p-item {
+    margin-bottom: 40px;
+    max-height: 500px;
+    padding: 0 !important;
+    width: 100%;
   }
+  // .portfolio-list {
+  //   padding: 5rem 20px;
+  // }
   .portfolio-list .items {
     margin-right: 0;
     margin-left: 0;
   }
-  .portfolio-list .p-item {
-    padding: 0 !important;
-    width: 100%;
+  .portfolio-list .p-item .p-img {
+    height: 66vw;
   }
 }
+@media screen and (max-width: 350px) {
+  .portfolio-list .p-item h3 {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .portfolio-list .p-item:nth-child(2) {
     margin-top: 30px;
@@ -538,14 +492,11 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .portfolio-list .p-item .p-text ul li {
     font-size: 1rem;
     line-height: inherit;
   }
-}
-
-@media screen and (min-width: 992px) {
   .portfolio-list .p-item:nth-child(2) {
     margin-top: 70px;
   }
@@ -568,9 +519,6 @@ export default {
   .portfolio-list .p-item .p-img .gatsby-image-wrapper {
     max-height: 600px;
   }
-  // .portfolio-list .p-item .p-img {
-  //   height: 23rem;
-  // }
 }
 
 @media screen and (min-width: 1200px) {
@@ -582,20 +530,6 @@ export default {
 @media screen and (min-width: 1620px) {
   .portfolio-list .p-item .p-text ul li {
     font-size: 0.75rem;
-  }
-}
-
-.h3-static {
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-}
-.p-text {
-  p {
-    display: inline;
-    color: #9e9e9e;
-    font-size: 12px !important;
-    line-height: 16px !important;
   }
 }
 </style>

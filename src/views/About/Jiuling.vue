@@ -1,27 +1,26 @@
 <template>
   <div class="">
     <div class="pb-40 container">
-      <h1 class="detail-title">NYONI | Professional painting material brand</h1>
+      <h1 class="detail-title">JIULING | NYONI FACTORY</h1>
       <h1 class="detail-content">
-        With the concept of "Define Your Direction Of Art", NYONI was founded in
-        2015.
+        Zhejiang Jiuling Brush Co., LTD focus on painting materials, beauty
+        cosmetics product development and production
       </h1>
     </div>
     <!-- 公司介绍 -->
-    <div class="row bg-gray ptb-60">
+    <div class="row ptb-60 align-center">
       <img
         src="../../assets/company/jiuling.jpg"
         alt=""
         class="plr-50 col-lg-6 content-img"
       />
       <div class="plr-50 col-lg-6 content-text">
-        <h2>We're focused on helping brands grow and delivering value.</h2>
+        <h2>Zhejiang Jiuling Brush Co., LTD</h2>
         <p>
-          Avex is a team of specialists in eCommerce, design, customer
-          experience, web development and growth optimization. We live at the
-          intersection of technology, creative and commerce. We’re your partner
-          and we align with your business goals to provide real, measurable
-          results by building, deploying and optimizing eCommerce experiences.
+          JIULING is a collection of production, research and development in one
+          of the professional production and sales of high-grade pencils, makeup
+          pens and cosmetics series of products enterprises, it owns FEIYAN,
+          SHAONIANPAI, NYONI, KUAZI brands.
         </p>
       </div>
     </div>

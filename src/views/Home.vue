@@ -9,11 +9,17 @@
       <p>
         {{ $t("home.companyIntroduction.content") }}
       </p>
+      <button @click="toRouter('nyoni')">{{ $t("home.button.about") }}</button>
     </div>
     <!-- 轮播 -->
     <Carousel category="banner" />
     <!-- 产品 -->
     <ProductsList class="container pt-80" />
+    <div class="text-center pb-80">
+      <button @click="toRouter('products')">
+        {{ $t("home.button.product") }}
+      </button>
+    </div>
     <!-- 客户 -->
     <div class="enterprise-spirit relative">
       <!-- <img src="../assets/common/background.jpg" alt="" /> -->
@@ -24,6 +30,9 @@
         <p>
           {{ $t("home.enterpriseSpirit.content") }}
         </p>
+        <button class="button-white" @click="toRouter('contact')">
+          {{ $t("home.button.contact") }}
+        </button>
       </div>
     </div>
   </div>
@@ -42,10 +51,26 @@ export default {
     Header,
     ProductsList,
   },
+  methods: {
+    toRouter(data) {
+      if (data == "products") {
+        this.$router.push({
+          name: "products",
+          params: {
+            brand: "nyoni",
+          },
+        });
+      } else {
+        this.$router.push({
+          name: data,
+        });
+      }
+    },
+  },
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .company-introduction {
   padding: 80px 50px;
   max-width: 920px;
@@ -87,11 +112,13 @@ export default {
   h2 {
     font-size: 50px;
     font-weight: 800;
+    color: #fff;
   }
   h3 {
     font-size: 24px;
     font-weight: 500;
     padding: 30px 0;
+    color: #fff;
   }
 }
 @media screen and (max-width: 992px) {

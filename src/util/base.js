@@ -1,11 +1,11 @@
 // import { useRouter, useRoute } from "vue-router";
 // const route = useRoute();
-// function toRouter(name, query = "") {
-//   this.$router.push({
-//     name,
-//     query,
-//   });
-// }
+function toRouter(name, query = "") {
+  this.$router.push({
+    name,
+    query,
+  });
+}
 // function toRouter(name, params = "") {
 //   const router = useRouter();
 //   console.log(router);
@@ -37,6 +37,6 @@ function isMobile() {
 
 export default {
   isMobile,
-  // toRouter,
+  toRouter,
   // getRoute,
 };

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="pb-40">
-      <h1 class="detail-title">NYONI | Professional painting material brand</h1>
+      <h1 class="detail-title">NYONI | PROFESSIONAL PAINTING MATERIAL BRAND</h1>
       <h1 class="detail-content">
         With the concept of "Define Your Direction Of Art", NYONI was founded in
         2015.
@@ -20,7 +20,7 @@
       </el-timeline-item>
     </el-timeline>
 
-    <ProductsList />
+    <ProductsList class="pt-80" />
   </div>
 </template>
 

@@ -1,62 +1,69 @@
 <template>
-  <div class="container-middle animateFadeInUp">
-    <!-- mgedbzyj -->
-    <!-- xoqrzykl -->
-    <form action="https://formspree.io/f/xoqrzykl" method="POST">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="block-form__input">
-            <label>
-              <span class="label">First name</span
-              ><input
-                placeholder="First name"
-                type="text"
-                name="firstname"
-                required=""
-                value=""
-            /></label>
+  <div class="container">
+    <div class="pb-40">
+      <h1 class="detail-title">CONTACT US</h1>
+      <h1 class="detail-content">
+        Let's talk about perfect win-win cooperation
+      </h1>
+    </div>
+    <div class="pb-80 animateFadeInUp">
+      <!-- mgedbzyj -->
+      <!-- xoqrzykl -->
+      <form action="https://formspree.io/f/xoqrzykl" method="POST">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="block-form__input">
+              <label>
+                <span class="label">First name</span
+                ><input
+                  placeholder="First name"
+                  type="text"
+                  name="firstname"
+                  required=""
+                  value=""
+              /></label>
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="block-form__input">
-            <label
-              ><span class="label">Last Name</span
-              ><input
-                placeholder="Last Name"
-                type="text"
-                name="lastname"
-                required=""
-                value=""
-            /></label>
+          <div class="col-12 col-md-6">
+            <div class="block-form__input">
+              <label
+                ><span class="label">Last Name</span
+                ><input
+                  placeholder="Last Name"
+                  type="text"
+                  name="lastname"
+                  required=""
+                  value=""
+              /></label>
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="block-form__input">
-            <label
-              ><span class="label">Email Address</span
-              ><input
-                placeholder="Email Address"
-                type="email"
-                name="email"
-                required=""
-                value=""
-            /></label>
+          <div class="col-12 col-md-6">
+            <div class="block-form__input">
+              <label
+                ><span class="label">Email Address</span
+                ><input
+                  placeholder="Email Address"
+                  type="email"
+                  name="email"
+                  required=""
+                  value=""
+              /></label>
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="block-form__input">
-            <label>
-              <span class="label">Company</span
-              ><input
-                placeholder="Company"
-                name="company"
-                required=""
-                value=""
-              />
-            </label>
+          <div class="col-12 col-md-6">
+            <div class="block-form__input">
+              <label>
+                <span class="label">Company</span
+                ><input
+                  placeholder="Company"
+                  name="company"
+                  required=""
+                  value=""
+                />
+              </label>
+            </div>
           </div>
-        </div>
-        <!-- <div class="col-12 col-md-6">
+          <!-- <div class="col-12 col-md-6">
           <div class="block-form__input is-focus">
             <span class="label">WEBSITE URL</span
             ><input
@@ -68,21 +75,63 @@
             />
           </div>
         </div> -->
-        <div class="col-12">
-          <div class="block-form__textarea">
-            <span class="label">Message</span
-            ><textarea
-              name="message"
-              rows="4"
-              placeholder="Start typing here…"
-            ></textarea>
+          <div class="col-12">
+            <div class="block-form__textarea">
+              <span class="label">Message</span
+              ><textarea
+                name="message"
+                rows="4"
+                placeholder="Start typing here…"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-12 download-asset__button">
+            <button type="submit">submit</button>
           </div>
         </div>
-        <div class="col-12 download-asset__button">
-          <button type="submit">submit</button>
+      </form>
+    </div>
+    <div class="row pb-80 flex-start">
+      <div
+        class="animateFadeInUp opacity-hide col-md-4 plr-20"
+        style="animation-delay: 0.25s"
+      >
+        <h4>Address</h4>
+        <div class="scrolly-block">
+          <p>
+            Factory Add: No.1, Zhukou Industrial, Qingyuan, Lishui, Zhejiang,
+            China.
+          </p>
+          <p>
+            Trade Add:Room 816, Block 5, Jinjiemeidi Commercial Center,Xihu
+            district, Hangzhou city, Zhejiang, China.
+          </p>
         </div>
       </div>
-    </form>
+      <div
+        class="animateFadeInUp opacity-hide col-md-4 plr-20"
+        style="animation-delay: 0.5s"
+      >
+        <h4>Hours Of Operation</h4>
+        <p>Monday-Sunday</p>
+        <p>09am - 06pm</p>
+      </div>
+      <div
+        class="animateFadeInUp opacity-hide col-md-4 plr-20 contact-info"
+        style="animation-delay: 0.75s"
+      >
+        <h4>Contact Info</h4>
+        <a href="mailTo: nyoni@hzmanqini.com"
+          >{{ $t("common.footer.contact.email") }}: nyoni@hzmanqini.com</a
+        >
+        <a href="tel:+8618157898718"
+          >{{ $t("common.footer.contact.phone") }}: +86 18157898718</a
+        >
+        <a href="tel:4008896590"
+          >{{ $t("common.footer.contact.landline") }}: 400-8896-590</a
+        >
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -136,7 +185,6 @@ export default {
 form {
   max-width: 800px;
   position: relative;
-  margin: 0 auto;
   .block-form__input {
     // margin-top: 1rem;
     margin: 1rem 1rem 0 0;
@@ -219,51 +267,25 @@ form {
     max-width: 50%;
   }
 }
-@media (min-width: 769px) {
-  .container-middle {
-    padding: 0 85px;
-  }
-}
 
-@media (min-width: 576px) {
-  .container-middle {
-    max-width: 100%;
-    padding: 0 56px;
-  }
-}
-
-.container-middle {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 80px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-button {
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 4.07px;
-  line-height: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #000;
-  padding: 0 4rem;
-  display: inline-block;
-  transition: all 0.55s ease-out;
-  text-decoration: none !important;
-  background-color: #000;
-  margin: 1rem 1rem 0 0;
-}
-button:hover {
-  color: black;
-  background-color: #fff;
-}
 .download-asset__button {
   text-align: right;
+  padding-right: 1rem;
+}
+
+.contact-info {
+  > a {
+    display: block;
+    color: #252525;
+    line-height: 28px;
+  }
+}
+
+.scrolly-block {
+  height: 84px;
+  overflow: scroll;
+  p {
+    margin-bottom: 28px;
+  }
 }
 </style>

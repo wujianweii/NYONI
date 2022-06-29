@@ -43,8 +43,7 @@ module.exports = {
         trade2: "Hangzhou Manqini Stationery Co., Ltd",
       },
       compinfo: {
-        compinfo:
-          "Avex is a eCommerce Agency and Shopify Plus agency in New York City. Avex specializes in web design, Shopify Plus eCommerce, development, design, email marketing and ecommerce optimization. Avex is rated 5 out of 5 on Google Clutch.co.",
+        compinfo: `NYONI is the leading brand in Chinese drawing market. NYONI specializes in charcoal pencil, color pencil, sketch pencil and many other drawing tools. And our factory also offer the OEM for customer.`,
       },
     },
     // 产品类目
@@ -77,6 +76,11 @@ module.exports = {
       title1: "CUSTOMER FOCUS",
       title2: "Better Meet Customer Expectations Than Competitors",
       content: `All Zhejiang Jiuling people will continue to carry forward the enterprise spirit of "hard work, enterprising, innovation and realism", adhere to the quality requirements of "high standards, refinement and whole process monitoring" and the enterprise concept of "customer-centric, better meet customer expectations than competitors", emancipate the mind, inspire the spirit, work together, and create a better tomorrow for Jiuling!`,
+    },
+    button: {
+      about: "WHY NYONI?",
+      product: "VIEW ALL",
+      contact: "CONTACT US",
     },
   },
   // 产品列表
