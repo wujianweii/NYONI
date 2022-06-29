@@ -1,5 +1,5 @@
 <template>
-  <div class="products">
+  <div class="container">
     <div class="products-title">
       <h1>
         <span>{{ $t("products.title") }} :</span>
@@ -186,10 +186,6 @@ export default {
 };
 </script>
 <style lang="less">
-.products {
-  padding: 0 56px;
-}
-
 .brand {
   display: inline-block;
   cursor: pointer;
@@ -211,11 +207,6 @@ export default {
   color: #000;
 }
 
-@media screen and (max-width: 768px) {
-  .products {
-    padding: 0 16px;
-  }
-}
 .products-title {
   padding: 40px 0;
   h1 {
@@ -266,54 +257,4 @@ export default {
 .product-list-container {
   padding: 4rem 0;
 }
-// .categories {
-//   margin-top: 4rem;
-//   ul {
-//     padding: 0;
-//     list-style: none;
-//     display: block;
-//     white-space: nowrap;
-//     overflow-y: auto;
-//     text-align: center;
-//     border-bottom: 1px solid #ccc;
-//     padding-bottom: 1rem;
-//     li {
-//       margin: 0 1rem;
-//       display: inline-block;
-//       font-size: 16px;
-//       line-height: 30px;
-//       span.active {
-//         border-bottom: 1px solid #000;
-//       }
-//       span {
-//         cursor: pointer;
-//         font-size: 12px;
-//         letter-spacing: 1px;
-//         line-height: 31px;
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }
-/* .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.text {
-  font-size: 14px;
-}
-
-.item {
-  margin-bottom: 18px;
-}
-
-.box-card {
-  width: 480px;
-}
-
-.el-container .el-main {
-  padding: 0 20px;
-} */
 </style>

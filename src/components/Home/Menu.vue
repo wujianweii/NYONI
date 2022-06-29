@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="header-bar" :class="{ dark_color: isDarkColor }">
+    <div
+      class="header-bar"
+      :class="{ dark_color: isDarkColor, hideBar: hideMenus }"
+    >
       <!-- logo -->
       <a href="/"
         ><img
@@ -14,7 +17,7 @@
           class="logo"
       /></a>
       <!-- 文字列表 -->
-      <ul class="header-bar-list" :class="{ hideBar: hideMenus }">
+      <ul class="header-bar-list">
         <!-- 首页 -->
         <li>
           <a href="/">{{ $t("common.header.home") }}</a>
@@ -55,16 +58,51 @@
             </li>
           </ul>
         </li>
+        <!-- 联系 -->
+        <li>
+          <a href="/contact">{{ $t("common.header.contact") }}</a>
+        </li>
         <!-- <li>
         <a href="/products">{{ $t("common.header.products") }}</a>
       </li> -->
         <!-- 关于 -->
-        <li>
+        <!-- <li>
           <a href="/about">{{ $t("common.header.about") }}</a>
-        </li>
-        <!-- 联系 -->
-        <li>
-          <a href="/contact">{{ $t("common.header.contact") }}</a>
+        </li> -->
+        <li
+          class="relative hasSubMenu"
+          :class="{ active: showAbouts == true }"
+          @click="showAbout()"
+          @mouseenter="showAbout(true)"
+          @mouseleave="showAbout(false)"
+        >
+          <a href="javaScript:void(0)"
+            >{{ $t("common.header.about.about") }}
+            <img
+              class="hasArraw"
+              src="../../assets/icon/arrow-down-white.svg"
+              alt=""
+              v-if="!isDarkColor"
+            />
+            <img
+              class="hasArraw"
+              src="../../assets/icon/arrow-down-black.svg"
+              alt=""
+              v-else
+            />
+          </a>
+          <ul class="subMenu" :class="{ active: showAbouts == true }">
+            <li @click="toAbout('nyoni')">
+              <a href="javaScript:void(0)">{{
+                $t("common.header.about.nyoni")
+              }}</a>
+            </li>
+            <li @click="toAbout('jiuling')">
+              <a href="javaScript:void(0)">{{
+                $t("common.header.about.jiuling")
+              }}</a>
+            </li>
+          </ul>
         </li>
         <!-- 语言 -->
         <li
@@ -115,6 +153,7 @@ export default {
     return {
       showLanguages: false,
       showProducts: false,
+      showAbouts: false,
       hideMenus: false,
       // isDarkColor: true,
       isHome: false,
@@ -170,6 +209,12 @@ export default {
         });
       }
     },
+    toAbout(data) {
+      // if () {
+      this.$router.push({
+        name: data,
+      });
+    },
     showLanguage(data) {
       if (data) {
         this.showLanguages = data;
@@ -182,6 +227,13 @@ export default {
         this.showProducts = data;
       } else {
         this.showProducts = !this.showProducts;
+      }
+    },
+    showAbout(data) {
+      if (data) {
+        this.showAbouts = data;
+      } else {
+        this.showAbouts = !this.showAbouts;
       }
     },
     changeLanguage(data) {

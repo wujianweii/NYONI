@@ -1,5 +1,5 @@
 <template>
-  <div class="relative title">
+  <div class="relative title-title">
     <div class="title-bg">{{ title }}</div>
     <div class="title-block">
       <h1 class="title-h">{{ title }}</h1>
@@ -23,8 +23,8 @@ export default {
   },
 };
 </script>
-<style>
-.title {
+<style scoped>
+.title-title {
   height: 80px;
   text-align: center;
   margin: 20px 0;
@@ -43,8 +43,8 @@ export default {
 }
 .title-h {
   font-size: 30px;
-
   font-weight: 700;
+  color: #000;
 }
 .title-text {
   font-size: 14px;

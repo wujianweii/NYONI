@@ -13,16 +13,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <el-image
+              fit="contain"
+              :src="require('@/assets/common/nyoni_white.png')"
+              alt=""
+            />
           </div>
-          <img
+          <el-image
+            fit="contain"
             class="colored animateRight"
-            src="../../assets/products/catalog/color_pencil.jpg"
+            :src="require('@/assets/products/catalog/color_pencil.jpg')"
             alt=""
           />
-          <img
+          <el-image
+            fit="contain"
             class="grey animateRight"
-            src="../../assets/products/catalog/color_pencil.jpg"
+            :src="require('@/assets/products/catalog/color_pencil.jpg')"
             alt=""
           />
         </div>
@@ -42,16 +48,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <el-image
+              fit="contain"
+              :src="require('@/assets/common/nyoni_white.png')"
+              alt=""
+            />
           </div>
-          <img
+          <el-image
+            fit="contain"
             class="colored animateRight"
-            src="../../assets/products/catalog/sketch_pencil.jpg"
+            :src="require('@/assets/products/catalog/sketch_pencil.jpg')"
             alt=""
           />
-          <img
+          <el-image
+            fit="contain"
             class="grey animateRight"
-            src="../../assets/products/catalog/sketch_pencil.jpg"
+            :src="require('@/assets/products/catalog/sketch_pencil.jpg')"
             alt=""
           />
         </div>
@@ -71,16 +83,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <el-image
+              fit="contain"
+              :src="require('@/assets/common/nyoni_white.png')"
+              alt=""
+            />
           </div>
-          <img
+          <el-image
+            fit="contain"
             class="colored animateRight"
-            src="../../assets/products/catalog/charcoal_pencil.jpg"
+            :src="require('@/assets/products/catalog/charcoal_pencil.jpg')"
             alt=""
           />
-          <img
+          <el-image
+            fit="contain"
             class="grey animateRight"
-            src="../../assets/products/catalog/charcoal_pencil.jpg"
+            :src="require('@/assets/products/catalog/charcoal_pencil.jpg')"
             alt=""
           />
         </div>
@@ -100,16 +118,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <el-image
+              fit="contain"
+              :src="require('@/assets/common/nyoni_white.png')"
+              alt=""
+            />
           </div>
-          <img
+          <el-image
+            fit="contain"
             class="colored animateRight"
-            src="../../assets/products/catalog/school_office_pencil.jpg"
+            :src="require('@/assets/products/catalog/school_office_pencil.jpg')"
             alt=""
           />
-          <img
+          <el-image
+            fit="contain"
             class="grey animateRight"
-            src="../../assets/products/catalog/school_office_pencil.jpg"
+            :src="require('@/assets/products/catalog/school_office_pencil.jpg')"
             alt=""
           />
         </div>
@@ -129,16 +153,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <el-image
+              fit="contain"
+              :src="require('@/assets/common/nyoni_white.png')"
+              alt=""
+            />
           </div>
-          <img
+          <el-image
+            fit="contain"
             class="colored animateRight"
-            src="../../assets/products/catalog/eraser.jpg"
+            :src="require('@/assets/products/catalog/eraser.jpg')"
             alt=""
           />
-          <img
+          <el-image
+            fit="contain"
             class="grey animateRight"
-            src="../../assets/products/catalog/eraser.jpg"
+            :src="require('@/assets/products/catalog/eraser.jpg')"
             alt=""
           />
         </div>
@@ -158,16 +188,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <el-image
+              fit="contain"
+              :src="require('@/assets/common/nyoni_white.png')"
+              alt=""
+            />
           </div>
-          <img
+          <el-image
+            fit="contain"
             class="colored animateRight"
-            src="../../assets/products/catalog/other_tools.jpg"
+            :src="require('@/assets/products/catalog/other_tools.jpg')"
             alt=""
           />
-          <img
+          <el-image
+            fit="contain"
             class="grey animateRight"
-            src="../../assets/products/catalog/other_tools.jpg"
+            :src="require('@/assets/products/catalog/other_tools.jpg')"
             alt=""
           />
         </div>
@@ -248,15 +284,15 @@ export default {
   animation-fill-mode: forwards;
   animation-delay: 0.25s;
 }
-// @media screen and (min-width: 576px) and (min-width: 576px) and (max-width: 991px) {
-//   .portfolio-list .p-item .p-img {
-//     height: 28.64583vw;
-//   }
-// }
+@media screen and (min-width: 576px) and (min-width: 576px) and (max-width: 991px) {
+  .portfolio-list .p-item .p-img {
+    height: 28.64583vw;
+  }
+}
 @media screen and (min-width: 576px) {
-  // .portfolio-list .p-item .p-img {
-  //   height: 15rem;
-  // }
+  .portfolio-list .p-item .p-img {
+    height: 15rem;
+  }
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -264,48 +300,11 @@ export default {
 }
 
 @media screen and (min-width: 350px) {
-  // .portfolio-list .p-item .p-img {
-  //   height: 30rem;
-  // }
+  .portfolio-list .p-item .p-img {
+    height: 30rem;
+  }
 }
-// .portfolio-list .p-item .p-img {
-//   background-color: #000;
-//   max-width: 540px;
-//   margin-bottom: 10px;
-//   overflow: hidden;
-//   display: flex;
-//   width: 100%;
-//   height: 18rem;
-//   position: relative;
-// }
-// .portfolio-list .p-item .p-img .logo {
-//   position: absolute;
-//   z-index: 1;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-// }
-// .portfolio-list .p-item .p-text {
-//   opacity: 0;
-// }
-// .portfolio-list .p-item .p-img img.grey {
-//   filter: grayscale(100%);
-//   opacity: 0.5;
-// }
-// .portfolio-list .p-item .p-img img {
-//   min-width: 100%;
-//   min-height: 100%;
-//   object-fit: cover;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   transition: all 0.7s ease;
-// }
-// .portfolio-list .p-item img {
-//   transition: all 1.5s ease;
-// }
+// .portfo
 .animateRight {
   animation: animateRight linear 0.3s;
   animation-iteration-count: 1;
@@ -319,8 +318,6 @@ export default {
     clip-path: inset(0% 0 0% 0%);
   }
 }
-
-//
 
 .portfolio-list h2 {
   margin-bottom: 2rem;
@@ -402,7 +399,7 @@ export default {
   overflow: hidden;
   display: flex;
   width: 100%;
-  height: 40vw;
+  height: 18rem;
   position: relative;
 }
 .portfolio-list .p-item .p-img .logo {
@@ -475,29 +472,27 @@ export default {
   display: none;
   content: "";
 }
-// .portfolio-list .p-item .p-img {
-//   height: 40vw;
-// }
+
 @media screen and (max-width: 375px) {
   .portfolio-list .p-item h3 {
     margin-bottom: 0;
   }
-  // .portfolio-list .p-item .p-img {
-  //   height: 16rem;
-  // }
+  .portfolio-list .p-item .p-img {
+    height: 16rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
-  // .portfolio-list .p-item .p-img {
-  //   height: 15rem;
-  // }
+  .portfolio-list .p-item .p-img {
+    height: 15rem;
+  }
   .portfolio-list .p-item {
     margin-bottom: 40px;
     max-height: 280px;
   }
-  // .portfolio-list .p-item .p-img {
-  //   height: 40vw;
-  // }
+  .portfolio-list .p-item .p-img {
+    height: 30rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (min-width: 576px) and (max-width: 991px) {
@@ -505,7 +500,7 @@ export default {
     max-height: 1000px;
   }
   .portfolio-list .p-item .p-img {
-    height: 40vw;
+    height: 28.64583vw;
   }
 }
 @media screen and (max-width: 576px) {
@@ -566,11 +561,11 @@ export default {
   }
   .portfolio-list .p-item .p-img,
   .portfolio-list .p-item .p-img .gatsby-image-wrapper {
-    max-height: 600px;
+    max-height: 440px;
   }
-  // .portfolio-list .p-item .p-img {
-  //   height: 23rem;
-  // }
+  .portfolio-list .p-item .p-img {
+    height: 23rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -9,7 +9,11 @@ module.exports = {
         nyoni: "尼奥尼",
         feiyan: "飞雁",
       },
-      about: "关于我们",
+      about: {
+        about: "关于",
+        nyoni: "尼奥尼",
+        jiuling: "久灵",
+      },
       contact: "联系我们",
       language: {
         lg: "语言",

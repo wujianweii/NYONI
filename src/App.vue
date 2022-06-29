@@ -41,12 +41,12 @@ export default {
 </script>
 <style lang="less">
 .header-fill {
-  height: 144px;
+  height: 184px;
   width: 100%;
 }
 @media screen and (max-width: 576px) {
   .header-fill {
-    height: 80px;
+    height: 100px;
     width: 100%;
   }
 }

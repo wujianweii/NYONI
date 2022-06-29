@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import home from "../views/Home.vue";
-import about from "../views/About.vue";
+import nyoni from "../views/About/Nyoni.vue";
+import jiuling from "../views/About/Jiuling.vue";
+import contact from "../views/Contact.vue";
 import products from "../views/Products/Products.vue";
 // import nyoni from "../views/Products/NyoniProducts.vue";
 // import feiyan from "../views/Products/FeiyanProducts.vue";
@@ -12,9 +14,19 @@ const routes = [
     component: home,
   },
   {
-    path: "/about",
-    name: "about",
-    component: about,
+    path: "/about/nyoni",
+    name: "nyoni",
+    component: nyoni,
+  },
+  {
+    path: "/about/jiuling",
+    name: "jiuling",
+    component: jiuling,
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: contact,
   },
   {
     path: "/products/:brand",

@@ -2,7 +2,7 @@
   <div ref="productContainer">
     <div
       v-if="isEnOrZh === 'zh'"
-      class="container"
+      class="row"
       :style="{ flexWrap: wrap ? 'wrap' : 'nowrap' }"
     >
       <ProductItem
@@ -16,7 +16,7 @@
     </div>
     <div
       v-if="isEnOrZh === 'en'"
-      class="container"
+      class="row"
       :style="{ flexWrap: wrap ? 'wrap' : 'nowrap' }"
     >
       <ProductItem
@@ -111,9 +111,9 @@ export default {
 };
 </script>
 <style>
-.container {
+/* .container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
+} */
 </style>

@@ -10,7 +10,11 @@ module.exports = {
         nyoni: "NYONI",
         feiyan: "FEIYAN",
       },
-      about: "About",
+      about: {
+        about: "About",
+        nyoni: "NYONI",
+        jiuling: "JIULING",
+      },
       contact: "Contact",
       language: {
         lg: "Language",

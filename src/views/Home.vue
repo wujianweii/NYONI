@@ -2,6 +2,7 @@
   <div>
     <!-- 头部 -->
     <Header />
+    <el-backtop :right="56" :bottom="56" style="color: #000" />
     <!-- 公司介绍 -->
     <div class="company-introduction">
       <h2>{{ $t("home.companyIntroduction.title") }}</h2>
@@ -12,7 +13,7 @@
     <!-- 轮播 -->
     <Carousel category="banner" />
     <!-- 产品 -->
-    <ProductsList />
+    <ProductsList class="container pt-80" />
     <!-- 客户 -->
     <div class="enterprise-spirit relative">
       <!-- <img src="../assets/common/background.jpg" alt="" /> -->
@@ -46,7 +47,7 @@ export default {
 
 <style lang="less">
 .company-introduction {
-  padding: 6rem 50px;
+  padding: 80px 50px;
   max-width: 920px;
   margin: 0 auto;
   h2 {
@@ -75,7 +76,7 @@ export default {
 }
 .enterprise-spirit-text {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

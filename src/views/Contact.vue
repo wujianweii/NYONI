@@ -1,68 +1,62 @@
 <template>
   <div class="container-middle animateFadeInUp">
-    <!-- <form action="https://formspree.io/f/mgedbzyj" method="post" ref="content">
-      <label>
-        FIRST NAME
-      <input
-        type="text"
-        name="name"
-        placeholder="姓名"
-        class="contact-area"
-        v-model="contactArea"
-      />
-      </label>
-
-      <input type="text" name="company" placeholder="公司名称" />
-      <input type="text" name="position" placeholder="职位" />
-      <input type="text" name="phone" placeholder="联系电话" />
-      <input type="email" name="_replyto" placeholder="邮箱" />
-      <div class="commit" @click="sendMessage">点击预约</div>
-    </form> -->
-    <form class="" action="https://formspree.io/f/mgedbzyj" method="POST">
+    <!-- mgedbzyj -->
+    <!-- xoqrzykl -->
+    <form action="https://formspree.io/f/xoqrzykl" method="POST">
       <div class="row">
         <div class="col-12 col-md-6">
           <div class="block-form__input">
-            <span class="label">First name</span
-            ><input
-              placeholder="First name"
-              type="text"
-              name="firstname"
-              required=""
-              value=""
-            />
+            <label>
+              <span class="label">First name</span
+              ><input
+                placeholder="First name"
+                type="text"
+                name="firstname"
+                required=""
+                value=""
+            /></label>
           </div>
         </div>
         <div class="col-12 col-md-6">
           <div class="block-form__input">
-            <span class="label">Last Name</span
-            ><input
-              placeholder="Last Name"
-              type="text"
-              name="lastname"
-              required=""
-              value=""
-            />
+            <label
+              ><span class="label">Last Name</span
+              ><input
+                placeholder="Last Name"
+                type="text"
+                name="lastname"
+                required=""
+                value=""
+            /></label>
           </div>
         </div>
         <div class="col-12 col-md-6">
           <div class="block-form__input">
-            <span class="label">Email Address</span
-            ><input
-              placeholder="Email Address"
-              type="email"
-              name="email"
-              required=""
-              value=""
-            />
+            <label
+              ><span class="label">Email Address</span
+              ><input
+                placeholder="Email Address"
+                type="email"
+                name="email"
+                required=""
+                value=""
+            /></label>
           </div>
         </div>
         <div class="col-12 col-md-6">
           <div class="block-form__input">
-            <span class="label">Company</span
-            ><input placeholder="Company" name="company" required="" value="" />
+            <label>
+              <span class="label">Company</span
+              ><input
+                placeholder="Company"
+                name="company"
+                required=""
+                value=""
+              />
+            </label>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <!-- <div class="col-12 col-md-6">
           <div class="block-form__input is-focus">
             <span class="label">WEBSITE URL</span
             ><input
@@ -73,7 +67,7 @@
               value="https://"
             />
           </div>
-        </div>
+        </div> -->
         <div class="col-12">
           <div class="block-form__textarea">
             <span class="label">Message</span
@@ -144,7 +138,8 @@ form {
   position: relative;
   margin: 0 auto;
   .block-form__input {
-    margin-top: 1rem;
+    // margin-top: 1rem;
+    margin: 1rem 1rem 0 0;
     position: relative;
 
     input {
@@ -165,7 +160,8 @@ form {
       background: rgba(196, 196, 196, 0.05);
       height: 52px;
       line-height: 52px;
-      max-width: 370px;
+      // max-width: 370px;
+      // margin: ;
     }
   }
   .label {
@@ -197,8 +193,7 @@ form {
   // margin-left: -15px;
 }
 .block-form__textarea {
-  margin-top: 35px;
-  // margin-right: 1rem;
+  margin: 35px 1rem 0 0;
   textarea {
     height: 160px;
     width: 100%;
@@ -249,7 +244,6 @@ form {
 
 button {
   cursor: pointer;
-  // margin-right: 1rem;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 4.07px;
@@ -263,7 +257,7 @@ button {
   transition: all 0.55s ease-out;
   text-decoration: none !important;
   background-color: #000;
-  margin-top: 15px;
+  margin: 1rem 1rem 0 0;
 }
 button:hover {
   color: black;
