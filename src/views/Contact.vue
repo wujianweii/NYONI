@@ -1,10 +1,8 @@
 <template>
   <div class="container">
     <div class="pb-40">
-      <h1 class="detail-title">CONTACT US</h1>
-      <h1 class="detail-content">
-        Let's talk about perfect win-win cooperation
-      </h1>
+      <h1 class="detail-title">{{ $t("contact.title") }}</h1>
+      <h1 class="detail-content">{{ $t("contact.content") }}</h1>
     </div>
     <div class="pb-80 animateFadeInUp">
       <!-- mgedbzyj -->
@@ -14,11 +12,11 @@
           <div class="col-12 col-md-6">
             <div class="block-form__input">
               <label>
-                <span class="label">First name</span
+                <span class="label">{{ $t("contact.fullName") }}</span
                 ><input
-                  placeholder="First name"
+                  placeholder="Full Name"
                   type="text"
-                  name="firstname"
+                  name="fullname"
                   required=""
                   value=""
               /></label>
@@ -26,21 +24,22 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="block-form__input">
-              <label
-                ><span class="label">Last Name</span
+              <label>
+                <span class="label">{{ $t("contact.company") }}</span
                 ><input
-                  placeholder="Last Name"
-                  type="text"
-                  name="lastname"
+                  placeholder="Company"
+                  name="company"
                   required=""
                   value=""
-              /></label>
+                />
+              </label>
             </div>
           </div>
+          <!-- 邮箱 -->
           <div class="col-12 col-md-6">
             <div class="block-form__input">
               <label
-                ><span class="label">Email Address</span
+                ><span class="label">{{ $t("contact.emailAddress") }}</span
                 ><input
                   placeholder="Email Address"
                   type="email"
@@ -50,17 +49,18 @@
               /></label>
             </div>
           </div>
+          <!-- 主题 -->
           <div class="col-12 col-md-6">
             <div class="block-form__input">
-              <label>
-                <span class="label">Company</span
+              <label
+                ><span class="label">{{ $t("contact.subject") }}</span
                 ><input
-                  placeholder="Company"
-                  name="company"
+                  placeholder="Subject"
+                  type="text"
+                  name="subject"
                   required=""
                   value=""
-                />
-              </label>
+              /></label>
             </div>
           </div>
           <!-- <div class="col-12 col-md-6">
@@ -77,7 +77,7 @@
         </div> -->
           <div class="col-12">
             <div class="block-form__textarea">
-              <span class="label">Message</span
+              <span class="label">{{ $t("contact.message") }}</span
               ><textarea
                 name="message"
                 rows="4"
@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="col-12 download-asset__button">
-            <button type="submit">submit</button>
+            <button type="submit">{{ $t("contact.submit") }}</button>
           </div>
         </div>
       </form>
@@ -96,15 +96,13 @@
         class="animateFadeInUp opacity-hide col-md-4 plr-20"
         style="animation-delay: 0.25s"
       >
-        <h4>Address</h4>
+        <h4 class="contact-info-header">{{ $t("contact.address") }}</h4>
         <div class="scrolly-block">
           <p>
-            Factory Add: No.1, Zhukou Industrial, Qingyuan, Lishui, Zhejiang,
-            China.
+            {{ $t("contact.factoryAdd") }}
           </p>
           <p>
-            Trade Add:Room 816, Block 5, Jinjiemeidi Commercial Center,Xihu
-            district, Hangzhou city, Zhejiang, China.
+            {{ $t("contact.tradeAdd") }}
           </p>
         </div>
       </div>
@@ -112,15 +110,15 @@
         class="animateFadeInUp opacity-hide col-md-4 plr-20"
         style="animation-delay: 0.5s"
       >
-        <h4>Hours Of Operation</h4>
-        <p>Monday-Sunday</p>
-        <p>09am - 06pm</p>
+        <h4 class="contact-info-header">{{ $t("contact.time") }}</h4>
+        <p>{{ $t("contact.weekDay") }}</p>
+        <p>{{ $t("contact.weekTime") }}</p>
       </div>
       <div
         class="animateFadeInUp opacity-hide col-md-4 plr-20 contact-info"
         style="animation-delay: 0.75s"
       >
-        <h4>Contact Info</h4>
+        <h4 class="contact-info-header">{{ $t("contact.contact") }}</h4>
         <a href="mailTo: nyoni@hzmanqini.com"
           >{{ $t("common.footer.contact.email") }}: nyoni@hzmanqini.com</a
         >
@@ -273,6 +271,10 @@ form {
   padding-right: 1rem;
 }
 
+.contact-info-header {
+  margin-top: 30px;
+  font-size: 18px;
+}
 .contact-info {
   > a {
     display: block;

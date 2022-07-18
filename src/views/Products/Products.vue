@@ -64,8 +64,9 @@
         </li>
       </ul>
     </div>
-    <div class="product-list-container">
+    <div class="product-list-container opacity-hide animateFadeInUp">
       <ProductList :products="productsList" />
+      <!-- :class="{ 'opacity-hide': opacityHide, animateFadeInUp: opacityHide }" -->
     </div>
     <!-- <el-container>
       <el-aside width="250px">
@@ -120,6 +121,8 @@ export default {
     return {
       productBrand: "",
       productsList: [],
+      isLoading: false,
+      opacityHide: true,
       nyoniProductsLists: nyoniProductsLists,
       feiyanProductsLists: feiyanProductsLists,
       // categoriesChoose: "all",
@@ -144,6 +147,9 @@ export default {
     // let router = useRoute();
     // console.log(router);
   },
+  // mounted() {
+  //   this.loading();
+  // },
   methods: {
     ...mapActions(["changeCategoriesChoose", "changeProductsBrand"]),
     switchCategories(data) {
@@ -153,6 +159,10 @@ export default {
     },
     // 更换列表数据
     changeProductsList(data) {
+      // this.opacityHide = false;
+      // setTimeout(() => {
+      //   this.opacityHide = true;
+      // }, 10);
       //created调用
       if (!data) {
         this.productBrand = this.$route.params.brand;
@@ -163,11 +173,19 @@ export default {
 
       if (this.productBrand == "nyoni") {
         this.productsList = this.nyoniProductsLists[this.categoriesChoose];
+        // this.loading();
       }
       if (this.productBrand == "feiyan") {
         this.productsList = this.feiyanProductsLists[this.categoriesChoose];
+        // this.loading();
       }
     },
+    // loading() {
+    //   this.isLoading = true;
+    //   setTimeout(() => {
+    //     this.isLoading = false;
+    //   }, 1000);
+    // },
     // 更换产品品牌
     switchProductsBrand(data) {
       this.$router.push({
@@ -186,6 +204,9 @@ export default {
 };
 </script>
 <style lang="less">
+.opacity-hide {
+  opacity: 0;
+}
 .brand {
   display: inline-block;
   cursor: pointer;

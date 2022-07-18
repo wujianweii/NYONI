@@ -1,11 +1,24 @@
 <template>
   <div class="product-box" @click="toProductDetail">
+    <!-- <el-skeleton style="width: 100%" :loading="isLoading" animated>
+      <template #template>
+        <el-skeleton-item
+          variant="image"
+          style="width: 100%; height: 0; padding-top: 100%"
+        />
+      </template>
+    </el-skeleton> -->
+    <!-- <div class=""></div> -->
     <el-image
       class="product-img"
       :src="!!model ? require('@/assets/products/' + model + '/1.jpg') : img"
       fit="cover"
       :lazy="lazy"
-    />
+    >
+      <template #placeholder>
+        <div class="image-slot"></div>
+      </template>
+    </el-image>
     <!-- <el-image
       class="product-img"
       :src="require('@/assets/products/N2806/1.jpg')"
@@ -48,6 +61,14 @@ export default {
     //   default: false,
     // },
   },
+  // data() {
+  //   return {
+  //     isLoading: false,
+  //   };
+  // },
+  // created() {
+  //   this.loading();
+  // },
   computed: {
     ...mapGetters({
       productsBrand: "getProductsBrand",
@@ -57,14 +78,32 @@ export default {
     TwoLinesText,
   },
   methods: {
+    // loading() {
+    //   this.isLoading = true;
+    //   setTimeout(() => {
+    //     this.isLoading = false;
+    //   }, 100);
+    // },
     toProductDetail() {
-      this.$router.push({
-        name: "details",
-        params: {
-          brand: this.productsBrand,
-          model: this.model,
-        },
-      });
+      let routeName = this.$route.name;
+      if (routeName == "products") {
+        this.$router.push({
+          name: "details",
+          params: {
+            brand: this.productsBrand,
+            model: this.model,
+          },
+        });
+      }
+      if (routeName == "details") {
+        this.$router.push({
+          name: "details",
+          params: {
+            brand: "nyoni",
+            model: this.model,
+          },
+        });
+      }
     },
   },
 };
@@ -89,29 +128,6 @@ export default {
   }
 }
 
-// @media screen and (max-width: 557px) {
-//   .product-box {
-//     flex: 100%;
-//     max-width: 100%;
-//   }
-// }
-
-// @media (min-width: 820px) {
-//   .product-box {
-//     flex: 0 0 33.33333%;
-//     max-width: 33.33333%;
-//   }
-// }
-// @media (min-width: 375px) {
-//   .product-box {
-//     flex: 0 0 50%;
-//     max-width: 50%;
-//   }
-// }
-// @media (min-width: 768px) {
-//   .product-box {
-//   }
-// }
 .product-item {
   width: 243px;
   height: 285px;
@@ -135,5 +151,9 @@ export default {
   text-align: center;
   padding: 5px 0;
   font-size: 12px;
+}
+.image-slot {
+  width: 100%;
+  padding-top: 100%;
 }
 </style>

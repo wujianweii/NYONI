@@ -14,6 +14,7 @@ module.exports = {
         about: "About",
         nyoni: "NYONI",
         jiuling: "JIULING",
+        hzmanqini: "HZMANQINI",
       },
       contact: "Contact",
       language: {
@@ -21,6 +22,8 @@ module.exports = {
         zh: "Chinese",
         en: "English",
       },
+      close: "CLOSE",
+      menu: "MENU",
     },
     // 页脚
     footer: {
@@ -102,5 +105,56 @@ module.exports = {
     size: "Size",
     material: "Material",
     package: "Package",
+  },
+  // 联系我们
+  contact: {
+    title: "CONTACT US",
+    content: "Let's talk about perfect win-win cooperation",
+    fullName: "FULL NAME",
+    company: "COMPANY",
+    emailAddress: "EMAIL ADDRESS",
+    subject: "SUBJECT",
+    // subjectPlaceholder: "Subject",
+    // fullNamePlaceholder: "Full Name",
+    // emailAddressPlaceholder: "Email Address",
+    // companyPlaceholder: "Company",
+    message: "Message",
+    submit: "SUBMIT",
+    address: "Address",
+    factoryAdd: `Factory Add: No.1, Zhukou Industrial, Qingyuan, Lishui, Zhejiang,
+    China.`,
+    tradeAdd: `Trade Add:Room 816, Block 5, Jinjiemeidi Commercial Center,Xihu
+    district, Hangzhou city, Zhejiang, China.`,
+    time: "Hours Of Operation",
+    weekDay: "Monday-Sunday",
+    weekTime: "09am - 06pm",
+    contact: "Contact Info",
+  },
+  // 关于我们
+  about: {
+    nyoni: {
+      title: "NYONI | PROFESSIONAL PAINTING MATERIAL BRAND",
+      content: `With the concept of "Define Your Direction Of Art", NYONI was founded in
+      2015.`,
+    },
+    jiuling: {
+      title: "JIULING | NYONI FACTORY",
+      content: `Zhejiang Jiuling Brush Co., Ltd focus on painting materials, beauty
+      cosmetics product development and production`,
+      textTitle: "Zhejiang Jiuling Brush Co., LTD",
+      textContent: `JIULING was founded in 1999, is a collection of production, research and development in one
+      of the professional production and sales of high-grade pencils, makeup
+      pens and cosmetics series of products enterprises, it owns FEIYAN,
+      SHAONIANPAI, NYONI, KUAZI brands.`,
+    },
+    hzmanqini: {
+      title: "HZMANQINI | NYONI SOLE SAlES AGENT IN ALIBABA.COM",
+      content: `HangZhou Manqini Stationery Co., Ltd as Zhejiang Jiuling Brush Co., Ltd
+                sole sales agent in Alibaba.com.`,
+      textTitle: "HangZhou Manqini Stationery Co., Ltd",
+      textContent: `HangZhou Manqini Stationery Co., Ltd as Zhejiang Jiuling Brush Co.,
+                    Ltd sole sales agent in Alibaba.com. Manqini will be responsible for
+                    the sales about brand "NYONI" and customer service in Alibaba website.`,
+    },
   },
 };

@@ -21,6 +21,13 @@
           :lazy="false"
         />
       </el-carousel-item>
+      <el-carousel-item height="auto">
+        <ProductList
+          :products="productsRecommend.slice(8, 12)"
+          :wrap="false"
+          :lazy="false"
+        />
+      </el-carousel-item>
     </el-carousel>
   </div>
 </template>

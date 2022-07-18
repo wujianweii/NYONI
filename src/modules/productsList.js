@@ -45,6 +45,23 @@ const productsList = {
       sort: "颜色",
     },
   },
+  N8535: {
+    size: "45*45*12",
+    model: "N8535",
+    price: 56,
+    en: {
+      name: "NYONI-N8535 Professional Art Standard 24 Colors People Skin Tints Oily Color Pencil Set",
+      type: "Oily Color Pencil",
+      material: "Basswood",
+      package: "Iron box",
+    },
+    zh: {
+      name: "NYONI-N8535 尼奥尼专业级24色人像 肤色系油性彩色铅笔",
+      type: "油性彩色铅笔",
+      material: "椴木",
+      package: "铁盒",
+    },
+  },
   N28: {
     size: "45*45*12",
     model: "N28",

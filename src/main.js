@@ -2,6 +2,7 @@ import { createApp } from "vue";
 
 import App from "./App.vue";
 import "./styles/main.less";
+import "./util/rem";
 
 import i18n from "./language";
 import router from "./router";

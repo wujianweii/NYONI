@@ -1,6 +1,6 @@
 <template>
   <div class="col detail-text-container">
-    <h1 class="divider-bottom">
+    <h1 class="divider-bottom font-18">
       {{ product[language].name }}
     </h1>
     <!-- 价格 -->

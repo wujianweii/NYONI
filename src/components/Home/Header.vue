@@ -60,8 +60,8 @@ export default {};
 
 @media screen and (min-width: 576px) {
   .header-title {
-    left: 16px;
-    right: 16px;
+    left: 20px;
+    right: 20px;
   }
 }
 @media screen and (min-width: 768px) {

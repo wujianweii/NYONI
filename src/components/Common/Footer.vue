@@ -8,8 +8,8 @@
       <!-- 产品 -->
       <div>
         <h1>{{ $t("common.footer.procudts.h1") }}</h1>
-        <a href="">{{ $t("common.footer.procudts.nyoni") }}</a>
-        <a href="">{{ $t("common.footer.procudts.feiyan") }}</a>
+        <a href="/products/nyoni">{{ $t("common.footer.procudts.nyoni") }}</a>
+        <a href="/products/feiyan">{{ $t("common.footer.procudts.feiyan") }}</a>
       </div>
       <!-- 联系我们 -->
       <div>
@@ -36,12 +36,12 @@
       <!-- 关于我们 -->
       <div>
         <h1>{{ $t("common.footer.about.h1") }}</h1>
-        <a href="">
+        <a href="/about/jiuling">
           {{ $t("common.footer.about.factory1") }}: <br />{{
             $t("common.footer.about.factory2")
           }}</a
         >
-        <a href=""
+        <a href="/about/hzmanqini"
           >{{ $t("common.footer.about.trade1") }}: <br />{{
             $t("common.footer.about.trade2")
           }}</a

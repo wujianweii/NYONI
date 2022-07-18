@@ -7,6 +7,12 @@ const nyoniProductsList = {
       zh_name: "NYONI-N8520 尼奥尼专业级油性彩色铅笔 24/36/48/72/120色",
     },
     {
+      model: "N8535",
+      en_name:
+        "NYONI-N8535 Professional Art Standard 24 Colors People Skin Tints Oily Color Pencil Set",
+      zh_name: "NYONI-N8535 尼奥尼专业级24色人像 肤色系油性彩色铅笔",
+    },
+    {
       model: "N28",
       en_name:
         "NYONI-N28 Professional Art Standard Oily Color Pencil Set With 24/36/48/72/120 Colors",

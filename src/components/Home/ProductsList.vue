@@ -254,11 +254,6 @@ export default {
   animation-fill-mode: forwards;
   animation-delay: 0.25s;
 }
-// @media screen and (min-width: 576px) and (min-width: 576px) and (max-width: 991px) {
-//   .portfolio-list .p-item .p-img {
-//     height: 28.64583vw;
-//   }
-// }
 
 .animateRight {
   animation: animateRight linear 0.3s;

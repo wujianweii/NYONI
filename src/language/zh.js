@@ -11,15 +11,18 @@ module.exports = {
       },
       about: {
         about: "关于",
-        nyoni: "尼奥尼",
         jiuling: "久灵",
+        nyoni: "尼奥尼",
+        hzmanqini: "曼奇尼",
       },
-      contact: "联系我们",
+      contact: "联系",
       language: {
         lg: "语言",
         zh: "中文",
         en: "英文",
       },
+      close: "关闭",
+      menu: "菜单",
     },
     footer: {
       procudts: {
@@ -59,7 +62,7 @@ module.exports = {
   home: {
     header: {
       title1: "尼奥尼 - 勾勒您艺术的方向",
-      title2: `尼奥尼是中国一线画材品牌，专注于专业绘画领域产品开发和生产。`,
+      title2: `尼奥尼是中国一线画材品牌，专注于专业绘画领域产品研发和生产。`,
     },
     companyIntroduction: {
       title: "尼奥尼 - 勾勒您艺术的方向",
@@ -85,8 +88,8 @@ module.exports = {
     title: "产品品牌",
     nyoni: "尼奥尼",
     feiyan: "飞雁",
-    nyoinTitle: "尼奥尼专注于专业画材开发和生产。",
-    feiyanTitle: "飞雁专注于学校办公书写铅笔开发和生产。",
+    nyoinTitle: "尼奥尼专注于专业画材研发和生产。",
+    feiyanTitle: "飞雁专注于学校办公书写铅笔研发和生产。",
   },
   // 产品详情页
   details: {
@@ -99,5 +102,46 @@ module.exports = {
     size: "尺寸",
     material: "材料",
     package: "包装",
+  },
+  // 联系我们
+  contact: {
+    title: "联系我们",
+    content: "让我们达成共赢合作",
+    fullName: "名字",
+    emailAddress: "邮箱",
+    company: "公司",
+    subject: "主题",
+    // subjectPlaceholder: "主题",
+    // fullNamePlaceholder: "名字",
+    // emailAddressPlaceholder: "邮件地址",
+    // companyPlaceholder: "公司",
+    message: "邮件内容",
+    submit: "提交",
+    address: "地址",
+    factoryAdd: `工厂地址: 中国浙江省丽水市庆元县竹口工业园区1号`,
+    tradeAdd: `外贸地址: 中国浙江省杭州市西湖区金街美地5号楼816室`,
+    time: "工作时间",
+    weekDay: "星期一 - 星期日",
+    weekTime: "上午9点 - 下午6点",
+    contact: "联系方式",
+  },
+  // 关于我们
+  about: {
+    nyoni: {
+      title: "尼奥尼 | 专业一线画材品牌",
+      content: `尼奥尼品牌于2015年创建,其理念是“勾勒您艺术的方向”。`,
+    },
+    jiuling: {
+      title: "久灵 | 尼奥尼品牌企业",
+      content: `浙江久灵笔刷有限公司主营画材、彩妆领域产品研发生产。`,
+      textTitle: "浙江久灵笔刷有限公司",
+      textContent: `浙江久灵笔刷有限公司成立于1999年，是一家集产供研于一体的专业生产销售中高档铅笔、化妆笔以及彩妆系列产品的企业，旗下拥有飞雁、少年派、尼奥尼、绔姿等品牌。`,
+    },
+    hzmanqini: {
+      title: "杭州曼奇尼 | 尼奥尼阿里巴巴国际站唯一销售总代理",
+      content: `杭州曼奇尼文化用品有限公司是浙江久灵笔刷有限公司在阿里巴巴国际站的唯一销售总代理。`,
+      textTitle: "杭州曼奇尼文化用品有限公司",
+      textContent: `杭州曼奇尼文化用品有限公司是浙江久灵笔刷有限公司在阿里巴巴国际站的唯一销售总代理, 负责尼奥尼等品牌在国际站上的销售、客户服务等相关业务经营及推广事宜。`,
+    },
   },
 };

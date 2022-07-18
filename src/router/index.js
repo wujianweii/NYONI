@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import home from "../views/Home.vue";
 import nyoni from "../views/About/Nyoni.vue";
 import jiuling from "../views/About/Jiuling.vue";
+import hzmanqini from "../views/About/Hzmanqini.vue";
 import contact from "../views/Contact.vue";
 import products from "../views/Products/Products.vue";
 // import nyoni from "../views/Products/NyoniProducts.vue";
@@ -22,6 +23,11 @@ const routes = [
     path: "/about/jiuling",
     name: "jiuling",
     component: jiuling,
+  },
+  {
+    path: "/about/hzmanqini",
+    name: "hzmanqini",
+    component: hzmanqini,
   },
   {
     path: "/contact",

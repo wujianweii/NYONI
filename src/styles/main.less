@@ -1,12 +1,71 @@
 @import "./normalize.less";
 @import "./animation.less";
+
 // 边框
 .container {
   padding: 0 56px;
 }
+
+h1,
+.h1 {
+  font-size: 40px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+p,
+.p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding: 0 20px;
+  }
+
+  h1,
+  .h1 {
+    font-size: 30px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 24px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 20px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    box-sizing: content-box;
+    max-width: 1200px;
   }
 }
 
@@ -14,28 +73,22 @@
   background-color: rgb(247, 247, 247);
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4, .font-primary {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4,
+.font-primary {
   font-weight: 500;
   font-family: "SiYuanSongTi", serif;
   color: #000;
   margin-bottom: 1rem;
 }
 
-h2, .h2 {
-  font-size: 32px;
-}
 
-h3, .h3 {
-  font-size: 24px;
-}
-h4, .h4 {
-  font-size: 20px;
-}
-
-p, .p {
-  font-size: 16px;
-  line-height: 28px;
-}
 
 button {
   cursor: pointer;
@@ -54,6 +107,7 @@ button {
   background-color: #000;
   margin: 30px 0 0 0;
 }
+
 button:hover {
   color: black;
   background-color: #fff;
@@ -63,11 +117,38 @@ button:hover {
   color: #000;
   background-color: #fff;
 }
+
 .button-white:hover {
   color: #fff;
   background-color: #000;
 }
 
+// padding  margin
+.ptb-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mtb-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 
 
 
@@ -93,12 +174,14 @@ button:hover {
     max-width: 33.333%;
   }
 }
+
 @media screen and (min-width: 576px) {
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
+
 @media screen and (min-width: 991px) {
   .col-lg-6 {
     flex: 0 0 50%;
@@ -133,6 +216,7 @@ button:hover {
 .space-around {
   justify-content: space-around;
 }
+
 .space-between {
   justify-content: space-between;
 }
@@ -441,6 +525,7 @@ button:hover {
 .ptb-5 {
   padding: 5px 0;
 }
+
 .ptb-60 {
   padding: 60px 0;
 }
@@ -468,12 +553,15 @@ button:hover {
 .pt-12 {
   padding-top: 12px;
 }
+
 .pt-80 {
   padding-top: 80px;
 }
+
 .pb-80 {
   padding-bottom: 80px;
 }
+
 .pb-7 {
   padding-bottom: 7px;
 }
@@ -524,9 +612,15 @@ button:hover {
   padding-right: 30px;
   padding-left: 30px;
 }
+
 .plr-50 {
   padding-right: 50px;
   padding-left: 50px;
+}
+
+.mlr-50 {
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .pb-40 {
@@ -550,8 +644,8 @@ button:hover {
   background-color: #fff !important;
 }
 
-.vux-slider > .vux-indicator > a,
-.vux-slider .vux-indicator-right > a {
+.vux-slider>.vux-indicator>a,
+.vux-slider .vux-indicator-right>a {
   margin: 0 4px !important;
 }
 

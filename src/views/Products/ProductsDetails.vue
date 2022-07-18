@@ -95,6 +95,7 @@ export default {
 }
 .plr-details {
   padding: 0 56px;
+  font-size: 24px;
 }
 .detail-container {
   display: flex;
@@ -116,7 +117,9 @@ export default {
     padding: 20px;
   }
   .plr-details {
+    margin-top: 20px;
     padding: 0 20px;
+    font-size: 16px;
   }
 }
 

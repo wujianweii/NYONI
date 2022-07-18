@@ -2,7 +2,6 @@
   <div>
     <!-- 头部 -->
     <Header />
-    <el-backtop :right="56" :bottom="56" style="color: #000" />
     <!-- 公司介绍 -->
     <div class="company-introduction">
       <h2>{{ $t("home.companyIntroduction.title") }}</h2>

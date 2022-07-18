@@ -21,6 +21,19 @@ module.exports = defineConfig({
   chainWebpack: (config) => {
     config.resolve.alias.set("vue-i18n", "vue-i18n/dist/vue-i18n.cjs.js");
   },
+  // css: {
+  //   loaderOptions: {
+  //     postcss: {
+  //       plugins: [
+  //         require("postcss-pxtorem")({
+  //           rootValue: 14,
+  //           selectorBlackList: ["el"], // 忽略转换正则匹配项
+  //           propList: ["*"],
+  //         }),
+  //       ],
+  //     },
+  //   },
+  // },
   // vue 3.0
   // chainWebpack: (config) => {
   //   config.resolve.alias.set("@", resolve("src"));

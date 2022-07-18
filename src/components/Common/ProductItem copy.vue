@@ -54,22 +54,7 @@ export default {
     max-width: 25%;
   }
 }
-// @media (min-width: 820px) {
-//   .product-box {
-//     flex: 0 0 33.33333%;
-//     max-width: 33.33333%;
-//   }
-// }
-// @media (min-width: 375px) {
-//   .product-box {
-//     flex: 0 0 50%;
-//     max-width: 50%;
-//   }
-// }
-// @media (min-width: 768px) {
-//   .product-box {
-//   }
-// }
+
 .product-item {
   width: 243px;
   height: 285px;

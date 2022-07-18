@@ -1,11 +1,8 @@
 <template>
   <div class="container">
     <div class="pb-40">
-      <h1 class="detail-title">NYONI | PROFESSIONAL PAINTING MATERIAL BRAND</h1>
-      <h1 class="detail-content">
-        With the concept of "Define Your Direction Of Art", NYONI was founded in
-        2015.
-      </h1>
+      <h1 class="detail-title">{{ $t("about.nyoni.title") }}</h1>
+      <h1 class="detail-content">{{ $t("about.nyoni.content") }}</h1>
     </div>
     <el-timeline>
       <el-timeline-item
@@ -86,7 +83,6 @@ export default {
   letter-spacing: 1.5px;
 }
 .detail-content {
-  font-size: 40px;
   max-width: 940px;
   color: #000;
   margin-bottom: 1rem;
