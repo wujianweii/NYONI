@@ -10,7 +10,7 @@
       <div ref="magnifierCover" class="magnifier-cover"></div>
     </div>
     <!-- 缩略图区块 -->
-    <ul class="magnifier-img-list" @mousemove="imgMoveHandle">
+    <ul class="magnifier-img-list" @click="imgMoveHandle">
       <li
         v-for="item in srcs"
         :key="item.src"
@@ -142,7 +142,6 @@ export default {
       background: hsla(0, 0%, 100%, 0.5);
     }
   }
-
   .magnifier-big {
     position: absolute;
     display: none;
@@ -166,6 +165,7 @@ export default {
       border: 1px solid #979797;
       img {
         display: block;
+        cursor: pointer;
         width: 50px;
         height: 50px;
       }
@@ -181,8 +181,5 @@ export default {
     width: 100%;
     height: auto;
   }
-  // .magnifier-container ul {
-  //   padding: 0 20px 20px;
-  // }
 }
 </style>

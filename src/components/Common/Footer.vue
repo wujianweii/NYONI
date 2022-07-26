@@ -41,7 +41,12 @@
             $t("common.footer.about.factory2")
           }}</a
         >
-        <a href="/about/hzmanqini"
+        <!-- <a href="/about/hzmanqini"
+          >{{ $t("common.footer.about.trade1") }}: <br />{{
+            $t("common.footer.about.trade2")
+          }}</a
+        > -->
+        <a href="javaScript:void(0)"
           >{{ $t("common.footer.about.trade1") }}: <br />{{
             $t("common.footer.about.trade2")
           }}</a

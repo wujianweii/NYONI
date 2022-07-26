@@ -74,9 +74,9 @@
             <li class="menu-drawer-li" @click="toRouter('jiuling')">
               {{ $t("common.header.about.jiuling") }}
             </li>
-            <li class="menu-drawer-li" @click="toRouter('hzmanqini')">
+            <!-- <li class="menu-drawer-li" @click="toRouter('hzmanqini')">
               {{ $t("common.header.about.hzmanqini") }}
-            </li>
+            </li> -->
           </ul>
         </el-collapse-item>
         <el-collapse-item :title="menu.language[isEnOrZh]" name="language">

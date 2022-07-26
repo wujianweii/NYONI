@@ -119,8 +119,8 @@
         style="animation-delay: 0.75s"
       >
         <h4 class="contact-info-header">{{ $t("contact.contact") }}</h4>
-        <a href="mailTo: nyoni@hzmanqini.com"
-          >{{ $t("common.footer.contact.email") }}: nyoni@hzmanqini.com</a
+        <a href="mailTo: jane@hzmanqini.com"
+          >{{ $t("common.footer.contact.email") }}: jane@hzmanqini.com</a
         >
         <a href="tel:+8618157898718"
           >{{ $t("common.footer.contact.phone") }}: +86 18157898718</a

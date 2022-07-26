@@ -95,14 +95,14 @@ const feiyanproductsList = {
       zh_name: "FEIYAN-FY1017 飞雁三角杆2B抽条5色混装洞洞笔",
     },
     {
-      model: "FY1233",
-      en_name: "FEIYAN-FY1233 Hexagon HB Pencil",
-      zh_name: "FEIYAN-FY1233 飞雁六角杆考试HB铅笔",
+      model: "JL1233",
+      en_name: "FEIYAN-JL1233 Hexagon HB Pencil",
+      zh_name: "FEIYAN-JL1233 飞雁六角杆考试HB铅笔",
     },
     {
-      model: "FY1234",
-      en_name: "FEIYAN-FY1234 Hexagon HB Pencil",
-      zh_name: "FEIYAN-FY1234 飞雁六角杆考试HB铅笔",
+      model: "JL1234",
+      en_name: "FEIYAN-JL1234 Hexagon HB Pencil",
+      zh_name: "FEIYAN-JL1234 飞雁六角杆考试HB铅笔",
     },
     {
       model: "FY2001",
@@ -170,11 +170,11 @@ const feiyanproductsList = {
       en_name: "FEIYAN-JL1801 Yellow Hexagon 2B Pencil",
       zh_name: "FEIYAN-JL1801 飞雁六角杆黑杆高级书写2B铅笔",
     },
-    {
-      model: "JL1810",
-      en_name: "FEIYAN-JL1810 Yellow Hexagon HB Pencil",
-      zh_name: "FEIYAN-JL1810 飞雁圆杆卡通HB铅笔",
-    },
+    // {
+    //   model: "JL1810",
+    //   en_name: "FEIYAN-JL1810 Yellow Hexagon HB Pencil",
+    //   zh_name: "FEIYAN-JL1810 飞雁圆杆卡通HB铅笔",
+    // },
     {
       model: "JL1822",
       en_name: "FEIYAN-JL1822 Triangle HB Pencil",

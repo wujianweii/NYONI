@@ -9,15 +9,15 @@
       <!-- <img
         src="../../assets/company/jiuling.jpg"
         alt=""
-        class="plr-50 col-lg-6 content-img"
+        class="plr-50 col-md-6 content-img"
       /> -->
       <video
-        class="pr-50 col-lg-6 content-video"
+        class="pr-50 col-md-6 content-video"
         src="@/assets/video/NYONI-FACTORY-JIULING.mp4"
         controls
         preload="metadata"
       ></video>
-      <div class="plr-50 col-lg-6 content-text">
+      <div class="plr-50 col-md-6 content-text">
         <h2>{{ $t("about.hzmanqini.textTitle") }}</h2>
         <p>{{ $t("about.hzmanqini.textContent") }}</p>
       </div>

@@ -103,11 +103,11 @@
               }}</a>
             </li>
 
-            <li @click="toAbout('hzmanqini')">
+            <!-- <li @click="toAbout('hzmanqini')">
               <a href="javaScript:void(0)">{{
                 $t("common.header.about.hzmanqini")
               }}</a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <!-- 语言 -->
