@@ -3,7 +3,12 @@
 
 // 边框
 .container {
+  position: relative;
+  width: 1905px;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0 56px;
+  clear: both;
 }
 
 h1,
@@ -83,7 +88,7 @@ h4,
 .h4,
 .font-primary {
   font-weight: 500;
-  font-family: "SiYuanSongTi", serif;
+  font-family: "siyuansongti", serif;
   color: #000;
   margin-bottom: 1rem;
 }
@@ -121,6 +126,12 @@ button:hover {
 .button-white:hover {
   color: #fff;
   background-color: #000;
+}
+
+.bg-gray {
+  background: #f4f7f6;
+  clear: both;
+  box-sizing: inherit;
 }
 
 // padding  margin
@@ -173,6 +184,7 @@ button:hover {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
+
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -542,10 +554,6 @@ button:hover {
   padding-top: 10px;
 }
 
-.pb-10 {
-  padding-bottom: 10px;
-}
-
 .pt-5 {
   padding-top: 5px;
 }
@@ -566,24 +574,12 @@ button:hover {
   padding-bottom: 80px;
 }
 
-.pb-7 {
-  padding-bottom: 7px;
-}
-
-.pl-12 {
-  padding-left: 12px;
-}
-
-.pl-50 {
-  padding-left: 50px;
+.pl-20 {
+  padding-left: 20px;
 }
 
 .pr-12 {
   padding-right: 12px;
-}
-
-.pb-12 {
-  padding-bottom: 12px;
 }
 
 .p-15 {
@@ -592,10 +588,6 @@ button:hover {
 
 .pt-20 {
   padding-top: 20px;
-}
-
-.pb-20 {
-  padding-bottom: 20px;
 }
 
 .pt-30 {

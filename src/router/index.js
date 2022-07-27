@@ -4,6 +4,7 @@ import nyoni from "../views/About/Nyoni.vue";
 import jiuling from "../views/About/Jiuling.vue";
 // import hzmanqini from "../views/About/Hzmanqini.vue";
 import contact from "../views/Contact.vue";
+import buy from "../views/Buy/Buy.vue";
 import products from "../views/Products/Products.vue";
 // import nyoni from "../views/Products/NyoniProducts.vue";
 // import feiyan from "../views/Products/FeiyanProducts.vue";
@@ -33,6 +34,11 @@ const routes = [
     path: "/contact",
     name: "contact",
     component: contact,
+  },
+  {
+    path: "/buy",
+    name: "buy",
+    component: buy,
   },
   {
     path: "/products/:brand",

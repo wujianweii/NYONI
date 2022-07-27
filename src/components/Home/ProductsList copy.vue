@@ -36,7 +36,7 @@
           <h3 class="h3-static">
             {{ $t("common.productsCategory.color_pencil") }}
           </h3>
-          <p>Helping this apparel brand increase conversions by 168%</p>
+          <p>NYONI - Define Your Direction Of Art</p>
         </div>
       </a>
 
@@ -71,7 +71,7 @@
           <h3 class="h3-static">
             {{ $t("common.productsCategory.sketch_pencil") }}
           </h3>
-          <p>Helping this apparel brand increase conversions by 168%</p>
+          <p>NYONI - Define Your Direction Of Art</p>
         </div>
       </a>
 
@@ -106,7 +106,7 @@
           <h3 class="h3-static">
             {{ $t("common.productsCategory.charcoal_pencil") }}
           </h3>
-          <p>Helping this apparel brand increase conversions by 168%</p>
+          <p>NYONI - Define Your Direction Of Art</p>
         </div>
       </a>
 
@@ -141,7 +141,7 @@
           <h3 class="h3-static">
             {{ $t("common.productsCategory.school_office_pencil") }}
           </h3>
-          <p>Helping this apparel brand increase conversions by 168%</p>
+          <p>NYONI - Define Your Direction Of Art</p>
         </div>
       </a>
 
@@ -176,7 +176,7 @@
           <h3 class="h3-static">
             {{ $t("common.productsCategory.eraser") }}
           </h3>
-          <p>Helping this apparel brand increase conversions by 168%</p>
+          <p>NYONI - Define Your Direction Of Art</p>
         </div>
       </a>
 
@@ -211,7 +211,7 @@
           <h3 class="h3-static">
             {{ $t("common.productsCategory.other_tools") }}
           </h3>
-          <p>Helping this apparel brand increase conversions by 168%</p>
+          <p>NYONI - Define Your Direction Of Art</p>
         </div>
       </a>
     </div>

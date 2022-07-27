@@ -8,7 +8,7 @@ module.exports = {
       products: {
         products: "Products",
         nyoni: "NYONI",
-        FEIYAN: "FEIYAN",
+        feiyan: "FEIYAN",
       },
       about: {
         about: "About",
@@ -17,6 +17,7 @@ module.exports = {
         hzmanqini: "HZMANQINI",
       },
       contact: "Contact",
+      buy: "Buy",
       language: {
         lg: "Language",
         zh: "Chinese",
@@ -30,7 +31,7 @@ module.exports = {
       procudts: {
         h1: "PRODUCTS",
         nyoni: "NYONI",
-        FEIYAN: "FEIYAN",
+        feiyan: "FEIYAN",
       },
       contact: {
         h1: "CONTACT",
@@ -58,6 +59,10 @@ module.exports = {
       eraser: "ERASER",
       other_tools: "OTHER TOOLS",
     },
+  },
+  // 购买链接
+  buy: {
+    title: "NYONI BUY LINK",
   },
   // 首页
   home: {
@@ -90,9 +95,9 @@ module.exports = {
   products: {
     title: "PRODUCTS BRANDS",
     nyoni: "NYONI",
-    FEIYAN: "FEIYAN",
+    feiyan: "FEIYAN",
     nyoinTitle: `NYONI focuses on the development and production of professional painting materials`,
-    FEIYANTitle: `FEIYAN focuses on the development and production of school & office writing pencils`,
+    feiyanTitle: `FEIYAN focuses on the development and production of school & office writing pencils`,
   },
   // 产品详情页
   details: {

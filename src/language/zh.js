@@ -16,6 +16,7 @@ module.exports = {
         hzmanqini: "曼奇尼",
       },
       contact: "联系",
+      buy: "购买",
       language: {
         lg: "语言",
         zh: "中文",
@@ -57,6 +58,10 @@ module.exports = {
       eraser: "橡皮",
       other_tools: "其他文具",
     },
+  },
+  // 购买链接
+  buy: {
+    title: "尼奥尼购买链接",
   },
   // 首页
   home: {
@@ -106,7 +111,7 @@ module.exports = {
   // 联系我们
   contact: {
     title: "联系我们",
-    content: "让我们达成共赢合作",
+    content: "让我们合作共赢",
     fullName: "名字",
     emailAddress: "邮箱",
     company: "公司",

@@ -8,7 +8,9 @@
       <p>
         {{ $t("home.companyIntroduction.content") }}
       </p>
-      <button @click="toRouter('nyoni')">{{ $t("home.button.about") }}</button>
+      <button @click="toRouter('jiuling')">
+        {{ $t("home.button.about") }}
+      </button>
     </div>
     <!-- 轮播 -->
     <Carousel category="banner" />

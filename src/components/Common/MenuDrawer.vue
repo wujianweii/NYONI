@@ -79,6 +79,9 @@
             </li> -->
           </ul>
         </el-collapse-item>
+        <div class="menu-drawer-li list-bb" @click="toRouter('buy')">
+          {{ $t("common.header.buy") }}
+        </div>
         <el-collapse-item :title="menu.language[isEnOrZh]" name="language">
           <ul>
             <li class="menu-drawer-li" @click="toRouter('language', 'zh')">

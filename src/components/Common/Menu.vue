@@ -110,6 +110,10 @@
             </li> -->
           </ul>
         </li>
+        <!-- 购买 -->
+        <li>
+          <a href="/buy">{{ $t("common.header.buy") }}</a>
+        </li>
         <!-- 语言 -->
         <li
           class="relative hasSubMenu"

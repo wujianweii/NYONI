@@ -1,9 +1,9 @@
 <template>
-  <div class="portfolio-list">
-    <h2>{{ $t("home.productsList.title") }}</h2>
-    <p class="short-content">
-      {{ $t("home.productsList.content") }}
-    </p>
+  <div class="container portfolio-list">
+    <h2>{{ $t("buy.title") }}</h2>
+    <!-- <p class="short-content">
+      {{ $t("home.buy.content") }}
+    </p> -->
     <div class="row items">
       <!-- 图片 color_pencil -->
       <a
@@ -13,16 +13,16 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <img src="../assets/common/nyoni_white.png" alt="" />
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/catalog/color_pencil.jpg"
+            src="../assets/buy/alibaba_manqini.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/catalog/color_pencil.jpg"
+            src="../assets/buy/alibaba_manqini.jpg"
             alt=""
           />
         </div>
@@ -42,16 +42,16 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <img src="../assets/common/nyoni_white.png" alt="" />
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/catalog/sketch_pencil.jpg"
+            src="../assets/buy/alibaba_jiuling.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/catalog/sketch_pencil.jpg"
+            src="../assets/buy/alibaba_jiuling.jpg"
             alt=""
           />
         </div>
@@ -71,16 +71,16 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <img src="../assets/common/nyoni_white.png" alt="" />
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/catalog/charcoal_pencil.jpg"
+            src="../assets/buy/taobao.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/catalog/charcoal_pencil.jpg"
+            src="../assets/buy/taobao.jpg"
             alt=""
           />
         </div>
@@ -101,16 +101,16 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <img src="../assets/common/nyoni_white.png" alt="" />
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/catalog/school_office_pencil.jpg"
+            src="../assets/buy/jingdong.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/catalog/school_office_pencil.jpg"
+            src="../assets/buy/jingdong.jpg"
             alt=""
           />
         </div>
@@ -130,51 +130,22 @@
       >
         <div class="p-img">
           <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
+            <img src="../assets/common/nyoni_white.png" alt="" />
           </div>
           <img
             class="colored animateRight"
-            src="../../assets/products/catalog/eraser.jpg"
+            src="../assets/buy/pinduoduo.jpg"
             alt=""
           />
           <img
             class="grey animateRight"
-            src="../../assets/products/catalog/eraser.jpg"
+            src="../assets/buy/pinduoduo.jpg"
             alt=""
           />
         </div>
         <div class="p-text animateFadeIn">
           <h3 class="h3-static">
             {{ $t("common.productsCategory.eraser") }}
-          </h3>
-          <p>NYONI - Define Your Direction Of Art</p>
-        </div>
-      </a>
-
-      <!-- 图片 other_tools -->
-      <a
-        href="javaScript:void(0)"
-        class="col-12 col-sm-6 p-item animateFadeIn"
-        @click="toProducts('other_tools')"
-      >
-        <div class="p-img">
-          <div class="logo">
-            <img src="../../assets/common/nyoni_white.png" alt="" />
-          </div>
-          <img
-            class="colored animateRight"
-            src="../../assets/products/catalog/other_tools.jpg"
-            alt=""
-          />
-          <img
-            class="grey animateRight"
-            src="../../assets/products/catalog/other_tools.jpg"
-            alt=""
-          />
-        </div>
-        <div class="p-text animateFadeIn">
-          <h3 class="h3-static">
-            {{ $t("common.productsCategory.other_tools") }}
           </h3>
           <p>NYONI - Define Your Direction Of Art</p>
         </div>
@@ -223,7 +194,7 @@ export default {
 </script>
 
 <style lang="less">
-.portfolio-list {
+.container -list {
   h2 {
     margin-bottom: 1rem;
   }
