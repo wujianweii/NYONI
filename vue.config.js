@@ -8,7 +8,9 @@ const { ElementPlusResolver } = require("unplugin-vue-components/resolvers");
 // }
 module.exports = defineConfig({
   publicPath: "./",
-  outputDir: "dist",
+  // publicPath:
+  //   process.env.VUE_APP_CURRENTMODE === "stage" ? "http://nyoni.top/" : "./",
+  outputDir: "dist/nyoni",
   assetsDir: "static",
   transpileDependencies: true,
   configureWebpack: {

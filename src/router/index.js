@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import home from "../views/Home.vue";
 import nyoni from "../views/About/Nyoni.vue";
 import jiuling from "../views/About/Jiuling.vue";
@@ -50,6 +50,7 @@ const routes = [
     name: "details",
     component: details,
   },
+  // 重定向 - home
   // {
   //   path: "/products/nyoni",
   //   name: "products",
@@ -63,7 +64,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 });
 
