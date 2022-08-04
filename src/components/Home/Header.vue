@@ -37,7 +37,7 @@ export default {};
 }
 .header-title {
   position: absolute;
-  top: 26rem;
+  top: 55%;
   left: 20px;
   right: 20px;
   z-index: 5;
@@ -52,7 +52,7 @@ export default {};
 }
 .title {
   line-height: 57px;
-  max-width: 800px;
+  max-width: 850px;
   font-size: 48px;
   margin-bottom: 2.5rem;
   color: #fff;

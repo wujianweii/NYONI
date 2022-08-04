@@ -493,7 +493,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1620px) {
+@media screen and (min-width: 1600px) {
   .portfolio-list .p-item .p-text ul li {
     font-size: 0.75rem;
   }

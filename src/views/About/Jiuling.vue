@@ -53,7 +53,7 @@
       fit="cover"
     /> -->
     <!-- 公司介绍 -->
-    <h2 class="company-introduction-title">公司介绍</h2>
+    <h2 class="company-introduction-title">{{ $t("jiuling.companyIntroductions") }}</h2>
     <div class="row">
       <div class="company-introduction-content content-left">
         <p>{{ $t("jiuling.companyIntroduction.p1") }}</p>
@@ -69,10 +69,10 @@
       </div>
     </div>
     <!-- 企业荣誉 -->
-    <h2 class="pt-60">企业荣誉</h2>
+    <h2 class="pt-60">{{ $t("jiuling.enterpriseHonor") }}</h2>
     <MixImageSwiperVue file="company/enterpriseHonor/" />
     <!-- 企业环境 -->
-    <h2 class="pt-60">公司环境</h2>
+    <h2 class="pt-60">{{ $t("jiuling.companyEnvironment") }}</h2>
     <MixImageSwiperVue
       file="company/companyEnvironment/"
       class="pb-60"

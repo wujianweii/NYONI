@@ -80,7 +80,7 @@ export default {
 <style lang="less">
 .products-recommend {
   background: #fff;
-  padding: 20px 0px;
+  padding: 20px 0px 60px;
   .el-carousel__arrow {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -101,7 +101,7 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .products-recommend {
-    padding: 20px 8px;
+    padding: 20px 8px 60px;
   }
 }
 </style>

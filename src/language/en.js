@@ -163,6 +163,9 @@ module.exports = {
     },
   },
   jiuling: {
+    companyIntroductions: "COMPANY INTRODUCTION",
+    enterpriseHonor: "ENTERPRISE HONOR",
+    companyEnvironment: "COMPANY ENVIRONMENT",
     companyIntroduction: {
       p1: `Zhejiang Jiuling brush Co., Ltd., founded in 1999, is an enterprise integrating production, supply and research, specializing in the production and sales of medium and high-end pencils, makeup pens and makeup series products. It owns brands such as FEIYAN, SHAONIANPAI, NYONI, KUAZI and so on.`,
       p2: `The company is located in Zhukou Town Industrial Park, Qingyuan County, Lishui City, which is known as "the first ecological county in China". Zhukou Town, known as the "pencil town of China", is the gathering place of Chinese pencil production enterprises, and the pencil output accounts for more than a quarter of the total domestic pencil output. Zhejiang Jiu brush Co., Ltd. is one of the first enterprises in Qingyuan County to develop, produce and sell pencils, and its production and sales volume has always been in the forefront of the pencil industry in the county.`,

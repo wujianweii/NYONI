@@ -519,11 +519,11 @@ export default {
 @media screen and (min-width: 1400px) {
   .portfolio-list .p-item .p-img {
     margin-bottom: 22px;
-    height: 26vw;
+    height: 28vw;
   }
 }
 
-@media screen and (min-width: 1620px) {
+@media screen and (min-width: 1600px) {
   .portfolio-list .p-item .p-text ul li {
     font-size: 0.75rem;
   }
