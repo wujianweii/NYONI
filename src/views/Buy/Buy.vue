@@ -69,7 +69,7 @@ export default {
 <style lang="less" scoped>
 .buy-container {
   position: relative;
-  width: 1905px;
+  width: 1400px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 56px 60px;
@@ -78,6 +78,12 @@ export default {
 @media screen and (max-width: 768px) {
   .buy-container {
     padding: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .buy-container {
+    box-sizing: content-box;
+    max-width: 1200px;
   }
 }
 .detail-title {

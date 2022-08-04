@@ -93,21 +93,21 @@
     </div>
     <div class="row pb-80 flex-start">
       <div
-        class="animateFadeInUp opacity-hide col-md-4 plr-20"
+        class="animateFadeInUp opacity-hide col-md-4 pr-40"
         style="animation-delay: 0.25s"
       >
         <h4 class="contact-info-header">{{ $t("contact.address") }}</h4>
-        <div class="scrolly-block">
-          <p>
+        <div class="scroll-block">
+          <p class="max-180">
             {{ $t("contact.factoryAdd") }}
           </p>
-          <p>
+          <!-- <p>
             {{ $t("contact.tradeAdd") }}
-          </p>
+          </p> -->
         </div>
       </div>
       <div
-        class="animateFadeInUp opacity-hide col-md-4 plr-20"
+        class="animateFadeInUp opacity-hide col-md-4 pr-40"
         style="animation-delay: 0.5s"
       >
         <h4 class="contact-info-header">{{ $t("contact.time") }}</h4>
@@ -115,7 +115,7 @@
         <p>{{ $t("contact.weekTime") }}</p>
       </div>
       <div
-        class="animateFadeInUp opacity-hide col-md-4 plr-20 contact-info"
+        class="animateFadeInUp opacity-hide col-md-4 pr-40 contact-info"
         style="animation-delay: 0.75s"
       >
         <h4 class="contact-info-header">{{ $t("contact.contact") }}</h4>
@@ -283,11 +283,20 @@ form {
   }
 }
 
-.scrolly-block {
-  height: 84px;
-  overflow: scroll;
-  p {
-    margin-bottom: 28px;
-  }
+// .scroll-block {
+//   height: 84px;
+//   overflow-x: hidden;
+//   overflow-y: scroll;
+//   p {
+//     margin-bottom: 28px;
+//   }
+// }
+
+.pr-40 {
+  padding-right: 40px;
+}
+
+.max-180 {
+  max-width: 180px;
 }
 </style>

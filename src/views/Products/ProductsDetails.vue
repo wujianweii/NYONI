@@ -19,8 +19,10 @@
       <ProductContent :product="product" :language="isEnOrZh" />
     </div>
     <!-- 你可能喜欢 -->
-    <h1 class="plr-details">{{ $t("details.recommendText") }}</h1>
-    <ProductsRecommend />
+    <div class="container recommend-container">
+      <h1 class="plr-details">{{ $t("details.recommendText") }}</h1>
+      <ProductsRecommend />
+    </div>
   </div>
 </template>
 
@@ -94,12 +96,15 @@ export default {
   height: 40px;
 }
 .plr-details {
-  padding: 0 56px;
   font-size: 24px;
 }
 .detail-container {
   display: flex;
   padding: 60px 56px;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  clear: both;
 }
 .detail-text-container {
   padding: 0 20px;
@@ -122,7 +127,17 @@ export default {
     font-size: 16px;
   }
 }
-
+@media screen and (min-width: 1400px) {
+  .detail-container {
+    box-sizing: content-box;
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recommend-container {
+    padding: 0;
+  }
+}
 // .bg {
 //   width: 100px;
 //   height: 100px;

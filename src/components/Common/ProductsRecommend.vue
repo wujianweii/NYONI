@@ -80,7 +80,7 @@ export default {
 <style lang="less">
 .products-recommend {
   background: #fff;
-  padding: 20px 44px;
+  padding: 20px 0px;
   .el-carousel__arrow {
     background-color: rgba(0, 0, 0, 0.3);
   }

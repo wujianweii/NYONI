@@ -126,7 +126,7 @@ module.exports = {
     message: "Message",
     submit: "SUBMIT",
     address: "Address",
-    factoryAdd: `Factory Add: No.1, Zhukou Industrial, Qingyuan, Lishui, Zhejiang,
+    factoryAdd: `No.1, Zhukou Industrial, Qingyuan, Lishui, Zhejiang,
     China.`,
     tradeAdd: `Trade Add:Room 816, Block 5, Jinjiemeidi Commercial Center,Xihu
     district, Hangzhou city, Zhejiang, China.`,

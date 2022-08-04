@@ -123,7 +123,7 @@ module.exports = {
     message: "邮件内容",
     submit: "提交",
     address: "地址",
-    factoryAdd: `工厂地址: 中国浙江省丽水市庆元县竹口工业园区1号`,
+    factoryAdd: `中国浙江省丽水市庆元县竹口工业园区1号`,
     tradeAdd: `外贸地址: 中国浙江省杭州市西湖区金街美地5号楼816室`,
     time: "工作时间",
     weekDay: "星期一 - 星期日",
