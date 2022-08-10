@@ -186,11 +186,11 @@ const nyoniProductsList = {
     //   en_name: "NYONI-N8512 Professional Art Eraser",
     //   zh_name: "NYONI-N8512 尼奥尼专业绘画橡皮",
     // },
-    // {
-    //   model: "N8133",
-    //   en_name: "NYONI-N8133 Professional Art Kneadable Eraser",
-    //   zh_name: "NYONI-N8133 尼奥尼专业可塑橡皮",
-    // },
+    {
+      model: "N8133",
+      en_name: "NYONI-N8133 Professional Art Kneadable Eraser",
+      zh_name: "NYONI-N8133 尼奥尼专业可塑橡皮",
+    },
   ],
   other_tools: [
     {

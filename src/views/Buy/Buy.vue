@@ -44,14 +44,14 @@ export default {
           buyLink:
             "http://mobile.pinduoduo.com/mall_page.html?mall_id=609785812",
         },
-        {
-          content: {
-            en: "NYONI Alibaba Zhejiang Jiuling Pencil & Brush Co.,Ltd",
-            zh: "尼奥尼 阿里巴巴国际站 浙江久灵笔刷有限公司",
-          },
-          buyType: "alibaba",
-          buyLink: "https://jiulingpencil.en.alibaba.com",
-        },
+        // {
+        //   content: {
+        //     en: "NYONI Alibaba Zhejiang Jiuling Pencil & Brush Co.,Ltd",
+        //     zh: "尼奥尼 阿里巴巴国际站 浙江久灵笔刷有限公司",
+        //   },
+        //   buyType: "alibaba",
+        //   buyLink: "https://jiulingpencil.en.alibaba.com",
+        // },
         {
           content: {
             en: "NYONI Alibaba Hangzhou Manqini Stationery Co.,Ltd",

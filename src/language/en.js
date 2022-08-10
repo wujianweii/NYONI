@@ -17,7 +17,7 @@ module.exports = {
         hzmanqini: "HZMANQINI",
       },
       contact: "Contact",
-      buy: "Buy",
+      buy: "Shop",
       language: {
         lg: "Language",
         zh: "Chinese",
@@ -62,17 +62,18 @@ module.exports = {
   },
   // 购买链接
   buy: {
-    title: "NYONI BUY LINK",
+    title: "NYONI SHOP LINK",
   },
   // 首页
   home: {
     header: {
       title1: "NYONI - DEFINE YOUR DIRECTION OF ART",
-      title2: `NYONI is a first-line brand of Chinese painting materials, focus on professional drawing products development and production."`,
+      title2: `NYONI is a top brand of Chinese painting materials, focus on professional drawing products development and production."`,
     },
     companyIntroduction: {
       title: "NYONI - Define Your Direction Of Art",
-      content: `Zhejiang Jiuling Brush Co., Ltd. was established in 1999, is a collection of production, research and development in one of the professional production and sales of high-grade pencil series of enterprises, owns FEIYAN, young PI, Nyoni, Jizi and other brands. The company is located in zhukou Town industrial Park, Qingyuan County, Lishui City, known as "The first ecological county in China". Zhukou town, known as "China's pencil town", is a gathering place for Chinese pencil manufacturers, accounting for more than a quarter of the country's total pencil output. Zhejiang Jiu brush Co., Ltd. is one of the earliest enterprises that develop, produce and sell pencils in Qingyuan county.`,
+      content: `Zhejiang jiuling pens & brushes co., ltd. is a professional company for pens making with a history of 20 years. We have our own factory with more than 400 employees.  It is also the leading enterprise of Zhejiang province.  And the annual output value is about 500 million cny. In addition, it engaged in its own brands that are called "NYONI" and "FEIYAN" which have the best sales volume in the Chinese market. nd the "NYONI" mainly makes painting tools, such as charcoal pencils, color pencils and eraser.  The "FEIYAN" mainly makes the office & school pencil.`,
+      // content: `Zhejiang Jiuling Brush Co., Ltd. was established in 1999, is a collection of production, research and development in one of the professional production and sales of high-grade pencil series of enterprises, owns FEIYAN, SHAONIANPAI, Nyoni, KUAZI and other brands. The company is located in zhukou Town industrial Park, Qingyuan County, Lishui City, known as "The first ecological county in China". Zhukou town, known as "China's pencil town", is a gathering place for Chinese pencil manufacturers, accounting for more than a quarter of the country's total pencil output. Zhejiang Jiu brush Co., Ltd. is one of the earliest enterprises that develop, produce and sell pencils in Qingyuan county.`,
       // 浙江久灵笔刷有限公司成立于1999年，是一家集产供研于一体的专业生产销售中高档铅笔系列产品的企业，旗下拥有飞雁、少年派、尼奥尼、绔姿等品牌。公司坐落于被誉为“中国生态第一县”之称的丽水市庆元县竹口镇工业园区。竹口镇被称为“中国铅笔小镇”，是中国铅笔生产企业的集聚地，铅笔产量占国内铅笔总量的四分之一强。浙江久笔刷有限公司是庆元县最早研发、生产和销售铅笔的企业之一，产销量始终稳居全县铅笔行业的前列。
     },
     productsList: {
@@ -86,7 +87,7 @@ module.exports = {
       content: `All Zhejiang Jiuling people will continue to carry forward the enterprise spirit of "hard work, enterprising, innovation and realism", adhere to the quality requirements of "high standards, refinement and whole process monitoring" and the enterprise concept of "customer-centric, better meet customer expectations than competitors", emancipate the mind, inspire the spirit, work together, and create a better tomorrow for Jiuling!`,
     },
     button: {
-      about: "WHY NYONI?",
+      about: "ABOUT US",
       product: "VIEW ALL",
       contact: "CONTACT US",
     },
@@ -144,8 +145,7 @@ module.exports = {
     },
     jiuling: {
       title: "JIULING | NYONI FACTORY",
-      content: `Zhejiang Jiuling Brush Co., Ltd focus on painting materials, beauty
-      cosmetics product development and production`,
+      content: `Zhejiang Jiuling Brush Co., Ltd focus on student pencil and professional art tools`,
       textTitle: "Zhejiang Jiuling Brush Co., LTD",
       textContent: `JIULING was founded in 1999, is a collection of production, research and development in one
       of the professional production and sales of high-grade pencils, makeup

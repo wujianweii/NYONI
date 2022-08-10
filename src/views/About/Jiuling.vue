@@ -53,7 +53,9 @@
       fit="cover"
     /> -->
     <!-- 公司介绍 -->
-    <h2 class="company-introduction-title">{{ $t("jiuling.companyIntroductions") }}</h2>
+    <h2 class="company-introduction-title">
+      {{ $t("jiuling.companyIntroductions") }}
+    </h2>
     <div class="row">
       <div class="company-introduction-content content-left">
         <p>{{ $t("jiuling.companyIntroduction.p1") }}</p>

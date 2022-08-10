@@ -7,8 +7,8 @@ const { ElementPlusResolver } = require("unplugin-vue-components/resolvers");
 //   return path.join(__dirname, "..", dir);
 // }
 module.exports = defineConfig({
-  // publicPath: "/",
-  publicPath: "../../",
+  publicPath: "/",
+  // publicPath: "../../",
   // publicPath:
   //   process.env.VUE_APP_CURRENTMODE === "stage" ? "http://nyoni.top/" : "./",
   outputDir: "dist/nyoni",
